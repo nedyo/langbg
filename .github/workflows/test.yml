@@ -1,0 +1,68 @@
+name: Test
+
+# Runs on every pull request, and before every deploy (deploy.yml calls it).
+
+on:
+  pull_request:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+          cache-dependency-glob: |
+            core/uv.lock
+            catalog/uv.lock
+
+      # Each suite runs in its own folder: pytest finds that project's settings (testpaths) there.
+      - name: Test core
+        working-directory: core
+        run: uv run pytest -q
+
+      - name: Test catalog
+        working-directory: catalog
+        run: uv run pytest -q
+
+  web:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ./.github/actions/setup-web
+
+      - name: Type-check
+        working-directory: web
+        run: pnpm check
+
+      - name: Build
+        working-directory: web
+        run: pnpm build
+
+      - name: Install Chromium
+        working-directory: web
+        run: pnpm exec playwright install --with-deps chromium
+
+      # Runs against the build above (astro preview), like the deployed site.
+      - name: End-to-end tests
+        working-directory: web
+        env:
+          E2E_PREBUILT: "1"
+        run: pnpm test:e2e
+
+      - name: Keep the Playwright traces of failed tests
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-traces
+          path: web/test-results/
+          retention-days: 7

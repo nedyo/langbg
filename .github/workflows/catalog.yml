@@ -1,0 +1,68 @@
+name: Catalog
+
+# Rebuilds the font catalog from google/fonts on the 1st of every month, or when started by hand
+# (Actions tab -> Catalog -> Run workflow). It commits what changed: web/src/data/catalog.json,
+# the previews under web/public/catalog/, catalog/manifest.json and catalog/report.md. Every run
+# rebuilds everything; only the commit each family's addresses point at is kept from the last run.
+#
+# No converted font and no ZIP is hosted: catalog.json holds addresses of the original files in
+# google/fonts (pinned to a commit) and the visitor's browser converts them on demand. What this job
+# publishes is small (one cut-down preview font per family), so it all goes into git.
+#
+# A push made with GITHUB_TOKEN does not start other workflows; deploy.yml
+# therefore listens for this one with `workflow_run` and publishes the site after it.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 5 1 * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: catalog
+  cancel-in-progress: false
+
+jobs:
+  catalog:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+          cache-dependency-glob: |
+            core/uv.lock
+            catalog/uv.lock
+
+      # Nothing is published unless the converter and the pipeline pass their own tests.
+      # Each suite runs in its own folder: pytest finds that project's settings (testpaths) there.
+      - name: Test core
+        working-directory: core
+        run: uv run pytest -q
+
+      - name: Test catalog
+        working-directory: catalog
+        run: uv run pytest -q
+
+      - name: Build the catalog
+        run: uv run --project catalog langbg-catalog --update build
+
+      - name: Show the report
+        run: cat catalog/report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit what changed
+        run: |
+          commit=$(jq -r .googleFontsCommit catalog/manifest.json)
+          git config user.name "langbg catalog"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add web/public/catalog web/src/data/catalog.json catalog/manifest.json catalog/report.md
+          if git diff --cached --quiet; then
+            echo "Nothing changed since the last run."
+          else
+            git commit -m "chore(catalog): update from google/fonts@${commit:0:7}"
+            git push
+          fi

@@ -1,0 +1,158 @@
+---
+import Link from "../components/Link.astro";
+import CodeSnippet from "../components/CodeSnippet.astro";
+import Converter from "../components/Converter.astro";
+import Preview from "../components/Preview.astro";
+import { SAMPLER_LETTERS, ui, type Lang } from "../i18n";
+import { localePath } from "../i18n";
+import Base from "../layouts/Base.astro";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = ui[lang];
+const letters = [...SAMPLER_LETTERS].join(" ");
+
+/** Splits a dictionary string into text and [text](href) links; a site path gets this page's language. */
+function linked(text: string): { text: string; href?: string }[] {
+  const parts: { text: string; href?: string }[] = [];
+  let last = 0;
+  for (const match of text.matchAll(/\[([^\]]+)\]\(([^)]+)\)/g)) {
+    if (match.index > last) parts.push({ text: text.slice(last, match.index) });
+    const href = match[2]!;
+    parts.push({ text: match[1]!, href: href.startsWith("/") ? localePath(lang, href) : href });
+    last = match.index + match[0].length;
+  }
+  if (last < text.length) parts.push({ text: text.slice(last) });
+  return parts;
+}
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "langBG",
+  url: new URL(localePath(lang, "/"), Astro.site).href,
+  description: t.home.jsonLdDescription,
+  applicationCategory: "DesignApplication",
+  operatingSystem: "Any (web browser)",
+  inLanguage: lang,
+  isAccessibleForFree: true,
+  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+};
+---
+
+<Base lang={lang} title={t.home.metaTitle} description={t.home.metaDescription} path="/" jsonLd={jsonLd}>
+  <section class="hero">
+    <div class="wrap">
+      <h1 class="display">{t.home.heroTitle}</h1>
+      <p class="lede" style="margin-top: 1.5rem">{t.home.heroLede}</p>
+      <p class="hero-actions">
+        <a class="button" href="#converter">{t.home.ctaPrimary}</a>
+        <a class="button button-quiet" href={localePath(lang, "/fonts/")}>{t.home.ctaSecondary}</a>
+      </p>
+
+      <div class="sampler" role="img" aria-label={t.home.samplerLabel}>
+        <div class="sampler-row">
+          <span class="sampler-label">{t.home.sampler.before}</span>
+          <span class="sampler-letters sampler-letters-now" lang="en">{letters}</span>
+        </div>
+        <div class="sampler-row">
+          <span class="sampler-label">{t.home.sampler.after}</span>
+          <span class="sampler-letters sampler-letters-with" lang="bg">{letters}</span>
+        </div>
+      </div>
+    </div>
+    <div class="stitch" aria-hidden="true"></div>
+  </section>
+
+  <section class="section" id="benefits">
+    <ul class="wrap cards cards-4">
+      {
+        t.home.benefits.items.map((item) => (
+          <li class="card">
+            <h2 class="card-title">{item.title}</h2>
+            <p class="card-text ui">{item.text}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <Converter lang={lang} />
+  <Preview lang={lang} />
+
+  <section class="section" id="modes" aria-labelledby="modes-title">
+    <div class="wrap split">
+      <div class="split-head">
+        <h2 id="modes-title">{t.home.modes.title}</h2>
+      </div>
+      <ul class="cards">
+        {
+          t.home.modes.items.map((item) => (
+            <li class="card">
+              <h3 class="card-title">{item.title}</h3>
+              <p class="card-text ui">{item.text}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="install" aria-labelledby="install-title">
+    <div class="wrap split">
+      <div class="split-head">
+        <h2 id="install-title">{t.install.title}</h2>
+      </div>
+      <ol class="steps">
+        {
+          t.install.steps.map((step) => (
+            <li class="step">
+              <h3 class="step-title">{step.title}</h3>
+              <p class="step-text ui">{step.text}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="handoff" aria-labelledby="handoff-title">
+    <div class="wrap split">
+      <div class="split-head">
+        <h2 id="handoff-title">{t.handoff.title}</h2>
+      </div>
+      <div>
+        <div class="measure">
+          {t.handoff.text.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+        <CodeSnippet lang={lang} kind="CSS" code={`/* ${t.handoff.cssComment} */\nfont-family: "Montserrat", sans-serif;`} />
+        <CodeSnippet lang={lang} kind="HTML" code={'<html lang="bg">'} />
+        <p class="muted ui small" style="margin-top: 1rem">{t.handoff.soon}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="wrap split">
+      <div class="split-head">
+        <h2 id="faq-title">{t.faq.title}</h2>
+      </div>
+      <div class="faq">
+        {
+          t.faq.items.map((item) => (
+            <details class="faq-item">
+              <summary class="faq-q">{item.q}</summary>
+              <div class="faq-a">
+                {item.a.map((paragraph) => (
+                  <p>{linked(paragraph).map((part) => (part.href ? <Link href={part.href}>{part.text}</Link> : part.text))}</p>
+                ))}
+              </div>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</Base>

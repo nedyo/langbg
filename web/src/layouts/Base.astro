@@ -1,0 +1,102 @@
+---
+import { Font } from "astro:assets";
+import { CF_BEACON_TOKEN } from "astro:env/server";
+import "../styles/global.css";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import { languages, localePath, ui, type Lang } from "../i18n";
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+  /** The Bulgarian path of this page ("/", "/fonts/montserrat/"); the English one is derived from it. */
+  path: string;
+  jsonLd?: Record<string, unknown>;
+  noindex?: boolean;
+}
+
+const { lang, title, description, path, jsonLd, noindex = false } = Astro.props;
+const t = ui[lang];
+const site = Astro.site as URL;
+const canonical = new URL(localePath(lang, path), site).href;
+const alternates = languages.map((code) => ({ code, href: new URL(localePath(code, path), site).href }));
+const image = new URL(`/og/${lang}.png`, site).href;
+const otherLocales = languages.filter((code) => code !== lang).map((code) => ui[code].site.ogLocale);
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <link rel="canonical" href={canonical} />
+    {alternates.map((a) => <link rel="alternate" hreflang={a.code} href={a.href} />)}
+    <link rel="alternate" hreflang="x-default" href={alternates[0].href} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={t.site.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={t.site.ogLocale} />
+    {otherLocales.map((locale) => <meta property="og:locale:alternate" content={locale} />)}
+    <meta property="og:image" content={image} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={title} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="color-scheme" content="light dark" />
+
+    <!-- Sets the theme before first paint, so a saved choice never flashes the other one. -->
+    <script is:inline>
+      try {
+        var theme = localStorage.getItem("theme");
+        if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+      } catch (error) {}
+    </script>
+
+    <!-- Preload only what the first screen draws: the heading and the lede in Cyrillic, "Figma" in Latin. -->
+    <Font
+      cssVariable="--font-serif"
+      preload={[
+        { subset: "cyrillic", weight: 800 },
+        { subset: "latin", weight: 800 },
+        { subset: "cyrillic", weight: 400 },
+      ]}
+    />
+    <Font cssVariable="--font-sans" />
+
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+
+    <!-- Cloudflare Web Analytics: cookie-free page counts. Only in the deployed build (token set). -->
+    {
+      CF_BEACON_TOKEN && (
+        <script
+          is:inline
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon={JSON.stringify({ token: CF_BEACON_TOKEN })}
+        />
+      )
+    }
+  </head>
+  <body>
+    <a class="skip-link ui" href="#main">{t.nav.skip}</a>
+    <Header lang={lang} path={path} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer lang={lang} />
+  </body>
+</html>

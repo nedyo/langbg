@@ -1,0 +1,21 @@
+---
+import { localePath, ui, type Lang } from "../i18n";
+import Base from "../layouts/Base.astro";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = ui[lang].notFound;
+---
+
+<Base lang={lang} title={t.metaTitle} description={t.text} path="/404/" noindex>
+  <section class="not-found">
+    <div class="wrap">
+      <h1 class="display" style="font-size: clamp(2.25rem, 5vw, 3.75rem)">{t.title}</h1>
+      <p class="lede">{t.text}</p>
+      <p class="hero-actions"><a class="button" href={localePath(lang, "/")}>{t.home}</a></p>
+    </div>
+  </section>
+</Base>

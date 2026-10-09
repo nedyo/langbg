@@ -1,0 +1,145 @@
+---
+import Link from "../components/Link.astro";
+import CatalogDownload from "../components/CatalogDownload.astro";
+import { format, localePath, PANGRAM, ui, type Lang } from "../i18n";
+import Base from "../layouts/Base.astro";
+import { catalog, type CatalogFont } from "../lib/catalog";
+
+interface Props {
+  lang: Lang;
+  font: CatalogFont;
+}
+
+const { lang, font } = Astro.props;
+const t = ui[lang];
+const d = t.fonts.detail;
+const family = `catalog-${font.slug}`;
+const letters = [...font.letters];
+const axes = font.axes.map((axis) => `${axis.tag} ${axis.min}–${axis.max}`).join(", ") || d.noAxes;
+const nativeSet = font.nativeSet;
+// The preview is the original font, cut down, with the language set to Bulgarian: the browser then applies the
+// font's own Bulgarian forms, which is what Figma shows after the conversion (or with the set turned on).
+const previewLang = "bg";
+---
+
+<Base
+  lang={lang}
+  title={format(d.metaTitle, { name: font.name })}
+  description={format(nativeSet ? d.metaDescriptionNative : d.metaDescription, { name: font.name, set: nativeSet, license: font.license })}
+  path={`/fonts/${font.slug}/`}
+>
+  <section class="section">
+    <span id="font-source" data-family={family} data-url={font.previewFont} hidden></span>
+    <div class="wrap">
+      <p class="ui small"><a href={localePath(lang, "/fonts/")}>{d.back}</a></p>
+      <h1 class="display" style="margin-top: 1rem;font-size: clamp(2.25rem, 6vw, 4.25rem)">{font.name}</h1>
+      {catalog.mock && <p class="panel panel-warn" style="margin-top: 1.25rem" data-testid="mock-notice">{d.mockNotice}</p>}
+
+      <div class="split" style="margin-top: 2.5rem">
+        <div class="split-head">
+          <h2>{d.testerTitle}</h2>
+        </div>
+        <div class="tester ui">
+          <div>
+            <label class="label" for="tester-text">{d.testerLabel}</label>
+            <textarea id="tester-text" class="field tester-text" data-testid="tester" lang={previewLang} rows="3" style={`font-family: "${family}", var(--font-serif)`}>{PANGRAM}</textarea>
+            <p class="muted ui small" style="margin-top: 0.5rem" data-testid="catalog-preview-note">
+              {nativeSet ? format(d.testerNoteNative, { set: nativeSet }) : d.testerNote}
+            </p>
+            <p class="muted ui small">{d.testerLimit}</p>
+          </div>
+          <div class="tester-controls">
+            <div>
+              <label class="label" for="tester-size">{d.testerSize}</label>
+              <input id="tester-size" type="range" min="16" max="96" value="36" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="split" style="margin-top: var(--space-section)">
+        <div class="split-head">
+          <h2>{d.lettersTitle}</h2>
+          <p class="muted ui">
+            {nativeSet ? format(d.lettersHelpNative, { name: font.convertedName, set: nativeSet }) : format(d.lettersHelp, { name: font.convertedName })}
+          </p>
+        </div>
+        <ul class="letters-grid" lang={previewLang} style={`font-family: "${family}", var(--font-serif)`} data-testid="letters">
+          {letters.map((letter) => <li>{letter}</li>)}
+        </ul>
+      </div>
+
+      <div class="split" style="margin-top: var(--space-section)">
+        <div class="split-head">
+          <h2>{d.infoTitle}</h2>
+        </div>
+        <div>
+          <dl class="facts">
+            <dt>{d.rows.figmaName}</dt>
+            <dd data-testid="catalog-figma-name">{font.convertedName}</dd>
+            <dt>{d.rows.original}</dt>
+            <dd>{font.name}</dd>
+            <dt>{d.rows.designer}</dt>
+            <dd>{font.designer}</dd>
+            <dt>{d.rows.license}</dt>
+            <dd>{font.license}</dd>
+            <dt>{d.rows.styles}</dt>
+            <dd>{font.styles.join(", ")}</dd>
+            <dt>{d.rows.axes}</dt>
+            <dd>{axes}</dd>
+            <dt>{d.rows.source}</dt>
+            <dd><Link href={font.source}>{font.source.replace("https://", "")}</Link></dd>
+          </dl>
+          {
+            font.group === "native" ? (
+              <div class="panel panel-ok ui" style="margin-top: 1.5rem" data-testid="catalog-native">
+                <p class="panel-title">{format(t.fonts.nativeLabel, { set: nativeSet })}</p>
+                <p>{format(d.nativeHow, { set: nativeSet })}</p>
+              </div>
+            ) : (
+              <>
+                <CatalogDownload lang={lang} font={font} />
+                <p class="ui small" style="margin-top: 1rem">
+                  <a href={`${localePath(lang, "/")}#install`}>{d.installLink}</a>
+                </p>
+              </>
+            )
+          }
+        </div>
+      </div>
+
+      <div class="split" style="margin-top: var(--space-section)">
+        <div class="split-head">
+          <h2>{d.licenseTitle}</h2>
+        </div>
+        <div class="measure">
+          <p>{format(d.licenseText, { license: font.license })}{font.files.length > 0 && ` ${d.licenseInZip}`}</p>
+          <p class="ui" style="margin-top: 0.75rem"><Link href={font.licenseUrl}>{d.licenseLink}</Link></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    import { runWhenIdle } from "../lib/idle";
+
+    const text = document.getElementById("tester-text") as HTMLTextAreaElement | null;
+    const size = document.getElementById("tester-size") as HTMLInputElement | null;
+    const apply = (): void => {
+      if (text && size) text.style.setProperty("--tester-size", `${size.value}px`);
+    };
+    size?.addEventListener("input", apply);
+    apply();
+
+    // The preview font is small, but it still loads after the page has loaded, never in front of
+    // the first paint; the preview shows the site's font for a moment and then switches.
+    const source = document.getElementById("font-source");
+    if (source?.dataset.family && source.dataset.url) {
+      const { family, url } = source.dataset;
+      runWhenIdle(() => {
+        const face = new FontFace(family, `url("${url}")`, { weight: "100 900", display: "swap" });
+        face.load().then(() => document.fonts.add(face)).catch(() => {});
+      });
+    }
+  </script>
+</Base>

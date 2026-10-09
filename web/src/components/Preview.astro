@@ -1,0 +1,38 @@
+---
+// Before/after preview. Until the visitor converts a font it shows the site's own font, which has
+// Bulgarian forms: "no language" is what Figma sends, "bg" is what a browser would send.
+// app.ts swaps in the visitor's fonts after a conversion.
+import { PANGRAM, ui, type Lang } from "../i18n";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = ui[lang].preview;
+---
+
+<section class="section" id="preview" aria-labelledby="preview-title">
+  <div class="wrap split">
+    <div class="split-head">
+      <h2 id="preview-title">{t.title}</h2>
+      <p class="muted ui">{t.lede}</p>
+      <p id="preview-note" class="muted ui small">{t.demoNote}</p>
+      <p id="preview-status" class="muted ui small" data-testid="preview-status" aria-live="polite"></p>
+    </div>
+    <div>
+      <div id="preview-controls" class="preview-controls" hidden>
+        <label for="preview-file">{t.font}</label>
+        <select id="preview-file" class="field field-auto" data-testid="preview-file" disabled></select>
+      </div>
+      <div class="specimen-row">
+        <span class="specimen-label">{t.now}</span>
+        <p id="sample-now" class="specimen" data-testid="preview-now" lang="en">{PANGRAM}</p>
+      </div>
+      <div class="specimen-row">
+        <span class="specimen-label">{t.with}</span>
+        <p id="sample-with" class="specimen specimen-with" data-testid="preview-with" lang="bg">{PANGRAM}</p>
+      </div>
+    </div>
+  </div>
+</section>

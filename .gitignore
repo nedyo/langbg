@@ -1,0 +1,41 @@
+# dependencies
+node_modules/
+.venv/
+
+# build output
+dist/
+.astro/
+
+# self-hosted Pyodide runtime (large, fetched at build time)
+web/public/pyodide/
+
+# generated browser runtime (see web/scripts/prepare-runtime.mjs)
+web/public/*.whl
+web/public/runtime.json
+
+# wrangler dev state (wherever it is started from)
+.wrangler/
+
+# Playwright output
+web/test-results/
+web/playwright-report/
+
+# archives
+*.zip
+
+# python caches
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# internal working files: kept on disk, not tracked
+CLAUDE.md
+PHASES.md
+REVIEW-FINDINGS.md
+COPY-REVIEW.md
+.claude/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/

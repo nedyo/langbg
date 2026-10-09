@@ -1,0 +1,14 @@
+# Cloudflare Workers static assets reads this file; it is not served.
+# Everything not listed keeps Cloudflare's default (the browser revalidates with an ETag).
+
+# Astro's build output: every file name carries a content hash.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Pyodide lives under its version (/pyodide/<version>/), so a new version gets a new address.
+/pyodide/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Names the Pyodide version and the wheels; must always be fresh.
+/runtime.json
+  Cache-Control: no-cache

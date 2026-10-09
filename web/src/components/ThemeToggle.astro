@@ -1,0 +1,32 @@
+---
+interface Props {
+  label: string;
+}
+const { label } = Astro.props;
+---
+
+<button class="theme-toggle" type="button" id="theme-toggle" aria-label={label} aria-pressed="false" title={label}>
+  <span class="theme-icon" aria-hidden="true"></span>
+</button>
+
+<script>
+  const button = document.getElementById("theme-toggle") as HTMLButtonElement | null;
+  const root = document.documentElement;
+  const media = window.matchMedia("(prefers-color-scheme: dark)");
+
+  const isDark = (): boolean => (root.dataset.theme ? root.dataset.theme === "dark" : media.matches);
+  const sync = (): void => button?.setAttribute("aria-pressed", String(isDark()));
+
+  button?.addEventListener("click", () => {
+    const next = isDark() ? "light" : "dark";
+    root.dataset.theme = next;
+    try {
+      localStorage.setItem("theme", next);
+    } catch {
+      // Private mode or blocked storage: the choice just lasts until the page closes.
+    }
+    sync();
+  });
+  media.addEventListener("change", sync);
+  sync();
+</script>

@@ -1,0 +1,12 @@
+---
+import { catalog } from "../../../lib/catalog";
+import FontDetail from "../../../views/FontDetail.astro";
+
+export function getStaticPaths() {
+  return catalog.fonts.map((font) => ({ params: { slug: font.slug }, props: { font } }));
+}
+
+const { font } = Astro.props;
+---
+
+<FontDetail lang="en" font={font} />

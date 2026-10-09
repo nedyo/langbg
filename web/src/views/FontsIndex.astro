@@ -1,0 +1,150 @@
+---
+import { format, localePath, ui, type Lang } from "../i18n";
+import Base from "../layouts/Base.astro";
+import { catalog, groupCounts, type CatalogGroup } from "../lib/catalog";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = ui[lang];
+const f = t.fonts.filter;
+const counts = groupCounts();
+const groups: CatalogGroup[] = ["convert", "native"];
+const filters = [
+  { key: "all", label: f.all, count: catalog.fonts.length },
+  ...groups.map((key) => ({ key, label: f[key], count: counts[key] })),
+];
+---
+
+<Base lang={lang} title={t.fonts.metaTitle} description={t.fonts.metaDescription} path="/fonts/">
+  <section class="section">
+    <div class="wrap">
+      <div class="split">
+        <div class="split-head">
+          <h1 class="display" style="font-size: clamp(2.25rem, 5vw, 3.75rem)">{t.fonts.title}</h1>
+        </div>
+        <div>
+          <p class="lede">{t.fonts.lede}</p>
+          {catalog.mock && <p class="panel panel-warn" style="margin-top: 1.25rem" data-testid="mock-notice">{t.fonts.mockNotice}</p>}
+        </div>
+      </div>
+
+      {
+        catalog.fonts.length === 0 ? (
+          <p style="margin-top: 2rem">{t.fonts.empty}</p>
+        ) : (
+          <>
+            <!-- The filter needs JavaScript, so it stays hidden until the script shows it; without it every card is listed. -->
+            <div
+              id="filters"
+              class="filters ui"
+              data-testid="catalog-filters"
+              data-help-convert={f.help.convert}
+              data-help-native={f.help.native}
+              hidden
+            >
+              <span class="label">{f.label}</span>
+              {
+                filters.map((filter) => (
+                  <button type="button" class="button button-quiet filter" data-filter={filter.key} aria-pressed={filter.key === "all" ? "true" : "false"} data-testid={`filter-${filter.key}`}>
+                    {filter.label} <span class="filter-count" data-testid={`filter-count-${filter.key}`}>{filter.count}</span>
+                  </button>
+                ))
+              }
+            </div>
+            <p id="filter-help" class="muted ui small filter-help" aria-live="polite" data-testid="filter-help"></p>
+
+            <ul class="catalog-list" style="margin-top: 1.5rem">
+              {catalog.fonts.map((font) => (
+                <li class="catalog-item" data-testid="catalog-item" data-group={font.group}>
+                  <div>
+                    <h2 class="catalog-name" style={`font-family: "catalog-${font.slug}", var(--font-serif)`}>
+                      <a href={localePath(lang, `/fonts/${font.slug}/`)} style="text-decoration: none">
+                        {font.name}
+                      </a>
+                    </h2>
+                    <p class={`catalog-figma${font.group === "native" ? " catalog-figma-native" : ""}`} data-testid="catalog-figma">
+                      {font.group === "native" ? format(t.fonts.nativeLabel, { set: font.nativeSet }) : format(t.fonts.inFigma, { name: font.convertedName })}
+                    </p>
+                    <p class="catalog-meta ui">
+                      {format(t.fonts.by, { designer: font.designer })}, {font.license}
+                    </p>
+                    <p
+                      class="catalog-letters"
+                      lang="bg"
+                      aria-hidden="true"
+                      data-testid="catalog-letters"
+                      data-family={`catalog-${font.slug}`}
+                      data-url={font.previewFont}
+                      style={`font-family: "catalog-${font.slug}", var(--font-serif)`}
+                    >
+                      {[...font.letters].map((letter) => <span>{letter}</span>)}
+                    </p>
+                  </div>
+                  <a class="button button-quiet ui" href={localePath(lang, `/fonts/${font.slug}/`)}>{t.fonts.view}</a>
+                </li>
+              ))}
+            </ul>
+          </>
+        )
+      }
+    </div>
+  </section>
+
+  <script>
+    // Filter by group. The choice lives in the address (#convert, #native), so a group can be linked to.
+    const bar = document.getElementById("filters");
+    const help = document.getElementById("filter-help");
+    if (bar && help) {
+      const buttons = [...bar.querySelectorAll<HTMLButtonElement>("[data-filter]")];
+      const cards = [...document.querySelectorAll<HTMLElement>("[data-group]")];
+      const known = new Set(buttons.map((button) => button.dataset.filter));
+      const show = (filter: string): void => {
+        for (const card of cards) card.hidden = filter !== "all" && card.dataset.group !== filter;
+        for (const button of buttons) button.setAttribute("aria-pressed", String(button.dataset.filter === filter));
+        help.textContent = bar.dataset[`help${filter[0].toUpperCase()}${filter.slice(1)}`] ?? "";
+      };
+      const fromAddress = (): string => {
+        const wanted = location.hash.slice(1);
+        return known.has(wanted) ? wanted : "all";
+      };
+      for (const button of buttons) {
+        button.addEventListener("click", () => {
+          const filter = button.dataset.filter ?? "all";
+          show(filter);
+          history.replaceState(null, "", filter === "all" ? location.pathname + location.search : `#${filter}`);
+        });
+      }
+      window.addEventListener("hashchange", () => show(fromAddress()));
+      bar.hidden = false;
+      show(fromAddress());
+    }
+
+    // Each card's name and letters are drawn in that family's own preview font. A preview is fetched only
+    // when its card comes near the screen (a hidden, filtered-out card never does), so the page does not
+    // download all of them. Until then, and if one fails, both show the site's serif; the letter boxes keep
+    // their size.
+    const rows = [...document.querySelectorAll<HTMLElement>(".catalog-letters[data-url]")];
+    const load = (row: HTMLElement): void => {
+      const { family, url } = row.dataset;
+      if (!family || !url) return;
+      const face = new FontFace(family, `url("${url}")`, { weight: "100 900" });
+      face.load().then(() => document.fonts.add(face)).catch(() => {});
+    };
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (!entry.isIntersecting) continue;
+            observer.unobserve(entry.target);
+            load(entry.target as HTMLElement);
+          }
+        },
+        { rootMargin: "200px 0px" },
+      );
+      for (const row of rows) observer.observe(row);
+    }
+  </script>
+</Base>

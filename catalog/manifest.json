@@ -1,0 +1,2123 @@
+{
+  "schema": 2,
+  "googleFontsCommit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd",
+  "families": {
+    "adventpro": {
+      "name": "Advent Pro",
+      "status": "no_bgr",
+      "inputHash": "712acdae4341f24cec3aba8b4fdfe4766497f08c504f24481ea0f2e93221636b",
+      "slug": "advent-pro",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "akt": {
+      "name": "Akt",
+      "status": "convert",
+      "inputHash": "279c008f4a93e481852b8685af37f0655f012cbbdf72ce5957b58e035c67160e",
+      "slug": "akt",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "alegreya": {
+      "name": "Alegreya",
+      "status": "no_bgr",
+      "inputHash": "8f9316b0f20210077cdfd8baf6f5f974d7ae7db9ef19a552297d2cc426bde01c",
+      "slug": "alegreya",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "alegreyasans": {
+      "name": "Alegreya Sans",
+      "status": "no_bgr",
+      "inputHash": "b6dde5da249c6f53f7fd600f136fcd028090202cfe4b933912fd611a6b0f6032",
+      "slug": "alegreya-sans",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "alegreyasanssc": {
+      "name": "Alegreya Sans SC",
+      "status": "no_bgr",
+      "inputHash": "dc0fc3cfe5558debd16153db201e2cabc5be1d940b2e77d35ac215d7660ff0c0",
+      "slug": "alegreya-sans-sc",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "alegreyasc": {
+      "name": "Alegreya SC",
+      "status": "no_bgr",
+      "inputHash": "1ec96c510049be1d734d7f1be45d2957fa4ddf5ea0345a6d6326292ad04defe0",
+      "slug": "alegreya-sc",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "alice": {
+      "name": "Alice",
+      "status": "no_bgr",
+      "inputHash": "e6a9eb90bcd73b1882bd7d9848658f8d4f651938e1d5d8c8306d8905f6159bb3",
+      "slug": "alice",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "alumnisans": {
+      "name": "Alumni Sans",
+      "status": "no_change",
+      "inputHash": "a8aafc051a8fbc1d5010fa12dad43b4d0bf71c127221d4dc8ee145c15dd38c47",
+      "slug": "alumni-sans",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "alumnisanscollegiateone": {
+      "name": "Alumni Sans Collegiate One",
+      "status": "no_bgr",
+      "inputHash": "59be66326ab2d8a7e03077d0c2a0393cf8cb5508168f863fbd050ba9ce6810e8",
+      "slug": "alumni-sans-collegiate-one",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "alumnisanscollegiateonesc": {
+      "name": "Alumni Sans Collegiate One SC",
+      "status": "no_bgr",
+      "inputHash": "d5e6d423f933392afd50a841fe3f1426652737e63ddd5b6c3766f06d82b12028",
+      "slug": "alumni-sans-collegiate-one-sc",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "alumnisanspinstripe": {
+      "name": "Alumni Sans Pinstripe",
+      "status": "convert",
+      "inputHash": "f3215639b87e0f829c854914b9efe591d40c397203fbcaf610a1e6b3de468ebd",
+      "slug": "alumni-sans-pinstripe",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "alumnisanssc": {
+      "name": "Alumni Sans SC",
+      "status": "no_change",
+      "inputHash": "97b91183caedd33cb0dd6a356f844bb6446adc9e6fc9265e86dacbd2f75ad000",
+      "slug": "alumni-sans-sc",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "amaticsc": {
+      "name": "Amatic SC",
+      "status": "no_bgr",
+      "inputHash": "344dea93b79b27d482a160172f37300a9b98f42edb979b6fa077fac43d66be6a",
+      "slug": "amatic-sc",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "andika": {
+      "name": "Andika",
+      "status": "no_bgr",
+      "inputHash": "51bfa18c6ceaa141bd7c6d2c6211bf65a6bc956e5e5843a845caa4a38493916f",
+      "slug": "andika",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "anonymouspro": {
+      "name": "Anonymous Pro",
+      "status": "no_bgr",
+      "inputHash": "83b7caf81057998bfbcaf6963501d08e30e871a320e2022c5c4f9bfa9c499489",
+      "slug": "anonymous-pro",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "arimo": {
+      "name": "Arimo",
+      "status": "no_bgr",
+      "inputHash": "1b5de7d0ec5f6bebcc8bd54bf627307c5da80f9c98c5a02a819b49aaace7a288",
+      "slug": "arimo",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "arsenal": {
+      "name": "Arsenal",
+      "status": "convert",
+      "inputHash": "6b2693d5c944d3e18176874d7a0935f33dfbf66fef157d9bdd2a7ba9bff7852e",
+      "slug": "arsenal",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "arsenalsc": {
+      "name": "Arsenal SC",
+      "status": "convert",
+      "inputHash": "7cd77396a7bfc89b5692748b68efc348afb220485d92a510fc729f75379ebb1c",
+      "slug": "arsenal-sc",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "badscript": {
+      "name": "Bad Script",
+      "status": "no_bgr",
+      "inputHash": "16833abe31c28f9512e1809fb0e7318157167439f9ee072e02b85c603cc4b8dc",
+      "slug": "bad-script",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "balsamiqsans": {
+      "name": "Balsamiq Sans",
+      "status": "no_bgr",
+      "inputHash": "063ed22ee6ce4eb5f94270ee43313caa7cf984d9e10724ec7dcf978b721267c0",
+      "slug": "balsamiq-sans",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "batang": {
+      "name": "Batang",
+      "status": "no_bgr",
+      "inputHash": "dfe03c8ccc10238fdcf9b13731b7cef2e6b4a08adbb3d822368493753145a362",
+      "slug": "batang",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "batangche": {
+      "name": "BatangChe",
+      "status": "no_bgr",
+      "inputHash": "9204a3405569037e5d6c4da6c2ded88a338463275f005a6647ee3afe084a8952",
+      "slug": "batangche",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "bellota": {
+      "name": "Bellota",
+      "status": "no_bgr",
+      "inputHash": "db4cb87616afdb62d8e4bca17317ad180c1452018200df782789ceef85ee5360",
+      "slug": "bellota",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "bellotatext": {
+      "name": "Bellota Text",
+      "status": "no_bgr",
+      "inputHash": "353ae9489ec550a0c5b75b28797af4dd80433f2d52ecdf0b8767fc5ee188d238",
+      "slug": "bellota-text",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "bitter": {
+      "name": "Bitter",
+      "status": "convert",
+      "inputHash": "23b21b69118d3c46b0ec588f4a4993702307b6e92831ab98e1e1cfcdaaf20ad4",
+      "slug": "bitter",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "bizudgothic": {
+      "name": "BIZ UDGothic",
+      "status": "no_bgr",
+      "inputHash": "f375b8953ab0208295525a6980ba055e6ded3be489b408c130a629c7127e75a9",
+      "slug": "biz-udgothic",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "bizudmincho": {
+      "name": "BIZ UDMincho",
+      "status": "no_bgr",
+      "inputHash": "dc2cc8ae6f5aab44148a008d67f20874b353a9afcd720c7d309557b89bdd8d79",
+      "slug": "biz-udmincho",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "bizudpgothic": {
+      "name": "BIZ UDPGothic",
+      "status": "no_bgr",
+      "inputHash": "dccd517a36881768e643f4a3d6ae6d39943dd90f82d80cb4a5599e7d761bd3d8",
+      "slug": "biz-udpgothic",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "bizudpmincho": {
+      "name": "BIZ UDPMincho",
+      "status": "no_bgr",
+      "inputHash": "014fa46509f52f564cc23868addeec8577cbd7f5f5d232854ec6089f89fea841",
+      "slug": "biz-udpmincho",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "bonanova": {
+      "name": "Bona Nova",
+      "status": "convert",
+      "inputHash": "86f0ace91119ccc063cb9ae6c231777de8a172598cf85c2597dc69cc8f07ad11",
+      "slug": "bona-nova",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "bonanovasc": {
+      "name": "Bona Nova SC",
+      "status": "convert",
+      "inputHash": "9b5b3a47d73d0c7044a5f8738f12be9eb83454adf684fedea0076b3fd290ca95",
+      "slug": "bona-nova-sc",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "brygada1918": {
+      "name": "Brygada 1918",
+      "status": "no_bgr",
+      "inputHash": "b30df6aa3f2fe4ef33d839111f10d381b6a26d1bfd69475b2f5ef92dc8fd2b33",
+      "slug": "brygada-1918",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "cactusclassicalserif": {
+      "name": "Cactus Classical Serif",
+      "status": "no_bgr",
+      "inputHash": "9fbe849eb1f6fe00b8e13a978b6b9bfbd3f5a37bee31283402e30f79b773a839",
+      "slug": "cactus-classical-serif",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "carlito": {
+      "name": "Carlito",
+      "status": "no_bgr",
+      "inputHash": "cf11755d43d1ec53bb8ad49776d5fbfccf18dced5621460c7be7c83d028b3169",
+      "slug": "carlito",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "cascadiacode": {
+      "name": "Cascadia Code",
+      "status": "convert",
+      "inputHash": "d457f8c8442f6e495913ec9ec8c51326accffa246360dcad7ea8d254378deb0e",
+      "slug": "cascadia-code",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "cascadiamono": {
+      "name": "Cascadia Mono",
+      "status": "convert",
+      "inputHash": "d5f6a299984903e264ed74e7b25044bfc0c0688908b1bfdcd3d63082b66f8615",
+      "slug": "cascadia-mono",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "caveat": {
+      "name": "Caveat",
+      "status": "no_bgr",
+      "inputHash": "0122b633730ddac18712a4551271ae7bd0bdc0b9b5aea68082a6eecf02b473e6",
+      "slug": "caveat",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "charissil": {
+      "name": "Charis SIL",
+      "status": "no_bgr",
+      "inputHash": "d67514fbda9528762ce5d282e219d5ebaaa22acaf61f1ee389d946a067140575",
+      "slug": "charis-sil",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "chirongoroundtc": {
+      "name": "Chiron GoRound TC",
+      "status": "no_bgr",
+      "inputHash": "dad167bb1a75e803289f41f6e165061878d5c4ce86f0a0485110d792cb3caa02",
+      "slug": "chiron-goround-tc",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "chironheihk": {
+      "name": "Chiron Hei HK",
+      "status": "convert",
+      "inputHash": "78574b7f30cad05de3140bb0c65eacef099a6734b1c445da75d20b932c4d1e72",
+      "slug": "chiron-hei-hk",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "chironsunghk": {
+      "name": "Chiron Sung HK",
+      "status": "convert",
+      "inputHash": "1029818e95ceed2aad7e2a0225bccf131d035700ad618c07b0a17f19ac05f1ef",
+      "slug": "chiron-sung-hk",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "chocolateclassicalsans": {
+      "name": "Chocolate Classical Sans",
+      "status": "convert",
+      "inputHash": "2a6c59b2e36239335649d5967172c75bd9133212275da7e095692d5e27ec95a8",
+      "slug": "chocolate-classical-sans",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "climatecrisis": {
+      "name": "Climate Crisis",
+      "status": "no_bgr",
+      "inputHash": "36f01d5a152d55451f72931cc0571f82dda30a162a9ec88be382824c6a8a9b3e",
+      "slug": "climate-crisis",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "comfortaa": {
+      "name": "Comfortaa",
+      "status": "no_bgr",
+      "inputHash": "0680e582022ed60675ffe7e1bf6b2d00f3434e620458755c71a36702fa4d4212",
+      "slug": "comfortaa",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "comforter": {
+      "name": "Comforter",
+      "status": "no_bgr",
+      "inputHash": "6f8c29a1948adf86a8325ada2851a63465b6aea870e1673f88db18d7cab4b31b",
+      "slug": "comforter",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "comforterbrush": {
+      "name": "Comforter Brush",
+      "status": "no_bgr",
+      "inputHash": "f41a1c4e61b3adced86751a5d6d891fe6e7c7c2bd065045a048b47a6d424eb0a",
+      "slug": "comforter-brush",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "comicrelief": {
+      "name": "Comic Relief",
+      "status": "no_bgr",
+      "inputHash": "6ad1e56f5fce512834d3021537f15f4bf5bcabb9af1c310bbc04402c12668863",
+      "slug": "comic-relief",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "commissioner": {
+      "name": "Commissioner",
+      "status": "convert",
+      "inputHash": "907b1567409f11357251a3abf66f8cfdbbb723b25b4bf639e70d9fb908bf700b",
+      "slug": "commissioner",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "cormorant": {
+      "name": "Cormorant",
+      "status": "convert",
+      "inputHash": "d527675491d7cc4e2468968007e759868bf7be9aa1d148c5774266d1dee9a172",
+      "slug": "cormorant",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "cormorantgaramond": {
+      "name": "Cormorant Garamond",
+      "status": "convert",
+      "inputHash": "ed68cb3fcb98bbc0fc408e7fbe3cc3f2eb107b45fc52ed5e3c4b92c968b50ffe",
+      "slug": "cormorant-garamond",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "cormorantinfant": {
+      "name": "Cormorant Infant",
+      "status": "partial",
+      "inputHash": "bb1d3fbaf7e5e948eab968157bad36b53cdd365421568fab4a20a6ba9685cbac",
+      "slug": "cormorant-infant",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd",
+      "note": "Bulgarian locl in 1 of 2 files"
+    },
+    "cormorantsc": {
+      "name": "Cormorant SC",
+      "status": "convert",
+      "inputHash": "602b0979e604a044f92b5a71205fa310ee79b560f336693a12aefea23b2d0c27",
+      "slug": "cormorant-sc",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "cormorantunicase": {
+      "name": "Cormorant Unicase",
+      "status": "convert",
+      "inputHash": "a49d1c00be49005dc171c5f0155330d69a00549e59223784c4e3850add358701",
+      "slug": "cormorant-unicase",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "cousine": {
+      "name": "Cousine",
+      "status": "no_bgr",
+      "inputHash": "a6f368a6f5018a5c13d4fc2460df33b653ee3a7b6f23cd9aab499cb653ff0e09",
+      "slug": "cousine",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "cuprum": {
+      "name": "Cuprum",
+      "status": "no_bgr",
+      "inputHash": "5dc2de9669d8d8b2d3a7eb6aca3794b057aef8c17e60cc4fb01c95f990d498d0",
+      "slug": "cuprum",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "daysone": {
+      "name": "Days One",
+      "status": "no_bgr",
+      "inputHash": "9406a2be83415973b3b152c27fad9aaa8f68b32465b7b3a6fd55763a271a8979",
+      "slug": "days-one",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "delagothicone": {
+      "name": "Dela Gothic One",
+      "status": "convert",
+      "inputHash": "006f195f614cb60b3f80af0ff9338e79f3a5e2046a6f0c0af8a309339907e6ef",
+      "slug": "dela-gothic-one",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "didactgothic": {
+      "name": "Didact Gothic",
+      "status": "no_bgr",
+      "inputHash": "7e3da69f90afb8ef852e03068c95918b709425b2b57a27fca4d59a24015ed109",
+      "slug": "didact-gothic",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "dotgothic16": {
+      "name": "DotGothic16",
+      "status": "no_bgr",
+      "inputHash": "d0c39a900e59261a7688d02877cce0965c0203879b059ad241816c0c256aebe7",
+      "slug": "dotgothic16",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "dotum": {
+      "name": "Dotum",
+      "status": "no_bgr",
+      "inputHash": "fd9285ab073ba45943d984b5da6e0c5dc858a937b457911536e16660dad2fa92",
+      "slug": "dotum",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "dotumche": {
+      "name": "DotumChe",
+      "status": "no_bgr",
+      "inputHash": "3d3b66093337f906fe6a9461690d19ae22d1a485c8b7a3cdbfbe1d4f1b2b469e",
+      "slug": "dotumche",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "ebgaramond": {
+      "name": "EB Garamond",
+      "status": "no_bgr",
+      "inputHash": "0acc8d4354e500d9dcbdd4045ed033585b6e6d186b37c85b36482577fbecaf4b",
+      "slug": "eb-garamond",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "elmessiri": {
+      "name": "El Messiri",
+      "status": "no_bgr",
+      "inputHash": "b59d14f31d142267b673ba12c1052a439633edcb4508dbaac4d40707fd49f8d3",
+      "slug": "el-messiri",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "exo2": {
+      "name": "Exo 2",
+      "status": "no_bgr",
+      "inputHash": "a9579170fbdb6d85121a7507953e4044dc6f5d78d346308eeefcf6ba07a4fc40",
+      "slug": "exo-2",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "finlandica": {
+      "name": "Finlandica",
+      "status": "no_bgr",
+      "inputHash": "c32f0d9255e23b57adbfc792f99b6d84273b3bb92e8ee3b11fcd8433da9cba29",
+      "slug": "finlandica",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "finlandicaheadline": {
+      "name": "Finlandica Headline",
+      "status": "convert",
+      "inputHash": "235bcfa2890c26f35bfbd5b0ee5d0f5f0327f8ebb3b0a7e12f338558e7d7ed00",
+      "slug": "finlandica-headline",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "finlandicatext": {
+      "name": "Finlandica Text",
+      "status": "convert",
+      "inputHash": "7d31ca622dd77ae3244746144bedf23759e1119c1045b00cc7d2ba2fc872a259",
+      "slug": "finlandica-text",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "firacode": {
+      "name": "Fira Code",
+      "status": "no_bgr",
+      "inputHash": "df72ce44b4bea500c8081eb788921062650fbdcb64282a1127b86b667622c2fe",
+      "slug": "fira-code",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "firamono": {
+      "name": "Fira Mono",
+      "status": "no_bgr",
+      "inputHash": "4acef3734afecb12d4b22e37bb5f870cce1c186c1af0867efe1f4fe23a417cdf",
+      "slug": "fira-mono",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "firasans": {
+      "name": "Fira Sans",
+      "status": "no_bgr",
+      "inputHash": "9c22cbc7441076b53dbfd5c008d328096fb70920d83d125d4c4f3ef16c5c7df6",
+      "slug": "fira-sans",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "firasanscondensed": {
+      "name": "Fira Sans Condensed",
+      "status": "no_bgr",
+      "inputHash": "817f1ca303721d1976253a1f28867c410185742267540ef943e901d7b2f3e1fb",
+      "slug": "fira-sans-condensed",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "firasansextracondensed": {
+      "name": "Fira Sans Extra Condensed",
+      "status": "no_bgr",
+      "inputHash": "d86054a00ef83f113a170825fe5d8d744b7c05da4f570b173215c136a2d65960",
+      "slug": "fira-sans-extra-condensed",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "flowblock": {
+      "name": "Flow Block",
+      "status": "no_bgr",
+      "inputHash": "a0676e6144c098af972848069b43bdb564ce927ea4da430ec362d9d41886be1b",
+      "slug": "flow-block",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "flowcircular": {
+      "name": "Flow Circular",
+      "status": "no_bgr",
+      "inputHash": "a7628689670bd234624f72bcdc590c8df3c36e904c283d4609f9073cba701527",
+      "slug": "flow-circular",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "flowrounded": {
+      "name": "Flow Rounded",
+      "status": "no_bgr",
+      "inputHash": "17321be00e0a524fc4498345ea5729dccae6907c5b4f93bf48d28839f6051fd3",
+      "slug": "flow-rounded",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "forum": {
+      "name": "Forum",
+      "status": "no_bgr",
+      "inputHash": "1b00fd1eccf80a3889941c5993b5f88925426763a3c8cff2eb8a93610115aa9c",
+      "slug": "forum",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "gabriela": {
+      "name": "Gabriela",
+      "status": "no_bgr",
+      "inputHash": "83b6608f215e6cc4ae077552a0d404c9ff21273f52429bf1ae12539b2ae107f0",
+      "slug": "gabriela",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "geist": {
+      "name": "Geist",
+      "status": "no_bgr",
+      "inputHash": "3d68fe7d8611766c4f4bd8e20eb2ad8e251ac3c7f6b8d88c09c5b80926ed1bd0",
+      "slug": "geist",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "geistmono": {
+      "name": "Geist Mono",
+      "status": "no_bgr",
+      "inputHash": "85e698fe20781dcb20a99bcb2f2cac36ddbd8caa2f13b1d5bb3e9ac7656ed1ac",
+      "slug": "geist-mono",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "gentiumbookplus": {
+      "name": "Gentium Book Plus",
+      "status": "no_bgr",
+      "inputHash": "1e1386b5d9b36a6f12c665aed755395977b91f548b783154b41433982fced098",
+      "slug": "gentium-book-plus",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "gentiumplus": {
+      "name": "Gentium Plus",
+      "status": "no_bgr",
+      "inputHash": "0f979145143be0bf78bd5fa5fe9371e7f75a8cea309768999ed9cdab9af1812f",
+      "slug": "gentium-plus",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "geologica": {
+      "name": "Geologica",
+      "status": "convert",
+      "inputHash": "1d60dfb6a3cfca8746b8b2d13de3dd283a583be03802acdc7583f81967443bf8",
+      "slug": "geologica",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "gidole": {
+      "name": "Gidole",
+      "status": "no_bgr",
+      "inputHash": "74e1f163f8d8d11ecaaf10dd8b43ce4bb58555276d2b246b897780b5e9998266",
+      "slug": "gidole",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "golostext": {
+      "name": "Golos Text",
+      "status": "no_bgr",
+      "inputHash": "1f701c9f88df1fef2c5e6ce9905ba996f18fd775d6db60050b0abb7fee54bccc",
+      "slug": "golos-text",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "googlesans": {
+      "name": "Google Sans",
+      "status": "convert",
+      "inputHash": "26b8527c34e26180060db0d41bdbda8622ed685cc0fde106a07ddc9247ef6a82",
+      "slug": "google-sans",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "gothica1": {
+      "name": "Gothic A1",
+      "status": "no_bgr",
+      "inputHash": "0f30b5b03ef59fd60a9c4840206dda4dfe8fa9149e8dd062173482ecda06d8c2",
+      "slug": "gothic-a1",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "greatvibes": {
+      "name": "Great Vibes",
+      "status": "convert",
+      "inputHash": "2a0afed5dba8dd1c540dd54125533d85f66c109287ba69e2e566c094a3b6fcde",
+      "slug": "great-vibes",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "gulim": {
+      "name": "Gulim",
+      "status": "no_bgr",
+      "inputHash": "d8a42e6de810fe393fc41a5054402866f4482346464d48ed051b0cc26d9dd496",
+      "slug": "gulim",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "gulimche": {
+      "name": "GulimChe",
+      "status": "no_bgr",
+      "inputHash": "23d25ce73e2b2b9c01ad48c9e4e11a3c03a3564d919b923908599f69e9f64c70",
+      "slug": "gulimche",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "gungsuh": {
+      "name": "Gungsuh",
+      "status": "no_bgr",
+      "inputHash": "ee7429779bb3d5c4881709ac41fcfb14e91e8283339fa84c2f6c7d66a6b53ec0",
+      "slug": "gungsuh",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "gungsuhche": {
+      "name": "GungsuhChe",
+      "status": "no_bgr",
+      "inputHash": "f469e63f9706b4a8efead18e8040dacaa6c1bf43463c66ed4e9ad0525be4646e",
+      "slug": "gungsuhche",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "hachimarupop": {
+      "name": "Hachi Maru Pop",
+      "status": "no_bgr",
+      "inputHash": "aa68136d12109fe9437930446c2f5a78d2d22c79930bbaaeeecf652a21a6b4b2",
+      "slug": "hachi-maru-pop",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "handjet": {
+      "name": "Handjet",
+      "status": "convert",
+      "inputHash": "6c021c4d63c648f2ef82ae0bf40fb80b5f74e2a1e0398dc4d3359c77b6d465f3",
+      "slug": "handjet",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "hinamincho": {
+      "name": "Hina Mincho",
+      "status": "no_bgr",
+      "inputHash": "56756f51ad86fbc2083ac146f9bc41b4131b0b365d7cabeca6307a05bc90a9ff",
+      "slug": "hina-mincho",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "huninn": {
+      "name": "Huninn",
+      "status": "no_bgr",
+      "inputHash": "8532395ce2c188b7bc4140762d827e7d2f09118bb7993aa3bbac3c91d7ff9c62",
+      "slug": "huninn",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "ibmplexmono": {
+      "name": "IBM Plex Mono",
+      "status": "no_bgr",
+      "inputHash": "2e33c2f470c1c6fe7de9ac60c7a91b08e12aaaf870c7491d5a458bca987a01e7",
+      "slug": "ibm-plex-mono",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "ibmplexsans": {
+      "name": "IBM Plex Sans",
+      "status": "native",
+      "inputHash": "591b6cc81a05dc2aa98924940efd6d478a0aa903b7b1292c81130ca2fc7fc547",
+      "slug": "ibm-plex-sans",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "ibmplexsansjp": {
+      "name": "IBM Plex Sans JP",
+      "status": "no_bgr",
+      "inputHash": "2a51ec4061d2bd3cfc2d31293be2cad734b57425c743e67c62b2eb45fc463a3e",
+      "slug": "ibm-plex-sans-jp",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "ibmplexserif": {
+      "name": "IBM Plex Serif",
+      "status": "no_bgr",
+      "inputHash": "0e825877fc34e57746d19a04c193bed76f4fcc9cca8121d6a8498d77bb144d4e",
+      "slug": "ibm-plex-serif",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "inter": {
+      "name": "Inter",
+      "status": "no_bgr",
+      "inputHash": "44af4f790d8ed7e779f254b940f3970dcfe92e9b0f24fb64a62138b89645d805",
+      "slug": "inter",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "intertight": {
+      "name": "Inter Tight",
+      "status": "no_bgr",
+      "inputHash": "c004627b76570a9eca2af25dd71c8f330f347bbb0be2ef54dfff9c1a85cfd26c",
+      "slug": "inter-tight",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "iosevkacharon": {
+      "name": "Iosevka Charon",
+      "status": "convert",
+      "inputHash": "97b9faa80c52a7f9eb58757aeb79c41483d61fca7f6714252c945e3ad11f157b",
+      "slug": "iosevka-charon",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "iosevkacharonmono": {
+      "name": "Iosevka Charon Mono",
+      "status": "convert",
+      "inputHash": "9033384495fd5aeaa3765f17b94230ebc1fe2b6cd363b9fe683373c93776a1c1",
+      "slug": "iosevka-charon-mono",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "istokweb": {
+      "name": "Istok Web",
+      "status": "no_bgr",
+      "inputHash": "7ac4fa285f940970b43035f4e44910cdb1a07888b60a57cafafb419bb73c99a7",
+      "slug": "istok-web",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "jetbrainsmono": {
+      "name": "JetBrains Mono",
+      "status": "no_bgr",
+      "inputHash": "8f4286d1fa38ee66aa3e4bf57fe32155a1749ff190fd037ba22293544877bb2a",
+      "slug": "jetbrains-mono",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "jost": {
+      "name": "Jost",
+      "status": "no_bgr",
+      "inputHash": "542d53dc999ba1b7442c794454d7847dd75a5e0d099b02a257e664ee88655fac",
+      "slug": "jost",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "jura": {
+      "name": "Jura",
+      "status": "no_bgr",
+      "inputHash": "3756d8a8f79802ae1605465e1c511e2d3953f25bfa282c64597d37c0abe978d4",
+      "slug": "jura",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "kablammo": {
+      "name": "Kablammo",
+      "status": "no_bgr",
+      "inputHash": "a64f7cf1072a7cafc4e2b9853f3d867ac360ad57d395ff9018e2c03f54645db2",
+      "slug": "kablammo",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "kaiseidecol": {
+      "name": "Kaisei Decol",
+      "status": "no_bgr",
+      "inputHash": "2b4fdc2670ee5d6940a9fc3c54a534ababf69a01e173f45824443fca5cea393d",
+      "slug": "kaisei-decol",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "kaiseiharunoumi": {
+      "name": "Kaisei HarunoUmi",
+      "status": "no_bgr",
+      "inputHash": "cf2d583a5f00a78b96bfd5e91600e1cfa0ca868fced145cc3aa6be7651c5a140",
+      "slug": "kaisei-harunoumi",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "kaiseiopti": {
+      "name": "Kaisei Opti",
+      "status": "no_bgr",
+      "inputHash": "2a3e652b76069648394f5d3ad126db17ebc877158e775c8bdd9133f50fa9c130",
+      "slug": "kaisei-opti",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "kaiseitokumin": {
+      "name": "Kaisei Tokumin",
+      "status": "no_bgr",
+      "inputHash": "3797eb4552285664af8ccbc48467da66a48bc8485bf70e50d782abd45cf8f01b",
+      "slug": "kaisei-tokumin",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "kellyslab": {
+      "name": "Kelly Slab",
+      "status": "no_bgr",
+      "inputHash": "829b7b226fa7d9678052c7e7ef3bea05ee9351d25438be382df39014950ee17e",
+      "slug": "kelly-slab",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "kiwimaru": {
+      "name": "Kiwi Maru",
+      "status": "no_bgr",
+      "inputHash": "a205b7774cd074042a78f16af19ff2276f67ee912f0a360a9f9ab47649ee8e06",
+      "slug": "kiwi-maru",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "kleeone": {
+      "name": "Klee One",
+      "status": "no_bgr",
+      "inputHash": "bdaa0b991adbc190827e27a2800a7590d3875288edaf501d1c0c1a8118d71542",
+      "slug": "klee-one",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "kurale": {
+      "name": "Kurale",
+      "status": "no_bgr",
+      "inputHash": "1ef7d17d6705cc2e435241eed5b03f35cff9894204badd8c7164bc5b81069080",
+      "slug": "kurale",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "lato": {
+      "name": "Lato",
+      "status": "no_bgr",
+      "inputHash": "a92df08928324cbe9e705609cdbad4c595fea54451b0a6724acd9f600ad97e6b",
+      "slug": "lato",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "ledger": {
+      "name": "Ledger",
+      "status": "no_bgr",
+      "inputHash": "f167adbcc1a2e8117d2ae478267f890f6bc9e7156a72120ad7fa47a2721809eb",
+      "slug": "ledger",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "libertinussans": {
+      "name": "Libertinus Sans",
+      "status": "no_bgr",
+      "inputHash": "5e382706140bc6aaf4f86a391cdf9233851de9d7e6fe9dd08c6c67e7d8d853ba",
+      "slug": "libertinus-sans",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "libertinusserif": {
+      "name": "Libertinus Serif",
+      "status": "no_bgr",
+      "inputHash": "7b82e4bb00a46293e11f2a272573251e290c99b1c3e22ff5b38673a1bf239873",
+      "slug": "libertinus-serif",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "libertinusserifdisplay": {
+      "name": "Libertinus Serif Display",
+      "status": "no_bgr",
+      "inputHash": "1e60d07b9f49f6e164ecfd995a2b5ec9835b6138e14f6417d3964bd9ce917a23",
+      "slug": "libertinus-serif-display",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "librefranklin": {
+      "name": "Libre Franklin",
+      "status": "no_bgr",
+      "inputHash": "8ddc640f13eec6c9b35c43824695355ccee447da73401c4b3181715048827251",
+      "slug": "libre-franklin",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "lilex": {
+      "name": "Lilex",
+      "status": "convert",
+      "inputHash": "f83cfcdf1255ec3a7f34ad511498aa4c72b651bd5b91011d572b6cd928f00365",
+      "slug": "lilex",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "lineseedjp": {
+      "name": "LINE Seed JP",
+      "status": "no_bgr",
+      "inputHash": "9ef7d100d0206d7f5f8327c22255e9b88e5bf73c75636702d77b83c87c1eca99",
+      "slug": "line-seed-jp",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "liter": {
+      "name": "Liter",
+      "status": "no_bgr",
+      "inputHash": "b22a460312f50856c816257d151c95c93c9eef1ec1e51bfded1aa7f904574245",
+      "slug": "liter",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "literata": {
+      "name": "Literata",
+      "status": "no_bgr",
+      "inputHash": "af364ded7bbdcff20ab72a1a1c9df7dd7a692d9bb0875d6584b085c0f32bbfce",
+      "slug": "literata",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "lobster": {
+      "name": "Lobster",
+      "status": "convert",
+      "inputHash": "e56bd06cd5f31d3b15c78e5b0ac28ddb3b488e0e953f34965a4329d526528379",
+      "slug": "lobster",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "lora": {
+      "name": "Lora",
+      "status": "convert",
+      "inputHash": "aefc59df7b7f27612b37c0591dfb2df84496f8d28fc92f1945eced1fc32bb88b",
+      "slug": "lora",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "lunasima": {
+      "name": "Lunasima",
+      "status": "no_bgr",
+      "inputHash": "1e4a194ac8f01fab26a3f8f82a15db2e3f5eb891213f0e3db26188a1eb94722e",
+      "slug": "lunasima",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "lxgwmarkergothic": {
+      "name": "LXGW Marker Gothic",
+      "status": "no_bgr",
+      "inputHash": "b9509a598e1c939eb988f04329bd36e562ed8ad0b36b7f3adb66771121d1bf9c",
+      "slug": "lxgw-marker-gothic",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "lxgwwenkaimonotc": {
+      "name": "LXGW WenKai Mono TC",
+      "status": "no_bgr",
+      "inputHash": "a2e19084669964feff921a68053cf3842db0d3f6ea438b5d6cebb2350f3ff59a",
+      "slug": "lxgw-wenkai-mono-tc",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "lxgwwenkaitc": {
+      "name": "LXGW WenKai TC",
+      "status": "no_bgr",
+      "inputHash": "d7459758272278e7a6edb74d71da0c80a368f0372e601f60ac82fe268a3aaf53",
+      "slug": "lxgw-wenkai-tc",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "manrope": {
+      "name": "Manrope",
+      "status": "convert",
+      "inputHash": "8922b134c74a1bf3e54fb8703c44968183eb8151bc03cdd6f4918ed3610cb7f6",
+      "slug": "manrope",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "marckscript": {
+      "name": "Marck Script",
+      "status": "no_bgr",
+      "inputHash": "aba879110da38ad17d7f5621aa19efb882d58a33a13acbb0232d0c496c8c00ed",
+      "slug": "marck-script",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "marmelad": {
+      "name": "Marmelad",
+      "status": "convert",
+      "inputHash": "fa5538701ffd1beef6f2b7cb7e77c8ecc7fdb0736a908958043efe008823f624",
+      "slug": "marmelad",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "martianmono": {
+      "name": "Martian Mono",
+      "status": "no_bgr",
+      "inputHash": "39e91481283c0b48d7ed00cda6e1837593e3e85baf879775869dd3a1f82d03b1",
+      "slug": "martian-mono",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "merriweather": {
+      "name": "Merriweather",
+      "status": "convert",
+      "inputHash": "df7e75a32e93b72abee35d5552fdd7a0bac31329ff2610c43a224033448bcc52",
+      "slug": "merriweather",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "moderustic": {
+      "name": "Moderustic",
+      "status": "convert",
+      "inputHash": "53da485b3d8dfde7b674684829a927cc988e4e11115227aa1d868acdf3715d67",
+      "slug": "moderustic",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "monomakh": {
+      "name": "Monomakh",
+      "status": "no_bgr",
+      "inputHash": "32ff2b8eef8220e73eb5bc3224bebf9fb1a471bc54eff4f21e1e92b3f256103f",
+      "slug": "monomakh",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "montserrat": {
+      "name": "Montserrat",
+      "status": "convert",
+      "inputHash": "bdca56f9850061d95b36a652388b522227e0f60002289c0cd5447e43db4462fa",
+      "slug": "montserrat",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "montserratalternates": {
+      "name": "Montserrat Alternates",
+      "status": "convert",
+      "inputHash": "5971c05dcc8c2e17a9063e28f05bbffbc43098e84f772c26309aae161eec78e6",
+      "slug": "montserrat-alternates",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "montserratunderline": {
+      "name": "Montserrat Underline",
+      "status": "convert",
+      "inputHash": "3feca32acba5d39c6da0a88cd1e3c159c5abdc06d2461d648f80a7b7ec5f4026",
+      "slug": "montserrat-underline",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "mplus1p": {
+      "name": "M PLUS 1p",
+      "status": "no_bgr",
+      "inputHash": "cbc28beae74326a9c56268bca73a4659381c4f4510509e7e10cee7100543bd04",
+      "slug": "m-plus-1p",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "mplusrounded1c": {
+      "name": "M PLUS Rounded 1c",
+      "status": "no_bgr",
+      "inputHash": "2f622f5c34ebabdf4acda26f4ceb8c5c5d02bdbede6bdaab12acd54a0cfbefab",
+      "slug": "m-plus-rounded-1c",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "mulish": {
+      "name": "Mulish",
+      "status": "no_bgr",
+      "inputHash": "1734b1c40fe7cdc42d28cfe5a430ba71c19d51ae92bbad568cc52dc37f62d9c2",
+      "slug": "mulish",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "murecho": {
+      "name": "Murecho",
+      "status": "no_bgr",
+      "inputHash": "a9b93091bb4176c4f61a19ff1c9bacb37e6a8e1f5024edffbf86a6abdef340ee",
+      "slug": "murecho",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "natasans": {
+      "name": "Nata Sans",
+      "status": "no_bgr",
+      "inputHash": "26467b2a5f1cb3a3eb7ac252c326df8321f64543081d7edbc9701c08992ca3d9",
+      "slug": "nata-sans",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "neucha": {
+      "name": "Neucha",
+      "status": "no_bgr",
+      "inputHash": "44186770f5dc24d6408315f1fb88e9504f95a58b9943c6576990d5c33338e339",
+      "slug": "neucha",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "nevermind": {
+      "name": "Nevermind",
+      "status": "convert",
+      "inputHash": "317c30d10ba4b39b5633625577aa9baabcaf3298d5ef4869cf06bcd7517f2c30",
+      "slug": "nevermind",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "newscycle": {
+      "name": "News Cycle",
+      "status": "no_bgr",
+      "inputHash": "c1b25b17f2a65c0fb8e80435dc5cc5c9c1527ac4104097a49248aacd7b20fac6",
+      "slug": "news-cycle",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "nobile": {
+      "name": "Nobile",
+      "status": "no_bgr",
+      "inputHash": "998631a8f6400e4209931ec2818d7ec7271829cde6f171369d7a8c84896fa3d9",
+      "slug": "nobile",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "notosans": {
+      "name": "Noto Sans",
+      "status": "no_bgr",
+      "inputHash": "37f43d242ca651ce307b7faba84eb2a723b541541d7235f98d4a03de7815d0aa",
+      "slug": "noto-sans",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "notosansdisplay": {
+      "name": "Noto Sans Display",
+      "status": "no_bgr",
+      "inputHash": "d218abc64217be01d2562f5d131a14fbb769cfb5dfa944320519b098a9429736",
+      "slug": "noto-sans-display",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "notosanshk": {
+      "name": "Noto Sans HK",
+      "status": "no_bgr",
+      "inputHash": "a8f23fa6c7d25e927efd30cf5e1a5c391649fa799d0e2355f40c4ff3a0a25d6c",
+      "slug": "noto-sans-hk",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "notosansjp": {
+      "name": "Noto Sans JP",
+      "status": "no_bgr",
+      "inputHash": "11b702321918d4b788fdfc54ca1d4479c8c9b9637796b3db4d97a15c5393a80f",
+      "slug": "noto-sans-jp",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "notosanskr": {
+      "name": "Noto Sans KR",
+      "status": "no_bgr",
+      "inputHash": "230349e8538fa00114c8aabe0c3a430a23b8b5cde0946f717b451e695a3df7e4",
+      "slug": "noto-sans-kr",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "notosansmono": {
+      "name": "Noto Sans Mono",
+      "status": "no_bgr",
+      "inputHash": "51b00eeb741e6e3f7b0619038456cb518f4e0625078ca6615198b0d095343893",
+      "slug": "noto-sans-mono",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "notosanssc": {
+      "name": "Noto Sans SC",
+      "status": "no_bgr",
+      "inputHash": "17d0aab97d6215bd75b2917b7daa81b81e7dd65f08b1fc462856d1602bb1eb6e",
+      "slug": "noto-sans-sc",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "notosanstc": {
+      "name": "Noto Sans TC",
+      "status": "no_bgr",
+      "inputHash": "6939d970720bf10b4bbf960d0cf25841731a9bd51edaeb2652094640f41ce232",
+      "slug": "noto-sans-tc",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "notoserif": {
+      "name": "Noto Serif",
+      "status": "no_bgr",
+      "inputHash": "f704e5a28d5563a9d3715ac0b1a0feb6b175f0d9016df6c9c6c4271fefe488ba",
+      "slug": "noto-serif",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "notoserifdisplay": {
+      "name": "Noto Serif Display",
+      "status": "no_bgr",
+      "inputHash": "9e16974341c35951cd6fa0a3cf1f1e4bd8d5188b3beca9ac457750538d8f92e9",
+      "slug": "noto-serif-display",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "notoserifhk": {
+      "name": "Noto Serif HK",
+      "status": "no_bgr",
+      "inputHash": "203a029c7645110f840326ce82039d58e8412d1e44238990917b0e2dbb9b8d05",
+      "slug": "noto-serif-hk",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "notoserifjp": {
+      "name": "Noto Serif JP",
+      "status": "no_bgr",
+      "inputHash": "cfd2b9c5062c28916ff69edd5bf80fa48863462c4321ad48789cfe73903ba7ce",
+      "slug": "noto-serif-jp",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "notoserifkr": {
+      "name": "Noto Serif KR",
+      "status": "no_bgr",
+      "inputHash": "99176b47d77a14710dae99d81c9ea690deb3f27b4f941c720f61b1dd7471a784",
+      "slug": "noto-serif-kr",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "notoserifsc": {
+      "name": "Noto Serif SC",
+      "status": "no_bgr",
+      "inputHash": "f775a374ce8330deb030482ddb657d741ba88d6219359cd7c4eaf97e04bcd083",
+      "slug": "noto-serif-sc",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "notoseriftc": {
+      "name": "Noto Serif TC",
+      "status": "no_bgr",
+      "inputHash": "f0826199332aa485f9a2d1235b2914b0ed57b0f9f1a0267ad45641c8610125f5",
+      "slug": "noto-serif-tc",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "nunito": {
+      "name": "Nunito",
+      "status": "no_bgr",
+      "inputHash": "ad20b0616f97c7f3a2370214c46ce47eab9e19f6b8671ce4418a3102650b0b09",
+      "slug": "nunito",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "nunitosans": {
+      "name": "Nunito Sans",
+      "status": "no_bgr",
+      "inputHash": "367bc82617cca1570b564c8e289146974439c144e3054d16a6b97270fd482569",
+      "slug": "nunito-sans",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "oi": {
+      "name": "Oi",
+      "status": "native",
+      "inputHash": "0ae74862bb5c57d7f4f3e75f6d8abebef9761304f155563ac93c36d155647325",
+      "slug": "oi",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "oldstandardtt": {
+      "name": "Old Standard TT",
+      "status": "no_bgr",
+      "inputHash": "41f128bff51e1f9d2ba9d316335bd7648a9ef9817caf684fe8b96e204b20c75a",
+      "slug": "old-standard-tt",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "onest": {
+      "name": "Onest",
+      "status": "no_bgr",
+      "inputHash": "6f91840e5579bea879a7dc4d69989cf428de22970e18bba008c43215dfcc9de7",
+      "slug": "onest",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "opensans": {
+      "name": "Open Sans",
+      "status": "no_bgr",
+      "inputHash": "7f722ee614d728ed3101326dcbd39c58e75727759bfd9b24ec7f43059d4fe227",
+      "slug": "open-sans",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "oranienbaum": {
+      "name": "Oranienbaum",
+      "status": "no_bgr",
+      "inputHash": "00d0c9f4bb96a5f35103a2753c4c15ac686c4240e38c44b2be5cfa3a24bf739a",
+      "slug": "oranienbaum",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "orelegaone": {
+      "name": "Orelega One",
+      "status": "no_bgr",
+      "inputHash": "6c64474072a043ad0d1d923612d5fcca133c28d8b70954ddeb64e4bd552c1bc9",
+      "slug": "orelega-one",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "oswald": {
+      "name": "Oswald",
+      "status": "no_bgr",
+      "inputHash": "57365a049219aade086766b4dd189cf085622544d8d0c99f754a1eed3f0ddf3f",
+      "slug": "oswald",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "overpass": {
+      "name": "Overpass",
+      "status": "convert",
+      "inputHash": "9fb8a11e7c4008efbd7df67917376d4d7013319a79900f3b8500ff26086e0493",
+      "slug": "overpass",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "overpassmono": {
+      "name": "Overpass Mono",
+      "status": "convert",
+      "inputHash": "a7ae2d229c3d83ddf1019b8c5b0bfcb21bf991a8c581d61fdbb3bfe5c6655170",
+      "slug": "overpass-mono",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "pacifico": {
+      "name": "Pacifico",
+      "status": "no_bgr",
+      "inputHash": "b144550b2f587e61c7c5b2adf7a6763f28489c9d51a4b0465f0c253f3d9603a4",
+      "slug": "pacifico",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "pangolin": {
+      "name": "Pangolin",
+      "status": "no_bgr",
+      "inputHash": "b8d7b657dafa4616a7d671720eb9b43c3ac389f1e5642e813186414705e4879b",
+      "slug": "pangolin",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "pattaya": {
+      "name": "Pattaya",
+      "status": "no_bgr",
+      "inputHash": "f52f724f0b268d9e1afac86847e51f2389dd17956782ede7c3e0da1a8e4cee34",
+      "slug": "pattaya",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "philosopher": {
+      "name": "Philosopher",
+      "status": "no_bgr",
+      "inputHash": "b50d9dc9913c5badb5f146b92460f711de2ffc4644a6a4852e7d9c54a561c036",
+      "slug": "philosopher",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "piazzolla": {
+      "name": "Piazzolla",
+      "status": "convert",
+      "inputHash": "3638d50ad2873b9351da6cceb67e28bb5510747481c8f81ab8026f7f9cbb753f",
+      "slug": "piazzolla",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "pixelifysans": {
+      "name": "Pixelify Sans",
+      "status": "no_bgr",
+      "inputHash": "36f81d637030520e75daaad360815f0e8ec762aef6798eb314c514704c3f8234",
+      "slug": "pixelify-sans",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "play": {
+      "name": "Play",
+      "status": "no_bgr",
+      "inputHash": "21d6365c808f13b87323ab84e18d29d521493bb292eeca9e38a3d84ff0c90e5b",
+      "slug": "play",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "playfair": {
+      "name": "Playfair",
+      "status": "convert",
+      "inputHash": "4cb8839983d9633a404ad4bcab4016a05f943b9449a4bc1a6de37e86ae6127e1",
+      "slug": "playfair",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "playfairdisplay": {
+      "name": "Playfair Display",
+      "status": "no_bgr",
+      "inputHash": "e28155455ecf030c40f5d6414bfbf47d3dbbc225fcee82e01e5bb49a7d3dcd0f",
+      "slug": "playfair-display",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "playfairdisplaysc": {
+      "name": "Playfair Display SC",
+      "status": "no_bgr",
+      "inputHash": "9f8a6f44ae916a1f09cd55eb41c474b3a39e67330a882fc0af03f21a4dca786e",
+      "slug": "playfair-display-sc",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "playpensans": {
+      "name": "Playpen Sans",
+      "status": "convert",
+      "inputHash": "513a7c22074b3cc312d2a5e6fe5a19795b3e40d4f824c6d8d07b6b8c3a29968b",
+      "slug": "playpen-sans",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "pliant": {
+      "name": "Pliant",
+      "status": "convert",
+      "inputHash": "495c715496eb9d5c1be556826e0ed484804e4043af7b8c669aab19b83ec85716",
+      "slug": "pliant",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "pochaevsk": {
+      "name": "Pochaevsk",
+      "status": "no_bgr",
+      "inputHash": "ec8ea65cfab46178e5ac77a658aeb5bfa37df1db3a5c6e4621ded400e4059f50",
+      "slug": "pochaevsk",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "podkova": {
+      "name": "Podkova",
+      "status": "no_bgr",
+      "inputHash": "562eff4517f54baa9d1920f64f41d6686721e7c063f73c7474292e9ea5f4f1f4",
+      "slug": "podkova",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "poiretone": {
+      "name": "Poiret One",
+      "status": "convert",
+      "inputHash": "538adfcdf06c9bb40426a7b566ababec5c258d806218659dfb0925b5588ce6b2",
+      "slug": "poiret-one",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "ponomar": {
+      "name": "Ponomar",
+      "status": "no_bgr",
+      "inputHash": "aabd2a96886b7175a6f2f5db979d23eed36297caf327ba3c8ddecb5bdea75945",
+      "slug": "ponomar",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "prata": {
+      "name": "Prata",
+      "status": "no_bgr",
+      "inputHash": "8e4d0d9524e0c3e1efec48841e039e254e588bdbb5c4ad2512ba5f8e19f01f85",
+      "slug": "prata",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "pressstart2p": {
+      "name": "Press Start 2P",
+      "status": "no_bgr",
+      "inputHash": "cce445045b99389d0bb7d95c7ced4522bd403d05568599a78f9c2224d2c8bc1d",
+      "slug": "press-start-2p",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "prostoone": {
+      "name": "Prosto One",
+      "status": "no_bgr",
+      "inputHash": "206a99024d18b95866c75431220433d021874aada0c40e1aca1e34058685956b",
+      "slug": "prosto-one",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "ptmono": {
+      "name": "PT Mono",
+      "status": "no_bgr",
+      "inputHash": "4965f91f12403006646aeab675240d0d57ec6206265c915fb2587fc58db89c5a",
+      "slug": "pt-mono",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "ptsans": {
+      "name": "PT Sans",
+      "status": "no_bgr",
+      "inputHash": "2eedc91870d84a581c7d761199508c4fecb7f24c1c28806d5b5a1c014c4ba1fe",
+      "slug": "pt-sans",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "ptsanscaption": {
+      "name": "PT Sans Caption",
+      "status": "no_bgr",
+      "inputHash": "7be9f0bf237e65dcf81cc9c12142b7579c8ef0aab04b67d6bae28508f39b9272",
+      "slug": "pt-sans-caption",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "ptsansnarrow": {
+      "name": "PT Sans Narrow",
+      "status": "no_bgr",
+      "inputHash": "8a417f7a46fbf509a3778e25d5993ceef8737512d83c0c495ad16c11651fb335",
+      "slug": "pt-sans-narrow",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "ptserif": {
+      "name": "PT Serif",
+      "status": "no_bgr",
+      "inputHash": "359863d8485df95419c19faf9c90c0584a5cf6ed70b8cad7a052fc1058eb2881",
+      "slug": "pt-serif",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "ptserifcaption": {
+      "name": "PT Serif Caption",
+      "status": "no_bgr",
+      "inputHash": "dd1b0684ee685629b864f0d1c1478011df80c0c04b7c9294f511edc77325f896",
+      "slug": "pt-serif-caption",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "raleway": {
+      "name": "Raleway",
+      "status": "convert",
+      "inputHash": "3dfcf951961742ec8cb55428ae2aef32bd1ed32f4a8e1e7c2de683f16709d98b",
+      "slug": "raleway",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rampartone": {
+      "name": "Rampart One",
+      "status": "no_bgr",
+      "inputHash": "a17199d4ec07a1ea0ee1e0f056dc8ff59c570ca1bd37288addb3308947724634",
+      "slug": "rampart-one",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "reggaeone": {
+      "name": "Reggae One",
+      "status": "no_bgr",
+      "inputHash": "a7cc567cca22db020c7bceba8f78a6e5fa8d8980b51c4984df512911453a3bfb",
+      "slug": "reggae-one",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "roboto": {
+      "name": "Roboto",
+      "status": "no_bgr",
+      "inputHash": "5389b8390e891f4114ea2a7bc853b65f5791bf44f10be402ed9ba608a340e5ab",
+      "slug": "roboto",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "robotocondensed": {
+      "name": "Roboto Condensed",
+      "status": "no_bgr",
+      "inputHash": "4edcd646ba7548a46631d77e34ba63ac3e76e7f13736b2784dc6f4385cb14c55",
+      "slug": "roboto-condensed",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "robotoflex": {
+      "name": "Roboto Flex",
+      "status": "no_bgr",
+      "inputHash": "a20ab6331eaf447f085d354b319d59321207ed2205e4fcb832f71447568f6b03",
+      "slug": "roboto-flex",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "robotomono": {
+      "name": "Roboto Mono",
+      "status": "no_bgr",
+      "inputHash": "b5ad9641af64b9095205f48adedc90277438e8df87a56e1a19b787ee36fd0da2",
+      "slug": "roboto-mono",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "robotoserif": {
+      "name": "Roboto Serif",
+      "status": "partial",
+      "inputHash": "650816853d9e06116470c76c8fad2951b3bf2193b339e2d53778c7e389ca8e35",
+      "slug": "roboto-serif",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd",
+      "note": "Bulgarian locl in 1 of 2 files"
+    },
+    "rubik": {
+      "name": "Rubik",
+      "status": "no_bgr",
+      "inputHash": "0f8b3aed6247b8035e4098bd4949ac2fcc4fd54fe6531a63a9a88db97fb4de28",
+      "slug": "rubik",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubik80sfade": {
+      "name": "Rubik 80s Fade",
+      "status": "no_bgr",
+      "inputHash": "53155407bb91f3e7095d8cd42985c1b472add66a8cc1338df96aca0a1f388a00",
+      "slug": "rubik-80s-fade",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikbeastly": {
+      "name": "Rubik Beastly",
+      "status": "no_bgr",
+      "inputHash": "0022d68b69eca6dff6c9b9607d21c655ad7a16287b7df2ab1713360d5e2a9076",
+      "slug": "rubik-beastly",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikbrokenfax": {
+      "name": "Rubik Broken Fax",
+      "status": "no_bgr",
+      "inputHash": "4cf02099c4d867582841b899e1f3769876cbf8351a8ca155e62f456d1f15a0d7",
+      "slug": "rubik-broken-fax",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikbubbles": {
+      "name": "Rubik Bubbles",
+      "status": "no_bgr",
+      "inputHash": "e33473a90981095801bba309693853614df79c9dafc856bf85d4ab1be2276390",
+      "slug": "rubik-bubbles",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikburned": {
+      "name": "Rubik Burned",
+      "status": "no_bgr",
+      "inputHash": "6f0067fd6ac310cb4873e75a34427450e856b4c89c185c819377974143ff838c",
+      "slug": "rubik-burned",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikdirt": {
+      "name": "Rubik Dirt",
+      "status": "no_bgr",
+      "inputHash": "ca885ccb4a5e13a763aa4c90bfdd9de11da6d2efec2d80e6b3ffcd4e795a8911",
+      "slug": "rubik-dirt",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikdistressed": {
+      "name": "Rubik Distressed",
+      "status": "no_bgr",
+      "inputHash": "99a82329d90db991985f757f7ad42a29b003db3c693028d2c067f0ac5c22f501",
+      "slug": "rubik-distressed",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikdoodleshadow": {
+      "name": "Rubik Doodle Shadow",
+      "status": "no_bgr",
+      "inputHash": "53660a270b0e3f8531ce7b7086a68149f1ff6951738d2843d2f79d3c90dda57e",
+      "slug": "rubik-doodle-shadow",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikdoodletriangles": {
+      "name": "Rubik Doodle Triangles",
+      "status": "no_bgr",
+      "inputHash": "9290de7c5ca967f49810e823cee2774102192f34a47d3cfead6ff9d00a03cd21",
+      "slug": "rubik-doodle-triangles",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikgemstones": {
+      "name": "Rubik Gemstones",
+      "status": "no_bgr",
+      "inputHash": "8b91b2d593a8f61d4b2633ac8fdee1bc2bfbbfa9257cb4337bd658d676910095",
+      "slug": "rubik-gemstones",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikglitch": {
+      "name": "Rubik Glitch",
+      "status": "no_bgr",
+      "inputHash": "f98f71965384d56eae9e51fa7e81beed44c70cb17106456fe121fd4baf892beb",
+      "slug": "rubik-glitch",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikglitchpop": {
+      "name": "Rubik Glitch Pop",
+      "status": "no_bgr",
+      "inputHash": "bd788683eeeac7448f4fb5583caf39deeaff602e40852c8343782a42324a2ab3",
+      "slug": "rubik-glitch-pop",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikiso": {
+      "name": "Rubik Iso",
+      "status": "no_bgr",
+      "inputHash": "8e5e940799dae4c073cb0cb9c7cb7d7baf274558501dd8cb75f92a7e77ee9756",
+      "slug": "rubik-iso",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubiklines": {
+      "name": "Rubik Lines",
+      "status": "no_bgr",
+      "inputHash": "5c7907903f23ddb991faa2fc935dc98040f6abfe8f2fcab6664a20b6c9021786",
+      "slug": "rubik-lines",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikmaps": {
+      "name": "Rubik Maps",
+      "status": "no_bgr",
+      "inputHash": "0fb1f3e42a099f49224bc38db57878f74d20f0a90ac539ef97551dd02e248c16",
+      "slug": "rubik-maps",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikmarkerhatch": {
+      "name": "Rubik Marker Hatch",
+      "status": "no_bgr",
+      "inputHash": "8a80bc5e11900a908dd41788cf3aceaf4ce3f7f09160498dc57cf9b0fd30f4a3",
+      "slug": "rubik-marker-hatch",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikmaze": {
+      "name": "Rubik Maze",
+      "status": "no_bgr",
+      "inputHash": "a9dfce478bdb28cdd2864ea338cfec05c77026a1f55cc5910b8e0d4e82ce7c69",
+      "slug": "rubik-maze",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikmicrobe": {
+      "name": "Rubik Microbe",
+      "status": "no_bgr",
+      "inputHash": "22b9040c3fca955b664a4837c3636058569364f7caec5789a735da72db8f53dc",
+      "slug": "rubik-microbe",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikmonoone": {
+      "name": "Rubik Mono One",
+      "status": "no_bgr",
+      "inputHash": "74c596df641bdcebea53f20a6eb1c1d3af84203a739e03bd558db639f38d7b0f",
+      "slug": "rubik-mono-one",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikmoonrocks": {
+      "name": "Rubik Moonrocks",
+      "status": "no_bgr",
+      "inputHash": "9dda56ebca55fb267114a05cde719bc61a34a0371b79451de4d134883cb27107",
+      "slug": "rubik-moonrocks",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikone": {
+      "name": "Rubik One",
+      "status": "no_bgr",
+      "inputHash": "bf17b4ed08621c911dab9c45447f99043c35d0446006a143f231e2b8afc472d4",
+      "slug": "rubik-one",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikpixels": {
+      "name": "Rubik Pixels",
+      "status": "no_bgr",
+      "inputHash": "6b7c2c4e86a7efde1ec2dd574d0e55aab33fa3b251a8720a5cb88d80cb723de0",
+      "slug": "rubik-pixels",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikpuddles": {
+      "name": "Rubik Puddles",
+      "status": "no_bgr",
+      "inputHash": "666f8b73d6e2dce06ed97669f71716daedea8ed41eb7e2bda88e31b7b9ae9006",
+      "slug": "rubik-puddles",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikscribble": {
+      "name": "Rubik Scribble",
+      "status": "no_bgr",
+      "inputHash": "9ac7b69cd0571bb7699227474fbf5838c31153ab79966aae218665a0565a5b08",
+      "slug": "rubik-scribble",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikspraypaint": {
+      "name": "Rubik Spray Paint",
+      "status": "no_bgr",
+      "inputHash": "59ad33334281d78d182c10b7a10c991de3598d41c88b9e92905e094ae13ab543",
+      "slug": "rubik-spray-paint",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikstorm": {
+      "name": "Rubik Storm",
+      "status": "no_bgr",
+      "inputHash": "43ec9fce7191136f24d883976b3a1d432b8850d352831e74f52657d55f311682",
+      "slug": "rubik-storm",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikvinyl": {
+      "name": "Rubik Vinyl",
+      "status": "no_bgr",
+      "inputHash": "12f8b7c6a88e4d562734e4c4549acd21bc2b7be1e734a03e4391f8cca319fca7",
+      "slug": "rubik-vinyl",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "rubikwetpaint": {
+      "name": "Rubik Wet Paint",
+      "status": "no_bgr",
+      "inputHash": "a414a461a0a410936d2cd8f95286892b63b1dfc4d4e46b7ccfdfd61345f65c1f",
+      "slug": "rubik-wet-paint",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "ruda": {
+      "name": "Ruda",
+      "status": "no_bgr",
+      "inputHash": "deeb07c480a250eb4b3446f5c28178f0583bce4bc4e6bb6cc4426c901653ba60",
+      "slug": "ruda",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "ruslandisplay": {
+      "name": "Ruslan Display",
+      "status": "no_bgr",
+      "inputHash": "364f24523b3695346136d7007c2e1c4d20060bcdc539d21063c2ff85c9cec547",
+      "slug": "ruslan-display",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "russoone": {
+      "name": "Russo One",
+      "status": "no_bgr",
+      "inputHash": "8aff475ec35428d03bdb8cedd6d11104f6a7508dcb754febf3adf7bfadc6525d",
+      "slug": "russo-one",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "sansation": {
+      "name": "Sansation",
+      "status": "no_bgr",
+      "inputHash": "5b846220bb5d38cd945915c2123dbc9681777634404367bf0d813a0f9c0d9685",
+      "slug": "sansation",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "sawarabigothic": {
+      "name": "Sawarabi Gothic",
+      "status": "no_bgr",
+      "inputHash": "4e9f975272d7ce78753413a1fb9f505c80ad4ab51cd26f4ce9b640a3eebb5520",
+      "slug": "sawarabi-gothic",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "scada": {
+      "name": "Scada",
+      "status": "no_bgr",
+      "inputHash": "75b5dc28e6127839088821c88d6c60bd43bd692708ef38cc3049664f256904a9",
+      "slug": "scada",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "sciencegothic": {
+      "name": "Science Gothic",
+      "status": "native",
+      "inputHash": "d337329edaad4411f06ae317b8e93cb95a95dcc6e5de3062d50377b436599d72",
+      "slug": "science-gothic",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "seymourone": {
+      "name": "Seymour One",
+      "status": "no_bgr",
+      "inputHash": "22a4b80ddfdf4d3af3973bcf4a9bbd20dd7e41a55f952494e09060975a7ab9f1",
+      "slug": "seymour-one",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "shafarik": {
+      "name": "Shafarik",
+      "status": "no_bgr",
+      "inputHash": "a2c34362fc1d37b4594ea755092b75279b7af081a2790fb366319cfb8e1df9eb",
+      "slug": "shafarik",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "shantellsans": {
+      "name": "Shantell Sans",
+      "status": "native",
+      "inputHash": "1fb88b5451b2ed2083d4b252a788c9f2555a2f7035f377dc4615440fbcf2edf5",
+      "slug": "shantell-sans",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "snpro": {
+      "name": "SN Pro",
+      "status": "no_bgr",
+      "inputHash": "d6584ef19194130211262a00d9205418fe821a2308e901560d2e460b020021c4",
+      "slug": "sn-pro",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "sofiasans": {
+      "name": "Sofia Sans",
+      "status": "no_bgr",
+      "inputHash": "9f701352cce31185b59e15cbb6b8851ca226bc22d37cacf3b414cb5466d47e76",
+      "slug": "sofia-sans",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "sofiasanscondensed": {
+      "name": "Sofia Sans Condensed",
+      "status": "no_bgr",
+      "inputHash": "fd8579d802ef1aa0d2d9bcb31b9102d851fa6f593f3cf61e57f7918ad952acac",
+      "slug": "sofia-sans-condensed",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "sofiasansextracondensed": {
+      "name": "Sofia Sans Extra Condensed",
+      "status": "no_bgr",
+      "inputHash": "d9c7aed084169b4566327a009793a208cc16bd842d35143b54b8c0e55130d3d5",
+      "slug": "sofia-sans-extra-condensed",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "sofiasanssemicondensed": {
+      "name": "Sofia Sans Semi Condensed",
+      "status": "no_bgr",
+      "inputHash": "bc0ad2d3e00b39ce752d70fe9bccb27d0fe2bd91b398b3082ba3b0eae83511ad",
+      "slug": "sofia-sans-semi-condensed",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "sourcecodepro": {
+      "name": "Source Code Pro",
+      "status": "no_bgr",
+      "inputHash": "04ce8042a67774f4bed4b1fdc9da31143c2fa5fdcbb5e6f08b0ca6edd65d52bb",
+      "slug": "source-code-pro",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "sourcesans3": {
+      "name": "Source Sans 3",
+      "status": "convert",
+      "inputHash": "aeefa679ed1ada2a8ff62b61e88b04d01c62d878856a1e5b17366da987dedc92",
+      "slug": "source-sans-3",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "sourceserif4": {
+      "name": "Source Serif 4",
+      "status": "convert",
+      "inputHash": "0245146e856bb2caec0cdae2ac937931d3ef3eab00b405e8d694d626e179f7eb",
+      "slug": "source-serif-4",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "spectral": {
+      "name": "Spectral",
+      "status": "native",
+      "inputHash": "99eb24013cc155907214850b0551a0d8cf5379856278a35f4f3a3aeca3c6b4f1",
+      "slug": "spectral",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "spectralsc": {
+      "name": "Spectral SC",
+      "status": "native",
+      "inputHash": "bd1111eb736be4823de498eb7b8f33f5eae21ebfcbcf461808fb25fd3083fc2b",
+      "slug": "spectral-sc",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "stalinistone": {
+      "name": "Stalinist One",
+      "status": "no_bgr",
+      "inputHash": "f06a16d79e7d52f98c195be08d9902338a2e8fd4c39bff52ca3419d0fd94d36e",
+      "slug": "stalinist-one",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "stick": {
+      "name": "Stick",
+      "status": "no_bgr",
+      "inputHash": "660149a30b0f6a8799d3f640000cc8a1cf3bf43061ec4a1c712c465a4adaa243",
+      "slug": "stick",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "stixtwotext": {
+      "name": "STIX Two Text",
+      "status": "no_bgr",
+      "inputHash": "1b2194f24b454c4e5a2f69fcf22b23b3891c3ff6c311d896b04a07e56afd9db6",
+      "slug": "stix-two-text",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "strong": {
+      "name": "Strong",
+      "status": "no_bgr",
+      "inputHash": "972d015f440e76481d09bfa801e0aeee20acdd405a2377e5e2351f9ebc1d7ae5",
+      "slug": "strong",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "tektur": {
+      "name": "Tektur",
+      "status": "convert",
+      "inputHash": "bbdaeefa6db417d9d3c157885543cbdba3560975f446a6777f368861b6ce680a",
+      "slug": "tektur",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "tenorsans": {
+      "name": "Tenor Sans",
+      "status": "no_bgr",
+      "inputHash": "7e5253538987e05644b1048afeb6f645cad9641a46de5b45e509c509539d34a5",
+      "slug": "tenor-sans",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "tiktoksans": {
+      "name": "TikTok Sans",
+      "status": "native",
+      "inputHash": "3ca1662855b8a5c6d3d8392f4950c64bd5b4af7c17117cf864b32cf6601e38ff",
+      "slug": "tiktok-sans",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "tinos": {
+      "name": "Tinos",
+      "status": "no_bgr",
+      "inputHash": "78968ab42031e806ed21c01d248af7d5568ae0e33a4cf9012867dfe8feabe1f0",
+      "slug": "tinos",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "tiny5": {
+      "name": "Tiny5",
+      "status": "no_bgr",
+      "inputHash": "03670a33e898e641b295dc2dbc57d6c455398bebaf39ef35ab79f6f6f37775f8",
+      "slug": "tiny5",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "tiny5duo": {
+      "name": "Tiny5 Duo",
+      "status": "no_bgr",
+      "inputHash": "c2471485c7b0f5780ad6d7378a4014dcee4512037e722f5f37ef7ac00d7fef4e",
+      "slug": "tiny5-duo",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "trainone": {
+      "name": "Train One",
+      "status": "no_bgr",
+      "inputHash": "feb12e736e9fb3360d35e2727c4f0232032f3c68d1a777a8fdc8e6586cf40aea",
+      "slug": "train-one",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "triodion": {
+      "name": "Triodion",
+      "status": "no_bgr",
+      "inputHash": "0b375683d015c80499dee035983019dee5bb464a01f8371ea54bf97631a98365",
+      "slug": "triodion",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "tuffy": {
+      "name": "Tuffy",
+      "status": "no_bgr",
+      "inputHash": "e3fbd7cb34fdb338e5ffded6bf4eab91d81dd211b8744ea50583b2b260ccb31b",
+      "slug": "tuffy",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "unbounded": {
+      "name": "Unbounded",
+      "status": "convert",
+      "inputHash": "183be8ece9c16676f4c5f95ecea69c5ff7ba691a37cd2dac0c88b8ab508447f9",
+      "slug": "unbounded",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "underdog": {
+      "name": "Underdog",
+      "status": "no_bgr",
+      "inputHash": "ede07b9d7b733353442f350d82fc11906091aedd6e50402e160d5086c087f65d",
+      "slug": "underdog",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "uoqmunthenkhung": {
+      "name": "UoqMunThenKhung",
+      "status": "no_bgr",
+      "inputHash": "22ad20f39df145a2505d838e0ebd46ea66e412d7bbf977315c347c09ee6ed42a",
+      "slug": "uoqmunthenkhung",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "viaodalibre": {
+      "name": "Viaoda Libre",
+      "status": "convert",
+      "inputHash": "094d3e416dc1901b4f14bb99de9ad2528e8113ef74f48445b9099df6ebfc36f2",
+      "slug": "viaoda-libre",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "victormono": {
+      "name": "Victor Mono",
+      "status": "convert",
+      "inputHash": "e9b55b266598d06f4d37dff36eeb5aff8ff4729a10dd39993fd6d3ae89f517a0",
+      "slug": "victor-mono",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "vollkorn": {
+      "name": "Vollkorn",
+      "status": "native",
+      "inputHash": "796882b181c491c0289af2e1fee918291944722f06bfda6658a75b54d9d38e4b",
+      "slug": "vollkorn",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "vollkornsc": {
+      "name": "Vollkorn SC",
+      "status": "native",
+      "inputHash": "d8968a43e2d282843ddf59db8d5f40b29efe160e4d04888f5288d4e7cccfd5f2",
+      "slug": "vollkorn-sc",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "wdxllubrifontjpn": {
+      "name": "WDXL Lubrifont JP N",
+      "status": "no_bgr",
+      "inputHash": "f56c944d0c561f4bbf722ad2153814424b20c5f771d8d428b151e31a372c053e",
+      "slug": "wdxl-lubrifont-jp-n",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "wdxllubrifontsc": {
+      "name": "WDXL Lubrifont SC",
+      "status": "no_bgr",
+      "inputHash": "25de27d7de5bd6ca667707d55e14a00a36ff6a80f317dd4db7b0969529d51c39",
+      "slug": "wdxl-lubrifont-sc",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "wdxllubrifonttc": {
+      "name": "WDXL Lubrifont TC",
+      "status": "no_bgr",
+      "inputHash": "56c99e285acaceb87a57a31dc87cdac0ace17b82d27a5dbe74b2b6a7971067b4",
+      "slug": "wdxl-lubrifont-tc",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "wixmadefordisplay": {
+      "name": "Wix Madefor Display",
+      "status": "convert",
+      "inputHash": "00e79fa66f48ad1a0f58edc85cccea1315799e72f39d600538b55fb0517e5675",
+      "slug": "wix-madefor-display",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "wixmadefortext": {
+      "name": "Wix Madefor Text",
+      "status": "partial",
+      "inputHash": "6edcbbc022516adea6ebfe061fa3f96df6bce94d98217a12d16ac502bfdbbc60",
+      "slug": "wix-madefor-text",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd",
+      "note": "Bulgarian locl in 6 of 12 files"
+    },
+    "xmind": {
+      "name": "Xmind",
+      "status": "convert",
+      "inputHash": "a80a2c8e4e3e3e42f9672d22b7d5c789fd0e1d2634c7db2496052dab5645a8f5",
+      "slug": "xmind",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "yanonekaffeesatz": {
+      "name": "Yanone Kaffeesatz",
+      "status": "convert",
+      "inputHash": "a30ac66bbf923e00c5e717205d9a2dfda6c6dece68af0a2e3829a90e06fb26fc",
+      "slug": "yanone-kaffeesatz",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "yesevaone": {
+      "name": "Yeseva One",
+      "status": "no_bgr",
+      "inputHash": "54e885057137a9933cec68798ffc128edcaef0aa43217389741e1ffd69702baf",
+      "slug": "yeseva-one",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "yomogi": {
+      "name": "Yomogi",
+      "status": "no_bgr",
+      "inputHash": "9e1dccdbbbcdb1ceb5da49ec6189674f622e1c57d1ce89e504ab23ae09b1fad6",
+      "slug": "yomogi",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "ysabeau": {
+      "name": "Ysabeau",
+      "status": "convert",
+      "inputHash": "8c487dc08bdba5fc6848c2c4f227ed6d0f17764d8833bc4eb976a5661bf2f98e",
+      "slug": "ysabeau",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "ysabeauinfant": {
+      "name": "Ysabeau Infant",
+      "status": "convert",
+      "inputHash": "0ffe5ec81e310e8b310c8cdc5586f4806b41b6e2fd3b602c2458057207db0d0d",
+      "slug": "ysabeau-infant",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "ysabeauoffice": {
+      "name": "Ysabeau Office",
+      "status": "convert",
+      "inputHash": "0cb195eed651382a8d759385a9a233f3d03bf71436dcfcc21959f4c38efb81ab",
+      "slug": "ysabeau-office",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "ysabeausc": {
+      "name": "Ysabeau SC",
+      "status": "convert",
+      "inputHash": "3dcb54e5bb6a5038cf650bda4ac235278106ad8af21fd5217b1e4ce3aff8cf22",
+      "slug": "ysabeau-sc",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "yujiboku": {
+      "name": "Yuji Boku",
+      "status": "no_bgr",
+      "inputHash": "a129f225dcc1c3e1d5c0beebe3860e64ae0a513191b69fdc2a5ccc59a91cb40c",
+      "slug": "yuji-boku",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "yujimai": {
+      "name": "Yuji Mai",
+      "status": "no_bgr",
+      "inputHash": "8aa66d061f4b8975bd572066fd96cd87774b1fcacfb8fd313721e4fa7f57c4ea",
+      "slug": "yuji-mai",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "yujisyuku": {
+      "name": "Yuji Syuku",
+      "status": "no_bgr",
+      "inputHash": "3330f1aba9f2a359de3ec7b2c2aa1707fbd7d840e62b11ac695d22df1f88de72",
+      "slug": "yuji-syuku",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "zenantique": {
+      "name": "Zen Antique",
+      "status": "no_bgr",
+      "inputHash": "bfab5d8b8283502d335008fe74bf05c4bfac6fd48bccbaaa82e3a0fe84716533",
+      "slug": "zen-antique",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "zenantiquesoft": {
+      "name": "Zen Antique Soft",
+      "status": "no_bgr",
+      "inputHash": "04b0332373fa53eb0beae0222cab87bac230312da444ec5ae079f29f50e12eba",
+      "slug": "zen-antique-soft",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "zenkakugothicantique": {
+      "name": "Zen Kaku Gothic Antique",
+      "status": "no_bgr",
+      "inputHash": "8bfdd237304e444dcfa5c6ab0881cf5b39096679475e2ef7a6c8c111208af7d0",
+      "slug": "zen-kaku-gothic-antique",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "zenkakugothicnew": {
+      "name": "Zen Kaku Gothic New",
+      "status": "no_bgr",
+      "inputHash": "807663a793e91955d644acdcf3350c22ca26e2f269403f9ecc96d4e853a48c3c",
+      "slug": "zen-kaku-gothic-new",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "zenkurenaido": {
+      "name": "Zen Kurenaido",
+      "status": "no_bgr",
+      "inputHash": "ec95edf8e2ea648b7c2914e341e2112a4472e8a754652f3374deb2dc933c0cc2",
+      "slug": "zen-kurenaido",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "zenmarugothic": {
+      "name": "Zen Maru Gothic",
+      "status": "no_bgr",
+      "inputHash": "d159b88fd5e32f77019e09d5cf4192431a0a4a989fc5611635af981b297510f4",
+      "slug": "zen-maru-gothic",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    },
+    "zenoldmincho": {
+      "name": "Zen Old Mincho",
+      "status": "no_bgr",
+      "inputHash": "36c02bc206776095330cde64f2e4bcd1113a82ff6dceee5f17b4160791c40b05",
+      "slug": "zen-old-mincho",
+      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+    }
+  }
+}

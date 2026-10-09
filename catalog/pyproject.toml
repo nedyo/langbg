@@ -1,0 +1,33 @@
+[project]
+name = "langbg-catalog"
+version = "0.1.0"
+description = "Scan google/fonts for Bulgarian locl forms, convert them with langbg and publish the catalog"
+license = "MIT"
+authors = [
+    { name = "Nedyalko Stoyanov", email = "stoyanov.nedyalko@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langbg",
+    "brotli>=1.1.0",  # WOFF2 previews
+    "uharfbuzz>=0.56.3",  # verification gate: shaping of the converted font must equal the original's lang=bg
+    "opentype-sanitizer>=9.2.0",  # verification gate: browsers must accept the converted font
+]
+
+[project.scripts]
+langbg-catalog = "langbg_catalog.cli:main"
+
+[tool.uv.sources]
+langbg = { path = "../core", editable = true }
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

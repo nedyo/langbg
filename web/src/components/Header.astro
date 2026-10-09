@@ -1,0 +1,42 @@
+---
+import { localePath, otherLang, ui, type Lang } from "../i18n";
+import ThemeToggle from "./ThemeToggle.astro";
+
+interface Props {
+  lang: Lang;
+  /** The Bulgarian path of the current page. */
+  path: string;
+}
+
+const { lang, path } = Astro.props;
+const t = ui[lang];
+const other = otherLang(lang);
+const otherName = ui[other].lang.nativeName;
+const links = [
+  { href: `${localePath(lang, "/")}#converter`, label: t.nav.converter, current: false },
+  { href: localePath(lang, "/fonts/"), label: t.nav.catalog, current: path.startsWith("/fonts/") },
+  { href: localePath(lang, "/about/"), label: t.nav.about, current: path === "/about/" },
+];
+---
+
+<header class="site-header ui">
+  <div class="wrap site-header-inner">
+    <a class="brand" href={localePath(lang, "/")} aria-label={t.nav.home}>langBG</a>
+    <nav class="nav" aria-label={t.nav.primary}>
+      {links.map((link) => <a class="nav-link" href={link.href} aria-current={link.current ? "page" : undefined}>{link.label}</a>)}
+    </nav>
+    <div class="tools">
+      <div class="lang-switch" role="group" aria-label={t.nav.language}>
+        <span lang={lang} aria-current="true">{t.lang.short}</span>
+        <a
+          href={localePath(other, path)}
+          lang={other}
+          hreflang={other}
+          title={ui[other].nav.switchTitle}
+          aria-label={otherName}>{ui[other].lang.short}</a
+        >
+      </div>
+      <ThemeToggle label={t.nav.theme} />
+    </div>
+  </div>
+</header>

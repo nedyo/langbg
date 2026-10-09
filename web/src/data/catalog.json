@@ -1,0 +1,2562 @@
+{
+  "schema": 3,
+  "mock": false,
+  "googleFontsCommit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd",
+  "fonts": [
+    {
+      "slug": "akt",
+      "name": "Akt",
+      "group": "convert",
+      "convertedName": "Akt BG",
+      "nativeSet": null,
+      "designer": "Dmitry Grenev",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/dimgrenev/akt",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Akt",
+      "reservedNames": [],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 100,
+          "max": 900
+        }
+      ],
+      "letters": "ДИЙЛФвгджзийклнптцшщъью",
+      "previewFont": "/catalog/akt/preview.woff2",
+      "files": [
+        {
+          "name": "Akt[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/akt/Akt%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/akt/OFL.txt"
+    },
+    {
+      "slug": "alumni-sans-pinstripe",
+      "name": "Alumni Sans Pinstripe",
+      "group": "convert",
+      "convertedName": "Alumni Sans Pinstripe BG",
+      "nativeSet": null,
+      "designer": "Robert Leuschke",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/googlefonts/alumni-sans-pinstripe",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Alumni+Sans+Pinstripe",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [],
+      "letters": "ДЛФвгджзийклптцшщъьюѝ",
+      "previewFont": "/catalog/alumni-sans-pinstripe/preview.woff2",
+      "files": [
+        {
+          "name": "AlumniSansPinstripe-Regular.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/alumnisanspinstripe/AlumniSansPinstripe-Regular.ttf"
+        },
+        {
+          "name": "AlumniSansPinstripe-Italic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/alumnisanspinstripe/AlumniSansPinstripe-Italic.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/alumnisanspinstripe/OFL.txt"
+    },
+    {
+      "slug": "arsenal",
+      "name": "Arsenal",
+      "group": "convert",
+      "convertedName": "Arsenal BG",
+      "nativeSet": null,
+      "designer": "Andrij Shevchenko",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/alexeiva/Arsenal",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Arsenal",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Bold",
+        "Italic",
+        "Bold Italic"
+      ],
+      "axes": [],
+      "letters": "ДЛФвгджзийклптцшщъьюѝ",
+      "previewFont": "/catalog/arsenal/preview.woff2",
+      "files": [
+        {
+          "name": "Arsenal-Regular.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/arsenal/Arsenal-Regular.ttf"
+        },
+        {
+          "name": "Arsenal-Italic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/arsenal/Arsenal-Italic.ttf"
+        },
+        {
+          "name": "Arsenal-Bold.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/arsenal/Arsenal-Bold.ttf"
+        },
+        {
+          "name": "Arsenal-BoldItalic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/arsenal/Arsenal-BoldItalic.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/arsenal/OFL.txt"
+    },
+    {
+      "slug": "arsenal-sc",
+      "name": "Arsenal SC",
+      "group": "convert",
+      "convertedName": "Arsenal SC BG",
+      "nativeSet": null,
+      "designer": "Andrij Shevchenko",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/alexeiva/Arsenal",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Arsenal+SC",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Bold",
+        "Italic",
+        "Bold Italic"
+      ],
+      "axes": [],
+      "letters": "ДЛФвгджзийклптцшщъьюѝ",
+      "previewFont": "/catalog/arsenal-sc/preview.woff2",
+      "files": [
+        {
+          "name": "ArsenalSC-Regular.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/arsenalsc/ArsenalSC-Regular.ttf"
+        },
+        {
+          "name": "ArsenalSC-Italic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/arsenalsc/ArsenalSC-Italic.ttf"
+        },
+        {
+          "name": "ArsenalSC-Bold.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/arsenalsc/ArsenalSC-Bold.ttf"
+        },
+        {
+          "name": "ArsenalSC-BoldItalic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/arsenalsc/ArsenalSC-BoldItalic.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/arsenalsc/OFL.txt"
+    },
+    {
+      "slug": "bitter",
+      "name": "Bitter",
+      "group": "convert",
+      "convertedName": "Bitter BG",
+      "nativeSet": null,
+      "designer": "Sol Matas",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/solmatas/BitterPro",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Bitter",
+      "reservedNames": [
+        "Bitter Pro"
+      ],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 100,
+          "max": 900
+        }
+      ],
+      "letters": "ЍДИЙЛФвгджзийклнптцчшщъьюѝ",
+      "previewFont": "/catalog/bitter/preview.woff2",
+      "files": [
+        {
+          "name": "Bitter[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/bitter/Bitter%5Bwght%5D.ttf"
+        },
+        {
+          "name": "Bitter-Italic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/bitter/Bitter-Italic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/bitter/OFL.txt"
+    },
+    {
+      "slug": "bona-nova",
+      "name": "Bona Nova",
+      "group": "convert",
+      "convertedName": "Bona Nova BG",
+      "nativeSet": null,
+      "designer": "Capitalics, Mateusz Machalski, Andrzej Heidrich",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/kosmynkab/Bona-Nova",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Bona+Nova",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Bold",
+        "Italic"
+      ],
+      "axes": [],
+      "letters": "ДЛФвгджзийклптцшщъьюѝ",
+      "previewFont": "/catalog/bona-nova/preview.woff2",
+      "files": [
+        {
+          "name": "BonaNova-Regular.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/bonanova/BonaNova-Regular.ttf"
+        },
+        {
+          "name": "BonaNova-Italic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/bonanova/BonaNova-Italic.ttf"
+        },
+        {
+          "name": "BonaNova-Bold.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/bonanova/BonaNova-Bold.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/bonanova/OFL.txt"
+    },
+    {
+      "slug": "bona-nova-sc",
+      "name": "Bona Nova SC",
+      "group": "convert",
+      "convertedName": "Bona Nova SC BG",
+      "nativeSet": null,
+      "designer": "Capitalics, Mateusz Machalski, Andrzej Heidrich",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/kosmynkab/Bona-Nova",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Bona+Nova+SC",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Bold",
+        "Italic"
+      ],
+      "axes": [],
+      "letters": "ДЛФвгджзийклптцшщъьюѝ",
+      "previewFont": "/catalog/bona-nova-sc/preview.woff2",
+      "files": [
+        {
+          "name": "BonaNovaSC-Regular.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/bonanovasc/BonaNovaSC-Regular.ttf"
+        },
+        {
+          "name": "BonaNovaSC-Italic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/bonanovasc/BonaNovaSC-Italic.ttf"
+        },
+        {
+          "name": "BonaNovaSC-Bold.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/bonanovasc/BonaNovaSC-Bold.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/bonanovasc/OFL.txt"
+    },
+    {
+      "slug": "cascadia-code",
+      "name": "Cascadia Code",
+      "group": "convert",
+      "convertedName": "Cascadia Code BG",
+      "nativeSet": null,
+      "designer": "Aaron Bell, Mohamad Dakak, Viktoriya Grabowska, Liron Lavi Turkenich",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/microsoft/cascadia-code",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Cascadia+Code",
+      "reservedNames": [
+        "Cascadia Code"
+      ],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 200,
+          "max": 700
+        }
+      ],
+      "letters": "ДЛФвгджзийклптцшщъьюѝ",
+      "previewFont": "/catalog/cascadia-code/preview.woff2",
+      "files": [
+        {
+          "name": "CascadiaCode[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cascadiacode/CascadiaCode%5Bwght%5D.ttf"
+        },
+        {
+          "name": "CascadiaCode-Italic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cascadiacode/CascadiaCode-Italic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cascadiacode/OFL.txt"
+    },
+    {
+      "slug": "cascadia-mono",
+      "name": "Cascadia Mono",
+      "group": "convert",
+      "convertedName": "Cascadia Mono BG",
+      "nativeSet": null,
+      "designer": "Aaron Bell, Mohamad Dakak, Viktoriya Grabowska, Liron Lavi Turkenich",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/microsoft/cascadia-code",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Cascadia+Mono",
+      "reservedNames": [
+        "Cascadia Code"
+      ],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 200,
+          "max": 700
+        }
+      ],
+      "letters": "ДЛФвгджзийклптцшщъьюѝ",
+      "previewFont": "/catalog/cascadia-mono/preview.woff2",
+      "files": [
+        {
+          "name": "CascadiaMono[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cascadiamono/CascadiaMono%5Bwght%5D.ttf"
+        },
+        {
+          "name": "CascadiaMono-Italic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cascadiamono/CascadiaMono-Italic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cascadiamono/OFL.txt"
+    },
+    {
+      "slug": "chiron-hei-hk",
+      "name": "Chiron Hei HK",
+      "group": "convert",
+      "convertedName": "Chiron Hei HK BG",
+      "nativeSet": null,
+      "designer": "Tamcy",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/chiron-fonts/chiron-hei-hk",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Chiron+Hei+HK",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 200,
+          "max": 900
+        }
+      ],
+      "letters": "ДЛФвгджзийклптфцшщюѝ",
+      "previewFont": "/catalog/chiron-hei-hk/preview.woff2",
+      "files": [
+        {
+          "name": "ChironHeiHK[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/chironheihk/ChironHeiHK%5Bwght%5D.ttf"
+        },
+        {
+          "name": "ChironHeiHK-Italic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/chironheihk/ChironHeiHK-Italic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/chironheihk/OFL.txt"
+    },
+    {
+      "slug": "chiron-sung-hk",
+      "name": "Chiron Sung HK",
+      "group": "convert",
+      "convertedName": "Chiron Sung HK BG",
+      "nativeSet": null,
+      "designer": "Tamcy",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/chiron-fonts/chiron-sung-hk",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Chiron+Sung+HK",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 200,
+          "max": 900
+        }
+      ],
+      "letters": "ЍИЙЛФвгджзийклнптфцчшщъьюѝ",
+      "previewFont": "/catalog/chiron-sung-hk/preview.woff2",
+      "files": [
+        {
+          "name": "ChironSungHK[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/chironsunghk/ChironSungHK%5Bwght%5D.ttf"
+        },
+        {
+          "name": "ChironSungHK-Italic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/chironsunghk/ChironSungHK-Italic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/chironsunghk/OFL.txt"
+    },
+    {
+      "slug": "chocolate-classical-sans",
+      "name": "Chocolate Classical Sans",
+      "group": "convert",
+      "convertedName": "Chocolate Classical Sans BG",
+      "nativeSet": null,
+      "designer": "Moonlit Owen",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/MoonlitOwen/ChocolateSans",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Chocolate+Classical+Sans",
+      "reservedNames": [],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [],
+      "letters": "ДЛФвгджзийклптфцшщюѝ",
+      "previewFont": "/catalog/chocolate-classical-sans/preview.woff2",
+      "files": [
+        {
+          "name": "ChocolateClassicalSans-Regular.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/chocolateclassicalsans/ChocolateClassicalSans-Regular.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/chocolateclassicalsans/OFL.txt"
+    },
+    {
+      "slug": "commissioner",
+      "name": "Commissioner",
+      "group": "convert",
+      "convertedName": "Commissioner BG",
+      "nativeSet": null,
+      "designer": "Kostas Bartsokas",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/m4rc1e/Commissioner",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Commissioner",
+      "reservedNames": [],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [
+        {
+          "tag": "FLAR",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "tag": "VOLM",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "tag": "slnt",
+          "min": -12,
+          "max": 0
+        },
+        {
+          "tag": "wght",
+          "min": 100,
+          "max": 900
+        }
+      ],
+      "letters": "ДЛФвгджзийклптфцшщъьюѝ",
+      "previewFont": "/catalog/commissioner/preview.woff2",
+      "files": [
+        {
+          "name": "Commissioner[FLAR,VOLM,slnt,wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/commissioner/Commissioner%5BFLAR%2CVOLM%2Cslnt%2Cwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/commissioner/OFL.txt"
+    },
+    {
+      "slug": "cormorant",
+      "name": "Cormorant",
+      "group": "convert",
+      "convertedName": "Cormorant BG",
+      "nativeSet": null,
+      "designer": "Christian Thalmann",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/CatharsisFonts/Cormorant",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Cormorant",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 300,
+          "max": 700
+        }
+      ],
+      "letters": "ЍДИЙЛФвгджзийклмнпртфцчшщъьюѝ",
+      "previewFont": "/catalog/cormorant/preview.woff2",
+      "files": [
+        {
+          "name": "Cormorant[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cormorant/Cormorant%5Bwght%5D.ttf"
+        },
+        {
+          "name": "Cormorant-Italic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cormorant/Cormorant-Italic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cormorant/OFL.txt"
+    },
+    {
+      "slug": "cormorant-garamond",
+      "name": "Cormorant Garamond",
+      "group": "convert",
+      "convertedName": "Cormorant Garamond BG",
+      "nativeSet": null,
+      "designer": "Christian Thalmann",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/CatharsisFonts/Cormorant",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Cormorant+Garamond",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 300,
+          "max": 700
+        }
+      ],
+      "letters": "ЍДИЙЛФвгджзийклмнпртфцчшщъьюѝ",
+      "previewFont": "/catalog/cormorant-garamond/preview.woff2",
+      "files": [
+        {
+          "name": "CormorantGaramond[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cormorantgaramond/CormorantGaramond%5Bwght%5D.ttf"
+        },
+        {
+          "name": "CormorantGaramond-Italic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cormorantgaramond/CormorantGaramond-Italic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cormorantgaramond/OFL.txt"
+    },
+    {
+      "slug": "cormorant-sc",
+      "name": "Cormorant SC",
+      "group": "convert",
+      "convertedName": "Cormorant SC BG",
+      "nativeSet": null,
+      "designer": "Christian Thalmann",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/CatharsisFonts/Cormorant",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Cormorant+SC",
+      "reservedNames": [],
+      "styles": [
+        "Light",
+        "Regular",
+        "Medium",
+        "SemiBold",
+        "Bold"
+      ],
+      "axes": [],
+      "letters": "ЍДИЙЛФвгджзийклмнпртфцчшщъьюѝ",
+      "previewFont": "/catalog/cormorant-sc/preview.woff2",
+      "files": [
+        {
+          "name": "CormorantSC-Light.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cormorantsc/CormorantSC-Light.ttf"
+        },
+        {
+          "name": "CormorantSC-Regular.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cormorantsc/CormorantSC-Regular.ttf"
+        },
+        {
+          "name": "CormorantSC-Medium.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cormorantsc/CormorantSC-Medium.ttf"
+        },
+        {
+          "name": "CormorantSC-SemiBold.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cormorantsc/CormorantSC-SemiBold.ttf"
+        },
+        {
+          "name": "CormorantSC-Bold.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cormorantsc/CormorantSC-Bold.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cormorantsc/OFL.txt"
+    },
+    {
+      "slug": "cormorant-unicase",
+      "name": "Cormorant Unicase",
+      "group": "convert",
+      "convertedName": "Cormorant Unicase BG",
+      "nativeSet": null,
+      "designer": "Christian Thalmann",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/CatharsisFonts/Cormorant",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Cormorant+Unicase",
+      "reservedNames": [],
+      "styles": [
+        "Light",
+        "Regular",
+        "Medium",
+        "SemiBold",
+        "Bold"
+      ],
+      "axes": [],
+      "letters": "ЍДИЙЛФвгджзийклмнпртфцчшщъьюѝ",
+      "previewFont": "/catalog/cormorant-unicase/preview.woff2",
+      "files": [
+        {
+          "name": "CormorantUnicase-Light.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cormorantunicase/CormorantUnicase-Light.ttf"
+        },
+        {
+          "name": "CormorantUnicase-Regular.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cormorantunicase/CormorantUnicase-Regular.ttf"
+        },
+        {
+          "name": "CormorantUnicase-Medium.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cormorantunicase/CormorantUnicase-Medium.ttf"
+        },
+        {
+          "name": "CormorantUnicase-SemiBold.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cormorantunicase/CormorantUnicase-SemiBold.ttf"
+        },
+        {
+          "name": "CormorantUnicase-Bold.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cormorantunicase/CormorantUnicase-Bold.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/cormorantunicase/OFL.txt"
+    },
+    {
+      "slug": "dela-gothic-one",
+      "name": "Dela Gothic One",
+      "group": "convert",
+      "convertedName": "Dela Gothic One BG",
+      "nativeSet": null,
+      "designer": "artakana",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/syakuzen/DelaGothic",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Dela+Gothic+One",
+      "reservedNames": [],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [],
+      "letters": "ДЛФвгджзийклптцшщъьюѝ",
+      "previewFont": "/catalog/dela-gothic-one/preview.woff2",
+      "files": [
+        {
+          "name": "DelaGothicOne-Regular.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/delagothicone/DelaGothicOne-Regular.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/delagothicone/OFL.txt"
+    },
+    {
+      "slug": "finlandica-headline",
+      "name": "Finlandica Headline",
+      "group": "convert",
+      "convertedName": "Finlandica Headline BG",
+      "nativeSet": null,
+      "designer": "Helsinki Type Studio, Niklas Ekholm, Juho Hiilivirta, Jaakko Suomalainen",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/HelsinkiTypeStudio/FinlandicaHeadline",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Finlandica+Headline",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 100,
+          "max": 900
+        }
+      ],
+      "letters": "ДЛФвгджзийклптцшщъьѝ",
+      "previewFont": "/catalog/finlandica-headline/preview.woff2",
+      "files": [
+        {
+          "name": "FinlandicaHeadline[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/finlandicaheadline/FinlandicaHeadline%5Bwght%5D.ttf"
+        },
+        {
+          "name": "FinlandicaHeadline-Italic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/finlandicaheadline/FinlandicaHeadline-Italic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/finlandicaheadline/OFL.txt"
+    },
+    {
+      "slug": "finlandica-text",
+      "name": "Finlandica Text",
+      "group": "convert",
+      "convertedName": "Finlandica Text BG",
+      "nativeSet": null,
+      "designer": "Helsinki Type Studio, Niklas Ekholm, Juho Hiilivirta, Jaakko Suomalainen",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/HelsinkiTypeStudio/FinlandicaText",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Finlandica+Text",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 100,
+          "max": 900
+        }
+      ],
+      "letters": "ДЛФвгджзийклптцшщъьѝ",
+      "previewFont": "/catalog/finlandica-text/preview.woff2",
+      "files": [
+        {
+          "name": "FinlandicaText[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/finlandicatext/FinlandicaText%5Bwght%5D.ttf"
+        },
+        {
+          "name": "FinlandicaText-Italic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/finlandicatext/FinlandicaText-Italic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/finlandicatext/OFL.txt"
+    },
+    {
+      "slug": "geologica",
+      "name": "Geologica",
+      "group": "convert",
+      "convertedName": "Geologica BG",
+      "nativeSet": null,
+      "designer": "Monokrom, Sindre Bremnes, Frode Helland",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/googlefonts/geologica",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Geologica",
+      "reservedNames": [],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [
+        {
+          "tag": "CRSV",
+          "min": 0,
+          "max": 1
+        },
+        {
+          "tag": "SHRP",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "tag": "slnt",
+          "min": -12,
+          "max": 0
+        },
+        {
+          "tag": "wght",
+          "min": 100,
+          "max": 900
+        }
+      ],
+      "letters": "ДЛвгджзийклптцшщъьюѝ",
+      "previewFont": "/catalog/geologica/preview.woff2",
+      "files": [
+        {
+          "name": "Geologica[CRSV,SHRP,slnt,wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/geologica/Geologica%5BCRSV%2CSHRP%2Cslnt%2Cwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/geologica/OFL.txt"
+    },
+    {
+      "slug": "google-sans",
+      "name": "Google Sans",
+      "group": "convert",
+      "convertedName": "Google Sans BG",
+      "nativeSet": null,
+      "designer": "Google",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/google/fonts/tree/main/ofl/googlesans",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Google+Sans",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "GRAD",
+          "min": -50,
+          "max": 200
+        },
+        {
+          "tag": "opsz",
+          "min": 17,
+          "max": 18
+        },
+        {
+          "tag": "wght",
+          "min": 400,
+          "max": 700
+        }
+      ],
+      "letters": "ДЛФвгджзийклптфцшщъьюѝ",
+      "previewFont": "/catalog/google-sans/preview.woff2",
+      "files": [
+        {
+          "name": "GoogleSans[GRAD,opsz,wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/googlesans/GoogleSans%5BGRAD%2Copsz%2Cwght%5D.ttf"
+        },
+        {
+          "name": "GoogleSans-Italic[GRAD,opsz,wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/googlesans/GoogleSans-Italic%5BGRAD%2Copsz%2Cwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/googlesans/OFL.txt"
+    },
+    {
+      "slug": "great-vibes",
+      "name": "Great Vibes",
+      "group": "convert",
+      "convertedName": "Great Vibes BG",
+      "nativeSet": null,
+      "designer": "Robert Leuschke",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/googlefonts/great-vibes",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Great+Vibes",
+      "reservedNames": [],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [],
+      "letters": "джкфю",
+      "previewFont": "/catalog/great-vibes/preview.woff2",
+      "files": [
+        {
+          "name": "GreatVibes-Regular.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/greatvibes/GreatVibes-Regular.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/greatvibes/OFL.txt"
+    },
+    {
+      "slug": "handjet",
+      "name": "Handjet",
+      "group": "convert",
+      "convertedName": "Handjet BG",
+      "nativeSet": null,
+      "designer": "Rosetta, David Březina",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/rosettatype/handjet",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Handjet",
+      "reservedNames": [],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [
+        {
+          "tag": "ELGR",
+          "min": 1,
+          "max": 2
+        },
+        {
+          "tag": "ELSH",
+          "min": 0,
+          "max": 16
+        },
+        {
+          "tag": "wght",
+          "min": 100,
+          "max": 900
+        }
+      ],
+      "letters": "ДЛвгджзийклптцшщюѝ",
+      "previewFont": "/catalog/handjet/preview.woff2",
+      "files": [
+        {
+          "name": "Handjet[ELGR,ELSH,wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/handjet/Handjet%5BELGR%2CELSH%2Cwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/handjet/OFL.txt"
+    },
+    {
+      "slug": "ibm-plex-sans",
+      "name": "IBM Plex Sans",
+      "group": "native",
+      "convertedName": "IBM Plex Sans",
+      "nativeSet": "ss06",
+      "designer": "Mike Abbink, Bold Monday",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/googlefonts/plex",
+      "googleFontsUrl": "https://fonts.google.com/specimen/IBM+Plex+Sans",
+      "reservedNames": [
+        "Plex"
+      ],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wdth",
+          "min": 75,
+          "max": 100
+        },
+        {
+          "tag": "wght",
+          "min": 100,
+          "max": 700
+        }
+      ],
+      "letters": "ДЖКЛФЯвгджзийклптфцшщъьюяѝ",
+      "previewFont": "/catalog/ibm-plex-sans/preview.woff2",
+      "files": [],
+      "licenseFile": null
+    },
+    {
+      "slug": "iosevka-charon",
+      "name": "Iosevka Charon",
+      "group": "convert",
+      "convertedName": "Iosevka Charon BG",
+      "nativeSet": null,
+      "designer": "Juliette Pluto",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/jul-sh/iosevka-charon",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Iosevka+Charon",
+      "reservedNames": [],
+      "styles": [
+        "Light",
+        "Regular",
+        "Medium",
+        "Bold",
+        "Light Italic",
+        "Italic",
+        "Medium Italic",
+        "Bold Italic"
+      ],
+      "axes": [],
+      "letters": "ЍДИЙЛФвгджзийклнптфцчшщъьюѝ",
+      "previewFont": "/catalog/iosevka-charon/preview.woff2",
+      "files": [
+        {
+          "name": "IosevkaCharon-Light.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/iosevkacharon/IosevkaCharon-Light.ttf"
+        },
+        {
+          "name": "IosevkaCharon-LightItalic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/iosevkacharon/IosevkaCharon-LightItalic.ttf"
+        },
+        {
+          "name": "IosevkaCharon-Regular.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/iosevkacharon/IosevkaCharon-Regular.ttf"
+        },
+        {
+          "name": "IosevkaCharon-Italic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/iosevkacharon/IosevkaCharon-Italic.ttf"
+        },
+        {
+          "name": "IosevkaCharon-Medium.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/iosevkacharon/IosevkaCharon-Medium.ttf"
+        },
+        {
+          "name": "IosevkaCharon-MediumItalic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/iosevkacharon/IosevkaCharon-MediumItalic.ttf"
+        },
+        {
+          "name": "IosevkaCharon-Bold.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/iosevkacharon/IosevkaCharon-Bold.ttf"
+        },
+        {
+          "name": "IosevkaCharon-BoldItalic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/iosevkacharon/IosevkaCharon-BoldItalic.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/iosevkacharon/OFL.txt"
+    },
+    {
+      "slug": "iosevka-charon-mono",
+      "name": "Iosevka Charon Mono",
+      "group": "convert",
+      "convertedName": "Iosevka Charon Mono BG",
+      "nativeSet": null,
+      "designer": "Juliette Pluto",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/jul-sh/iosevka-charon",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Iosevka+Charon+Mono",
+      "reservedNames": [],
+      "styles": [
+        "Light",
+        "Regular",
+        "Medium",
+        "Bold",
+        "Light Italic",
+        "Italic",
+        "Medium Italic",
+        "Bold Italic"
+      ],
+      "axes": [],
+      "letters": "ЍДИЙЛФвгджзийклнптфцчшщъьюѝ",
+      "previewFont": "/catalog/iosevka-charon-mono/preview.woff2",
+      "files": [
+        {
+          "name": "IosevkaCharonMono-Light.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/iosevkacharonmono/IosevkaCharonMono-Light.ttf"
+        },
+        {
+          "name": "IosevkaCharonMono-LightItalic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/iosevkacharonmono/IosevkaCharonMono-LightItalic.ttf"
+        },
+        {
+          "name": "IosevkaCharonMono-Regular.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/iosevkacharonmono/IosevkaCharonMono-Regular.ttf"
+        },
+        {
+          "name": "IosevkaCharonMono-Italic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/iosevkacharonmono/IosevkaCharonMono-Italic.ttf"
+        },
+        {
+          "name": "IosevkaCharonMono-Medium.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/iosevkacharonmono/IosevkaCharonMono-Medium.ttf"
+        },
+        {
+          "name": "IosevkaCharonMono-MediumItalic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/iosevkacharonmono/IosevkaCharonMono-MediumItalic.ttf"
+        },
+        {
+          "name": "IosevkaCharonMono-Bold.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/iosevkacharonmono/IosevkaCharonMono-Bold.ttf"
+        },
+        {
+          "name": "IosevkaCharonMono-BoldItalic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/iosevkacharonmono/IosevkaCharonMono-BoldItalic.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/iosevkacharonmono/OFL.txt"
+    },
+    {
+      "slug": "lilex",
+      "name": "Lilex",
+      "group": "convert",
+      "convertedName": "Lilex BG",
+      "nativeSet": null,
+      "designer": "Mike Abbink, Paul van der Laan, Pieter van Rosmalen, Mikhael Khrustik",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/mishamyrt/Lilex",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Lilex",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 100,
+          "max": 700
+        }
+      ],
+      "letters": "ДКЛФЯвгджзийклптфцшщъьюяѝ",
+      "previewFont": "/catalog/lilex/preview.woff2",
+      "files": [
+        {
+          "name": "Lilex[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/lilex/Lilex%5Bwght%5D.ttf"
+        },
+        {
+          "name": "Lilex-Italic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/lilex/Lilex-Italic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/lilex/OFL.txt"
+    },
+    {
+      "slug": "lobster",
+      "name": "Lobster",
+      "group": "convert",
+      "convertedName": "Lobster BG",
+      "nativeSet": null,
+      "designer": "Impallari Type",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/impallari/The-Lobster-Font",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Lobster",
+      "reservedNames": [
+        "Lobster"
+      ],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [],
+      "letters": "Фжкю",
+      "previewFont": "/catalog/lobster/preview.woff2",
+      "files": [
+        {
+          "name": "Lobster-Regular.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/lobster/Lobster-Regular.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/lobster/OFL.txt"
+    },
+    {
+      "slug": "lora",
+      "name": "Lora",
+      "group": "convert",
+      "convertedName": "Lora BG",
+      "nativeSet": null,
+      "designer": "Cyreal",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/cyrealtype/Lora-Cyrillic",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Lora",
+      "reservedNames": [
+        "Lora"
+      ],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 400,
+          "max": 700
+        }
+      ],
+      "letters": "ДЛФвгджзийклнптцчшщъьюѝ",
+      "previewFont": "/catalog/lora/preview.woff2",
+      "files": [
+        {
+          "name": "Lora[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/lora/Lora%5Bwght%5D.ttf"
+        },
+        {
+          "name": "Lora-Italic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/lora/Lora-Italic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/lora/OFL.txt"
+    },
+    {
+      "slug": "manrope",
+      "name": "Manrope",
+      "group": "convert",
+      "convertedName": "Manrope BG",
+      "nativeSet": null,
+      "designer": "Mikhail Sharanda",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/googlefonts/manrope",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Manrope",
+      "reservedNames": [],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 200,
+          "max": 800
+        }
+      ],
+      "letters": "ДЖКЛвгджзийклнптцчшщьюѝ",
+      "previewFont": "/catalog/manrope/preview.woff2",
+      "files": [
+        {
+          "name": "Manrope[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/manrope/Manrope%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/manrope/OFL.txt"
+    },
+    {
+      "slug": "marmelad",
+      "name": "Marmelad",
+      "group": "convert",
+      "convertedName": "Marmelad BG",
+      "nativeSet": null,
+      "designer": "Cyreal, Manvel Shmavonyan",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/cyrealtype/Marmelad-Cyrillic",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Marmelad",
+      "reservedNames": [],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [],
+      "letters": "ДЛФвгджзийклптцчшщъьюѝ",
+      "previewFont": "/catalog/marmelad/preview.woff2",
+      "files": [
+        {
+          "name": "Marmelad-Regular.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/marmelad/Marmelad-Regular.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/marmelad/OFL.txt"
+    },
+    {
+      "slug": "merriweather",
+      "name": "Merriweather",
+      "group": "convert",
+      "convertedName": "Merriweather BG",
+      "nativeSet": null,
+      "designer": "Sorkin Type",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/EbenSorkin/Merriweather4",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Merriweather",
+      "reservedNames": [
+        "Merriweather"
+      ],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "opsz",
+          "min": 18,
+          "max": 144
+        },
+        {
+          "tag": "wdth",
+          "min": 87,
+          "max": 112
+        },
+        {
+          "tag": "wght",
+          "min": 300,
+          "max": 900
+        }
+      ],
+      "letters": "ЍДИЙЛФвгджзийклнптфцчшщъьюѝ",
+      "previewFont": "/catalog/merriweather/preview.woff2",
+      "files": [
+        {
+          "name": "Merriweather[opsz,wdth,wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/merriweather/Merriweather%5Bopsz%2Cwdth%2Cwght%5D.ttf"
+        },
+        {
+          "name": "Merriweather-Italic[opsz,wdth,wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/merriweather/Merriweather-Italic%5Bopsz%2Cwdth%2Cwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/merriweather/OFL.txt"
+    },
+    {
+      "slug": "moderustic",
+      "name": "Moderustic",
+      "group": "convert",
+      "convertedName": "Moderustic BG",
+      "nativeSet": null,
+      "designer": "Tural Alisoy",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/Tural/Moderustic",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Moderustic",
+      "reservedNames": [],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 300,
+          "max": 800
+        }
+      ],
+      "letters": "ДЛФвгджзийклптцшщъьюѝ",
+      "previewFont": "/catalog/moderustic/preview.woff2",
+      "files": [
+        {
+          "name": "Moderustic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/moderustic/Moderustic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/moderustic/OFL.txt"
+    },
+    {
+      "slug": "montserrat",
+      "name": "Montserrat",
+      "group": "convert",
+      "convertedName": "Montserrat BG",
+      "nativeSet": null,
+      "designer": "Julieta Ulanovsky, Sol Matas, Juan Pablo del Peral, Jacques Le Bailly",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/JulietaUla/Montserrat",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Montserrat",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 100,
+          "max": 900
+        }
+      ],
+      "letters": "ДЛФвгджзийклнптцчшщъьюѝ",
+      "previewFont": "/catalog/montserrat/preview.woff2",
+      "files": [
+        {
+          "name": "Montserrat[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserrat/Montserrat%5Bwght%5D.ttf"
+        },
+        {
+          "name": "Montserrat-Italic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserrat/Montserrat-Italic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserrat/OFL.txt"
+    },
+    {
+      "slug": "montserrat-alternates",
+      "name": "Montserrat Alternates",
+      "group": "convert",
+      "convertedName": "Montserrat Alternates BG",
+      "nativeSet": null,
+      "designer": "Julieta Ulanovsky, Sol Matas, Juan Pablo del Peral, Jacques Le Bailly",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/JulietaUla/Montserrat",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Montserrat+Alternates",
+      "reservedNames": [],
+      "styles": [
+        "Thin",
+        "ExtraLight",
+        "Light",
+        "Regular",
+        "Medium",
+        "SemiBold",
+        "Bold",
+        "ExtraBold",
+        "Black",
+        "Thin Italic",
+        "ExtraLight Italic",
+        "Light Italic",
+        "Italic",
+        "Medium Italic",
+        "SemiBold Italic",
+        "Bold Italic",
+        "ExtraBold Italic",
+        "Black Italic"
+      ],
+      "axes": [],
+      "letters": "ДЛФвгджзийклнптцчшщъьюѝ",
+      "previewFont": "/catalog/montserrat-alternates/preview.woff2",
+      "files": [
+        {
+          "name": "MontserratAlternates-Thin.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserratalternates/MontserratAlternates-Thin.ttf"
+        },
+        {
+          "name": "MontserratAlternates-ThinItalic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserratalternates/MontserratAlternates-ThinItalic.ttf"
+        },
+        {
+          "name": "MontserratAlternates-ExtraLight.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserratalternates/MontserratAlternates-ExtraLight.ttf"
+        },
+        {
+          "name": "MontserratAlternates-ExtraLightItalic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserratalternates/MontserratAlternates-ExtraLightItalic.ttf"
+        },
+        {
+          "name": "MontserratAlternates-Light.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserratalternates/MontserratAlternates-Light.ttf"
+        },
+        {
+          "name": "MontserratAlternates-LightItalic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserratalternates/MontserratAlternates-LightItalic.ttf"
+        },
+        {
+          "name": "MontserratAlternates-Regular.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserratalternates/MontserratAlternates-Regular.ttf"
+        },
+        {
+          "name": "MontserratAlternates-Italic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserratalternates/MontserratAlternates-Italic.ttf"
+        },
+        {
+          "name": "MontserratAlternates-Medium.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserratalternates/MontserratAlternates-Medium.ttf"
+        },
+        {
+          "name": "MontserratAlternates-MediumItalic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserratalternates/MontserratAlternates-MediumItalic.ttf"
+        },
+        {
+          "name": "MontserratAlternates-SemiBold.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserratalternates/MontserratAlternates-SemiBold.ttf"
+        },
+        {
+          "name": "MontserratAlternates-SemiBoldItalic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserratalternates/MontserratAlternates-SemiBoldItalic.ttf"
+        },
+        {
+          "name": "MontserratAlternates-Bold.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserratalternates/MontserratAlternates-Bold.ttf"
+        },
+        {
+          "name": "MontserratAlternates-BoldItalic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserratalternates/MontserratAlternates-BoldItalic.ttf"
+        },
+        {
+          "name": "MontserratAlternates-ExtraBold.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserratalternates/MontserratAlternates-ExtraBold.ttf"
+        },
+        {
+          "name": "MontserratAlternates-ExtraBoldItalic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserratalternates/MontserratAlternates-ExtraBoldItalic.ttf"
+        },
+        {
+          "name": "MontserratAlternates-Black.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserratalternates/MontserratAlternates-Black.ttf"
+        },
+        {
+          "name": "MontserratAlternates-BlackItalic.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserratalternates/MontserratAlternates-BlackItalic.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserratalternates/OFL.txt"
+    },
+    {
+      "slug": "montserrat-underline",
+      "name": "Montserrat Underline",
+      "group": "convert",
+      "convertedName": "Montserrat Underline BG",
+      "nativeSet": null,
+      "designer": "Julieta Ulanovsky, Sol Matas, Juan Pablo del Peral, Jacques Le Bailly",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/JulietaUla/Montserrat",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Montserrat+Underline",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 100,
+          "max": 900
+        }
+      ],
+      "letters": "ДЛФвгджзийклнптцчшщъьюѝ",
+      "previewFont": "/catalog/montserrat-underline/preview.woff2",
+      "files": [
+        {
+          "name": "MontserratUnderline[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserratunderline/MontserratUnderline%5Bwght%5D.ttf"
+        },
+        {
+          "name": "MontserratUnderline-Italic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserratunderline/MontserratUnderline-Italic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/montserratunderline/OFL.txt"
+    },
+    {
+      "slug": "nevermind",
+      "name": "Nevermind",
+      "group": "convert",
+      "convertedName": "Nevermind BG",
+      "nativeSet": null,
+      "designer": "lan",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/lamzhonghang/nevermind",
+      "googleFontsUrl": null,
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 100,
+          "max": 900
+        }
+      ],
+      "letters": "жй",
+      "previewFont": "/catalog/nevermind/preview.woff2",
+      "files": [
+        {
+          "name": "Nevermind[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/nevermind/Nevermind%5Bwght%5D.ttf"
+        },
+        {
+          "name": "Nevermind-Italic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/nevermind/Nevermind-Italic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/nevermind/OFL.txt"
+    },
+    {
+      "slug": "oi",
+      "name": "Oi",
+      "group": "native",
+      "convertedName": "Oi",
+      "nativeSet": "ss03",
+      "designer": "Kostas Bartsokas",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/kosbarts/Oi",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Oi",
+      "reservedNames": [],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [],
+      "letters": "ДЛФвгджзийклнптцчшщъьюѝ",
+      "previewFont": "/catalog/oi/preview.woff2",
+      "files": [],
+      "licenseFile": null
+    },
+    {
+      "slug": "overpass",
+      "name": "Overpass",
+      "group": "convert",
+      "convertedName": "Overpass BG",
+      "nativeSet": null,
+      "designer": "Delve Withrington, Dave Bailey, Thomas Jockin",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/RedHatOfficial/Overpass",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Overpass",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 100,
+          "max": 900
+        }
+      ],
+      "letters": "ЍДИЙЛФвгджзийклнптфцчшщъьюѝ",
+      "previewFont": "/catalog/overpass/preview.woff2",
+      "files": [
+        {
+          "name": "Overpass[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/overpass/Overpass%5Bwght%5D.ttf"
+        },
+        {
+          "name": "Overpass-Italic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/overpass/Overpass-Italic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/overpass/OFL.txt"
+    },
+    {
+      "slug": "overpass-mono",
+      "name": "Overpass Mono",
+      "group": "convert",
+      "convertedName": "Overpass Mono BG",
+      "nativeSet": null,
+      "designer": "Delve Withrington, Dave Bailey, Thomas Jockin",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/RedHatOfficial/Overpass",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Overpass+Mono",
+      "reservedNames": [],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 300,
+          "max": 700
+        }
+      ],
+      "letters": "ЍДИЙЛФвгджзийклнптфцчшщъьюѝ",
+      "previewFont": "/catalog/overpass-mono/preview.woff2",
+      "files": [
+        {
+          "name": "OverpassMono[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/overpassmono/OverpassMono%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/overpassmono/OFL.txt"
+    },
+    {
+      "slug": "piazzolla",
+      "name": "Piazzolla",
+      "group": "convert",
+      "convertedName": "Piazzolla BG",
+      "nativeSet": null,
+      "designer": "Juan Pablo del Peral, HT Fonts",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/huertatipografica/piazzolla",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Piazzolla",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "opsz",
+          "min": 8,
+          "max": 30
+        },
+        {
+          "tag": "wght",
+          "min": 100,
+          "max": 900
+        }
+      ],
+      "letters": "ДЛФвгджзийклнптцчшщъьюѝ",
+      "previewFont": "/catalog/piazzolla/preview.woff2",
+      "files": [
+        {
+          "name": "Piazzolla[opsz,wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/piazzolla/Piazzolla%5Bopsz%2Cwght%5D.ttf"
+        },
+        {
+          "name": "Piazzolla-Italic[opsz,wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/piazzolla/Piazzolla-Italic%5Bopsz%2Cwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/piazzolla/OFL.txt"
+    },
+    {
+      "slug": "playfair",
+      "name": "Playfair",
+      "group": "convert",
+      "convertedName": "Playfair BG",
+      "nativeSet": null,
+      "designer": "Claus Eggers Sørensen",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/googlefonts/Playfair",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Playfair",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "opsz",
+          "min": 5,
+          "max": 1200
+        },
+        {
+          "tag": "wdth",
+          "min": 87.5,
+          "max": 112.5
+        },
+        {
+          "tag": "wght",
+          "min": 300,
+          "max": 900
+        }
+      ],
+      "letters": "ЍДЖИЙКЛФвгджзийклнптуфцчшщъьюя",
+      "previewFont": "/catalog/playfair/preview.woff2",
+      "files": [
+        {
+          "name": "Playfair[opsz,wdth,wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/playfair/Playfair%5Bopsz%2Cwdth%2Cwght%5D.ttf"
+        },
+        {
+          "name": "Playfair-Italic[opsz,wdth,wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/playfair/Playfair-Italic%5Bopsz%2Cwdth%2Cwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/playfair/OFL.txt"
+    },
+    {
+      "slug": "playpen-sans",
+      "name": "Playpen Sans",
+      "group": "convert",
+      "convertedName": "Playpen Sans BG",
+      "nativeSet": null,
+      "designer": "TypeTogether, Laura Meseguer, Veronika Burian, José Scaglione, Kostas Bartsokas, Vera Evstafieva, Tom Grace, Yorlmar Campos",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/TypeTogether/Playpen-Sans",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Playpen+Sans",
+      "reservedNames": [],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 100,
+          "max": 800
+        }
+      ],
+      "letters": "Фгджкптю",
+      "previewFont": "/catalog/playpen-sans/preview.woff2",
+      "files": [
+        {
+          "name": "PlaypenSans[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/playpensans/PlaypenSans%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/playpensans/OFL.txt"
+    },
+    {
+      "slug": "pliant",
+      "name": "Pliant",
+      "group": "convert",
+      "convertedName": "Pliant BG",
+      "nativeSet": null,
+      "designer": "Non Foundry, Jona Saucedo",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/TheJonassss/Pliant",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Pliant",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wdth",
+          "min": 100,
+          "max": 125
+        },
+        {
+          "tag": "wght",
+          "min": 100,
+          "max": 900
+        }
+      ],
+      "letters": "ДЛФвгджзийклптцшщъьюѝ",
+      "previewFont": "/catalog/pliant/preview.woff2",
+      "files": [
+        {
+          "name": "Pliant[wdth,wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/pliant/Pliant%5Bwdth%2Cwght%5D.ttf"
+        },
+        {
+          "name": "Pliant-Italic[wdth,wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/pliant/Pliant-Italic%5Bwdth%2Cwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/pliant/OFL.txt"
+    },
+    {
+      "slug": "poiret-one",
+      "name": "Poiret One",
+      "group": "convert",
+      "convertedName": "Poiret One BG",
+      "nativeSet": null,
+      "designer": "Denis Masharov",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/alexeiva/poiretone",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Poiret+One",
+      "reservedNames": [],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [],
+      "letters": "Фвгджзийкптцчшщъьюѝ",
+      "previewFont": "/catalog/poiret-one/preview.woff2",
+      "files": [
+        {
+          "name": "PoiretOne-Regular.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/poiretone/PoiretOne-Regular.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/poiretone/OFL.txt"
+    },
+    {
+      "slug": "raleway",
+      "name": "Raleway",
+      "group": "convert",
+      "convertedName": "Raleway BG",
+      "nativeSet": null,
+      "designer": "Matt McInerney, Pablo Impallari, Rodrigo Fuenzalida",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/theleagueof/raleway",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Raleway",
+      "reservedNames": [
+        "Raleway"
+      ],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 100,
+          "max": 900
+        }
+      ],
+      "letters": "ДЛФвгджзийклптцшщъьюѝ",
+      "previewFont": "/catalog/raleway/preview.woff2",
+      "files": [
+        {
+          "name": "Raleway[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/raleway/Raleway%5Bwght%5D.ttf"
+        },
+        {
+          "name": "Raleway-Italic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/raleway/Raleway-Italic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/raleway/OFL.txt"
+    },
+    {
+      "slug": "science-gothic",
+      "name": "Science Gothic",
+      "group": "native",
+      "convertedName": "Science Gothic",
+      "nativeSet": "ss02",
+      "designer": "Thomas Phinney, Vassil Kateliev, Brandon Buerkle",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/googlefonts/science-gothic",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Science+Gothic",
+      "reservedNames": [],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [
+        {
+          "tag": "CTRS",
+          "min": 0,
+          "max": 85
+        },
+        {
+          "tag": "slnt",
+          "min": -10,
+          "max": 0
+        },
+        {
+          "tag": "wdth",
+          "min": 50,
+          "max": 200
+        },
+        {
+          "tag": "wght",
+          "min": 100,
+          "max": 900
+        }
+      ],
+      "letters": "вгджзийкптцшщъью",
+      "previewFont": "/catalog/science-gothic/preview.woff2",
+      "files": [],
+      "licenseFile": null
+    },
+    {
+      "slug": "shantell-sans",
+      "name": "Shantell Sans",
+      "group": "native",
+      "convertedName": "Shantell Sans",
+      "nativeSet": "ss01",
+      "designer": "Shantell Martin, Arrow Type, Anya Danilova",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/arrowtype/shantell-sans",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Shantell+Sans",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "BNCE",
+          "min": -100,
+          "max": 100
+        },
+        {
+          "tag": "INFM",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "tag": "SPAC",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "tag": "wght",
+          "min": 300,
+          "max": 800
+        }
+      ],
+      "letters": "Фвгджзкптцшщ",
+      "previewFont": "/catalog/shantell-sans/preview.woff2",
+      "files": [],
+      "licenseFile": null
+    },
+    {
+      "slug": "source-sans-3",
+      "name": "Source Sans 3",
+      "group": "convert",
+      "convertedName": "Source Sans 3 BG",
+      "nativeSet": null,
+      "designer": "Paul D. Hunt",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/adobe-fonts/source-sans",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Source+Sans+3",
+      "reservedNames": [
+        "Source"
+      ],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 200,
+          "max": 900
+        }
+      ],
+      "letters": "ДЛФвгджзийклптфцшщюѝ",
+      "previewFont": "/catalog/source-sans-3/preview.woff2",
+      "files": [
+        {
+          "name": "SourceSans3[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/sourcesans3/SourceSans3%5Bwght%5D.ttf"
+        },
+        {
+          "name": "SourceSans3-Italic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/sourcesans3/SourceSans3-Italic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/sourcesans3/OFL.txt"
+    },
+    {
+      "slug": "source-serif-4",
+      "name": "Source Serif 4",
+      "group": "convert",
+      "convertedName": "Source Serif 4 BG",
+      "nativeSet": null,
+      "designer": "Frank Grießhammer",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/adobe-fonts/source-serif",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Source+Serif+4",
+      "reservedNames": [
+        "Source"
+      ],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "opsz",
+          "min": 8,
+          "max": 60
+        },
+        {
+          "tag": "wght",
+          "min": 200,
+          "max": 900
+        }
+      ],
+      "letters": "ЍИЙЛФвгджзийклнптфцчшщъьюѝ",
+      "previewFont": "/catalog/source-serif-4/preview.woff2",
+      "files": [
+        {
+          "name": "SourceSerif4[opsz,wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/sourceserif4/SourceSerif4%5Bopsz%2Cwght%5D.ttf"
+        },
+        {
+          "name": "SourceSerif4-Italic[opsz,wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/sourceserif4/SourceSerif4-Italic%5Bopsz%2Cwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/sourceserif4/OFL.txt"
+    },
+    {
+      "slug": "spectral",
+      "name": "Spectral",
+      "group": "native",
+      "convertedName": "Spectral",
+      "nativeSet": "ss06",
+      "designer": "Production Type",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/productiontype/Spectral",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Spectral",
+      "reservedNames": [],
+      "styles": [
+        "ExtraLight",
+        "Light",
+        "Regular",
+        "Medium",
+        "SemiBold",
+        "Bold",
+        "ExtraBold",
+        "ExtraLight Italic",
+        "Light Italic",
+        "Italic",
+        "Medium Italic",
+        "SemiBold Italic",
+        "Bold Italic",
+        "ExtraBold Italic"
+      ],
+      "axes": [],
+      "letters": "ДЖКЛвгджзийклнптцчшщъью",
+      "previewFont": "/catalog/spectral/preview.woff2",
+      "files": [],
+      "licenseFile": null
+    },
+    {
+      "slug": "spectral-sc",
+      "name": "Spectral SC",
+      "group": "native",
+      "convertedName": "Spectral SC",
+      "nativeSet": "ss06",
+      "designer": "Production Type",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/productiontype/Spectral",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Spectral+SC",
+      "reservedNames": [],
+      "styles": [
+        "ExtraLight",
+        "Light",
+        "Regular",
+        "Medium",
+        "SemiBold",
+        "Bold",
+        "ExtraBold",
+        "ExtraLight Italic",
+        "Light Italic",
+        "Italic",
+        "Medium Italic",
+        "SemiBold Italic",
+        "Bold Italic",
+        "ExtraBold Italic"
+      ],
+      "axes": [],
+      "letters": "ДЖКЛвгджзийклнптцчшщъью",
+      "previewFont": "/catalog/spectral-sc/preview.woff2",
+      "files": [],
+      "licenseFile": null
+    },
+    {
+      "slug": "tektur",
+      "name": "Tektur",
+      "group": "convert",
+      "convertedName": "Tektur BG",
+      "nativeSet": null,
+      "designer": "Adam Jagosz",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/hyvyys/Tektur",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Tektur",
+      "reservedNames": [],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [
+        {
+          "tag": "wdth",
+          "min": 75,
+          "max": 100
+        },
+        {
+          "tag": "wght",
+          "min": 400,
+          "max": 900
+        }
+      ],
+      "letters": "ДЛФвгджзийклптцшщъьюѝ",
+      "previewFont": "/catalog/tektur/preview.woff2",
+      "files": [
+        {
+          "name": "Tektur[wdth,wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/tektur/Tektur%5Bwdth%2Cwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/tektur/OFL.txt"
+    },
+    {
+      "slug": "tiktok-sans",
+      "name": "TikTok Sans",
+      "group": "native",
+      "convertedName": "TikTok Sans",
+      "nativeSet": "ss01",
+      "designer": "Grilli Type, Contrast Foundry, Type Network",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/TikTok/TikTokSans",
+      "googleFontsUrl": "https://fonts.google.com/specimen/TikTok+Sans",
+      "reservedNames": [],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [
+        {
+          "tag": "opsz",
+          "min": 12,
+          "max": 36
+        },
+        {
+          "tag": "slnt",
+          "min": -6,
+          "max": 0
+        },
+        {
+          "tag": "wdth",
+          "min": 75,
+          "max": 150
+        },
+        {
+          "tag": "wght",
+          "min": 300,
+          "max": 900
+        }
+      ],
+      "letters": "ДЛФвгджзийклптцшщъьюѝ",
+      "previewFont": "/catalog/tiktok-sans/preview.woff2",
+      "files": [],
+      "licenseFile": null
+    },
+    {
+      "slug": "unbounded",
+      "name": "Unbounded",
+      "group": "convert",
+      "convertedName": "Unbounded BG",
+      "nativeSet": null,
+      "designer": "NaN",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/googlefonts/unbounded",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Unbounded",
+      "reservedNames": [],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 200,
+          "max": 900
+        }
+      ],
+      "letters": "ДЛФвгджзийклптцшщъьѝ",
+      "previewFont": "/catalog/unbounded/preview.woff2",
+      "files": [
+        {
+          "name": "Unbounded[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/unbounded/Unbounded%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/unbounded/OFL.txt"
+    },
+    {
+      "slug": "viaoda-libre",
+      "name": "Viaoda Libre",
+      "group": "convert",
+      "convertedName": "Viaoda Libre BG",
+      "nativeSet": null,
+      "designer": "Gydient, ViệtAnh Nguyễn",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/bettergui/ViaodaLibre",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Viaoda+Libre",
+      "reservedNames": [],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [],
+      "letters": "ДЛФвгджзийклнптфцшщъьюѝ",
+      "previewFont": "/catalog/viaoda-libre/preview.woff2",
+      "files": [
+        {
+          "name": "ViaodaLibre-Regular.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/viaodalibre/ViaodaLibre-Regular.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/viaodalibre/OFL.txt"
+    },
+    {
+      "slug": "victor-mono",
+      "name": "Victor Mono",
+      "group": "convert",
+      "convertedName": "Victor Mono BG",
+      "nativeSet": null,
+      "designer": "Rune Bjørnerås",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/rubjo/victor-mono-font",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Victor+Mono",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 100,
+          "max": 700
+        }
+      ],
+      "letters": "ДЛФвгджзийклптцшщъьюѝ",
+      "previewFont": "/catalog/victor-mono/preview.woff2",
+      "files": [
+        {
+          "name": "VictorMono[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/victormono/VictorMono%5Bwght%5D.ttf"
+        },
+        {
+          "name": "VictorMono-Italic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/victormono/VictorMono-Italic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/victormono/OFL.txt"
+    },
+    {
+      "slug": "vollkorn",
+      "name": "Vollkorn",
+      "group": "native",
+      "convertedName": "Vollkorn",
+      "nativeSet": "ss04",
+      "designer": "Friedrich Althausen",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/FAlthausen/Vollkorn-Typeface",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Vollkorn",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 400,
+          "max": 900
+        }
+      ],
+      "letters": "ЍДИЙЛФвгджзийклнптцчшщъьюѝ",
+      "previewFont": "/catalog/vollkorn/preview.woff2",
+      "files": [],
+      "licenseFile": null
+    },
+    {
+      "slug": "vollkorn-sc",
+      "name": "Vollkorn SC",
+      "group": "native",
+      "convertedName": "Vollkorn SC",
+      "nativeSet": "ss04",
+      "designer": "Friedrich Althausen",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/FAlthausen/Vollkorn-Typeface",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Vollkorn+SC",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "SemiBold",
+        "Bold",
+        "Black"
+      ],
+      "axes": [],
+      "letters": "ЍДИЙЛФдийлфѝ",
+      "previewFont": "/catalog/vollkorn-sc/preview.woff2",
+      "files": [],
+      "licenseFile": null
+    },
+    {
+      "slug": "wix-madefor-display",
+      "name": "Wix Madefor Display",
+      "group": "convert",
+      "convertedName": "Wix Madefor Display BG",
+      "nativeSet": null,
+      "designer": "Dalton Maag",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/wix/wixmadefor",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Wix+Madefor+Display",
+      "reservedNames": [],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 400,
+          "max": 800
+        }
+      ],
+      "letters": "ДЛФвгджзийклптцчшщъьюѝ",
+      "previewFont": "/catalog/wix-madefor-display/preview.woff2",
+      "files": [
+        {
+          "name": "WixMadeforDisplay[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/wixmadefordisplay/WixMadeforDisplay%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/wixmadefordisplay/OFL.txt"
+    },
+    {
+      "slug": "xmind",
+      "name": "Xmind",
+      "group": "convert",
+      "convertedName": "Xmind BG",
+      "nativeSet": null,
+      "designer": "lan",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/lamzhonghang/xmind",
+      "googleFontsUrl": null,
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 100,
+          "max": 900
+        }
+      ],
+      "letters": "жй",
+      "previewFont": "/catalog/xmind/preview.woff2",
+      "files": [
+        {
+          "name": "Xmind[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/xmind/Xmind%5Bwght%5D.ttf"
+        },
+        {
+          "name": "Xmind-Italic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/xmind/Xmind-Italic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/xmind/OFL.txt"
+    },
+    {
+      "slug": "yanone-kaffeesatz",
+      "name": "Yanone Kaffeesatz",
+      "group": "convert",
+      "convertedName": "Yanone Kaffeesatz BG",
+      "nativeSet": null,
+      "designer": "Yanone, Cyreal",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/yanone/kaffeesatz",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Yanone+Kaffeesatz",
+      "reservedNames": [],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 200,
+          "max": 700
+        }
+      ],
+      "letters": "ЍДИЙЛФвгджзийклптцчшщъьюѝ",
+      "previewFont": "/catalog/yanone-kaffeesatz/preview.woff2",
+      "files": [
+        {
+          "name": "YanoneKaffeesatz[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/yanonekaffeesatz/YanoneKaffeesatz%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/yanonekaffeesatz/OFL.txt"
+    },
+    {
+      "slug": "ysabeau",
+      "name": "Ysabeau",
+      "group": "convert",
+      "convertedName": "Ysabeau BG",
+      "nativeSet": null,
+      "designer": "Christian Thalmann",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/CatharsisFonts/Ysabeau",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Ysabeau",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 1,
+          "max": 1000
+        }
+      ],
+      "letters": "ДЛФвгджзийклнпртцчшщъьюѝ",
+      "previewFont": "/catalog/ysabeau/preview.woff2",
+      "files": [
+        {
+          "name": "Ysabeau[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/ysabeau/Ysabeau%5Bwght%5D.ttf"
+        },
+        {
+          "name": "Ysabeau-Italic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/ysabeau/Ysabeau-Italic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/ysabeau/OFL.txt"
+    },
+    {
+      "slug": "ysabeau-infant",
+      "name": "Ysabeau Infant",
+      "group": "convert",
+      "convertedName": "Ysabeau Infant BG",
+      "nativeSet": null,
+      "designer": "Christian Thalmann",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/CatharsisFonts/Ysabeau",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Ysabeau+Infant",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 1,
+          "max": 1000
+        }
+      ],
+      "letters": "Фвгджзийкнпртцчшщъьюѝ",
+      "previewFont": "/catalog/ysabeau-infant/preview.woff2",
+      "files": [
+        {
+          "name": "YsabeauInfant[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/ysabeauinfant/YsabeauInfant%5Bwght%5D.ttf"
+        },
+        {
+          "name": "YsabeauInfant-Italic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/ysabeauinfant/YsabeauInfant-Italic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/ysabeauinfant/OFL.txt"
+    },
+    {
+      "slug": "ysabeau-office",
+      "name": "Ysabeau Office",
+      "group": "convert",
+      "convertedName": "Ysabeau Office BG",
+      "nativeSet": null,
+      "designer": "Christian Thalmann",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/CatharsisFonts/Ysabeau",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Ysabeau+Office",
+      "reservedNames": [],
+      "styles": [
+        "Regular",
+        "Italic"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 1,
+          "max": 1000
+        }
+      ],
+      "letters": "ДЛФвгджзийклнпртцчшщъьюѝ",
+      "previewFont": "/catalog/ysabeau-office/preview.woff2",
+      "files": [
+        {
+          "name": "YsabeauOffice[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/ysabeauoffice/YsabeauOffice%5Bwght%5D.ttf"
+        },
+        {
+          "name": "YsabeauOffice-Italic[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/ysabeauoffice/YsabeauOffice-Italic%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/ysabeauoffice/OFL.txt"
+    },
+    {
+      "slug": "ysabeau-sc",
+      "name": "Ysabeau SC",
+      "group": "convert",
+      "convertedName": "Ysabeau SC BG",
+      "nativeSet": null,
+      "designer": "Christian Thalmann",
+      "license": "OFL-1.1",
+      "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
+      "source": "https://github.com/CatharsisFonts/Ysabeau",
+      "googleFontsUrl": "https://fonts.google.com/specimen/Ysabeau+SC",
+      "reservedNames": [],
+      "styles": [
+        "Regular"
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 1,
+          "max": 1000
+        }
+      ],
+      "letters": "ДЛФ",
+      "previewFont": "/catalog/ysabeau-sc/preview.woff2",
+      "files": [
+        {
+          "name": "YsabeauSC[wght].ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/ysabeausc/YsabeauSC%5Bwght%5D.ttf"
+        }
+      ],
+      "licenseFile": "https://raw.githubusercontent.com/google/fonts/2eb0b48d5f760f62e286216f0859a8c540dbc1bd/ofl/ysabeausc/OFL.txt"
+    }
+  ]
+}

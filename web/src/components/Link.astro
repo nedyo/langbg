@@ -1,0 +1,18 @@
+---
+// Use this for any link whose address can be outside the site (an e2e test checks every page). A link to
+// another domain opens in a new tab, says so to screen readers and shows a small arrow; a link inside the
+// site (a path, a #fragment, langbg.com) stays as it is.
+// The markup is kept on one line on purpose: a line break inside <a> would become an underlined space.
+import type { HTMLAttributes } from "astro/types";
+import { langFromPath, ui } from "../i18n";
+
+type Props = HTMLAttributes<"a"> & { href: string };
+
+const { href, rel, target, ...attrs } = Astro.props;
+const site = Astro.site ?? new URL(Astro.url.origin);
+const url = new URL(href, site);
+const external = /^https?:$/.test(url.protocol) && url.host !== site.host;
+const newTab = ui[langFromPath(Astro.url.pathname)].link.newTab;
+---
+
+{external ? <a href={href} target="_blank" rel="noopener noreferrer" {...attrs}><slot /><svg class="external-icon" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M3.5 2.5h6v6M9.5 2.5l-7 7" /></svg><span class="visually-hidden"> ({newTab})</span></a> : <a href={href} rel={rel} target={target} {...attrs}><slot /></a>}

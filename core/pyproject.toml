@@ -1,0 +1,30 @@
+[project]
+name = "langbg"
+version = "0.1.0"
+description = "Rewrite a font's GSUB so Bulgarian Cyrillic forms work in Figma"
+license = "MIT"
+readme = "README.md"
+authors = [
+    { name = "Nedyalko Stoyanov", email = "stoyanov.nedyalko@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fonttools>=4.66.1",
+]
+
+[project.scripts]
+langbg = "langbg.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "opentype-sanitizer>=9.2.0",
+    "pytest>=9.1.1",
+    "uharfbuzz>=0.56.3",
+]

@@ -1,0 +1,68 @@
+---
+// A code snippet with a small copy button. The code is not text to translate (translate="no") and
+// carries no `lang` of its own, so a Cyrillic comment is set in the page's language, Bulgarian on
+// the Bulgarian site, and gets the Bulgarian letterforms.
+import { ui, type Lang } from "../i18n";
+
+interface Props {
+  lang: Lang;
+  /** What the code is, shown in the bar. A name of a code language, so it is not translated. */
+  kind: string;
+  /** The code; lines are separated by \n. */
+  code: string;
+}
+
+const { lang, kind, code } = Astro.props;
+const t = ui[lang].code;
+---
+
+<figure class="snippet" data-snippet>
+  <div class="snippet-bar">
+    <span class="snippet-kind" translate="no">{kind}</span>
+    <button type="button" class="snippet-copy ui" data-copy data-copied={t.copied} data-failed={t.copyFailed}>
+      <span data-copy-label>{t.copy}</span><span class="visually-hidden"> {kind}</span>
+    </button>
+  </div>
+  {/* tabindex: a box that can scroll sideways must be reachable with the keyboard. */}
+  <pre class="code" translate="no" tabindex="0"><code>{code}</code></pre>
+  <span class="visually-hidden" role="status" data-copy-status></span>
+</figure>
+
+<script>
+  const RESET_AFTER_MS = 1800;
+  const timers = new WeakMap<HTMLElement, number>();
+
+  document.addEventListener("click", async (event) => {
+    const button = (event.target as Element).closest<HTMLButtonElement>("[data-copy]");
+    const figure = button?.closest("[data-snippet]");
+    const code = figure?.querySelector("pre code");
+    const label = button?.querySelector<HTMLElement>("[data-copy-label]");
+    const status = figure?.querySelector<HTMLElement>("[data-copy-status]");
+    if (!button || !code || !label || !status) return;
+
+    const idle = (button.dataset.idle ??= label.textContent ?? "");
+    let message = button.dataset.copied ?? "";
+    try {
+      await navigator.clipboard.writeText(code.textContent ?? "");
+    } catch {
+      // No clipboard (an insecure page, a denied permission): select the code, so Ctrl+C finishes the job.
+      const range = document.createRange();
+      range.selectNodeContents(code);
+      const selection = getSelection();
+      selection?.removeAllRanges();
+      selection?.addRange(range);
+      message = button.dataset.failed ?? "";
+    }
+
+    label.textContent = message;
+    status.textContent = message;
+    clearTimeout(timers.get(button));
+    timers.set(
+      button,
+      window.setTimeout(() => {
+        label.textContent = idle;
+        status.textContent = "";
+      }, RESET_AFTER_MS),
+    );
+  });
+</script>

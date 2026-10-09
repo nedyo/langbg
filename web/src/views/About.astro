@@ -1,0 +1,62 @@
+---
+import Link from "../components/Link.astro";
+import { ui, type Lang } from "../i18n";
+import { CREDITS, SITE } from "../data/site";
+import Base from "../layouts/Base.astro";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = ui[lang];
+const a = t.about;
+---
+
+<Base lang={lang} title={a.metaTitle} description={a.metaDescription} path="/about/">
+  <section class="section">
+    <div class="wrap">
+      <h1 class="display" style="font-size: clamp(2.25rem, 5vw, 3.75rem)">{a.title}</h1>
+
+      <div class="split" style="margin-top: 3rem">
+        <div class="split-head">
+          <h2>{a.who.title}</h2>
+        </div>
+        <div>
+          <div class="measure">{a.who.text.map((paragraph) => <p>{paragraph}</p>)}</div>
+          <p class="ui" style="margin-top: 1.25rem"><Link href={SITE.repo}>{a.who.repo}</Link></p>
+        </div>
+      </div>
+
+      <div class="split" style="margin-top: var(--space-section)">
+        <div class="split-head">
+          <h2>{a.involve.title}</h2>
+        </div>
+        <div>
+          <p class="measure">{a.involve.text}</p>
+          <p style="margin-top: 1.25rem">
+            <Link class="button" href={SITE.author.linkedin} data-testid="linkedin">{a.involve.button}</Link>
+          </p>
+        </div>
+      </div>
+
+      <div class="split" id="credits" style="margin-top: var(--space-section)">
+        <div class="split-head">
+          <h2>{a.credits.title}</h2>
+          <p class="muted ui">{a.credits.intro}</p>
+        </div>
+        <ul class="credits" data-testid="credits">
+          {
+            CREDITS.map((credit) => (
+              <li class="credit">
+                <Link class="credit-name" href={credit.url}>{credit.name}</Link>
+                <Link class="credit-license" href={credit.licenseUrl}>{credit.license}</Link>
+                <span class="ui">{a.credits.items[credit.key]}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,119 @@
+---
+// The server-rendered shell of the converter. src/lib/app.ts brings it to life: it only
+// finds elements by id and fills them in, so first paint needs no JavaScript.
+// The strings of this language travel to the script as JSON; nothing is translated in the browser.
+import { PANGRAM, ui, type Lang } from "../i18n";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = ui[lang];
+const c = t.converter;
+const island = { lang, converter: c, preview: t.preview, pangram: PANGRAM };
+---
+
+<section class="section" id="converter" aria-labelledby="converter-title">
+  <div class="wrap split">
+    <div class="split-head">
+      <h2 id="converter-title">{c.title}</h2>
+      <p class="muted ui">{c.intro}</p>
+      <p id="runtime-status" class="runtime-status" data-testid="runtime-status" data-stage="idle" aria-live="polite">
+        {c.runtime.idle}
+      </p>
+    </div>
+
+    <div class="converter-body ui">
+      <noscript><p class="panel panel-warn">{c.noscript}</p></noscript>
+
+      <div id="drop" class="drop" data-testid="drop">
+        <p class="drop-title">{c.dropTitle}</p>
+        <p class="muted">{c.dropHint}</p>
+        <div class="drop-actions">
+          <button id="choose" class="button" type="button">{c.choose}</button>
+          <button id="clear" class="button button-quiet" type="button" hidden>{c.clear}</button>
+        </div>
+        <input
+          id="file-input"
+          class="visually-hidden"
+          data-testid="file-input"
+          type="file"
+          multiple
+          accept=".ttf,.otf,.woff,.woff2,.txt"
+          tabindex="-1"
+          aria-hidden="true"
+        />
+      </div>
+
+      <div id="reports" class="reports" data-testid="reports" aria-live="polite"></div>
+
+      <form id="options" class="options" data-testid="options" hidden novalidate>
+        <div id="reserved-info" data-testid="reserved-info" hidden></div>
+
+        <fieldset class="fieldset">
+          <legend class="legend">{c.name.legend}</legend>
+          <div class="choice" id="choice-suffix">
+            <input id="naming-suffix" type="radio" name="naming" value="suffix" checked />
+            <label class="choice-label" for="naming-suffix">{c.name.suffixLabel}</label>
+            <div class="choice-body">
+              <div class="inline-field">
+                <label class="visually-hidden" for="suffix">{c.name.suffixInput}</label>
+                <input id="suffix" class="field field-short" type="text" value="BG" size="6" autocomplete="off" />
+                <span id="suffix-result" class="muted small"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="choice" id="choice-custom">
+            <input id="naming-custom" type="radio" name="naming" value="custom" />
+            <label class="choice-label" for="naming-custom">{c.name.customLabel}</label>
+            <div class="choice-body">
+              <label class="visually-hidden" for="family-name">{c.name.customInput}</label>
+              <input
+                id="family-name"
+                class="field"
+                data-testid="name-input"
+                type="text"
+                autocomplete="off"
+                spellcheck="false"
+              />
+              <p id="whole-family" class="muted small"></p>
+            </div>
+          </div>
+
+          <div id="name-problem" data-testid="name-problem" hidden></div>
+        </fieldset>
+
+        <details class="advanced">
+          <summary>{c.advanced.summary}</summary>
+          <div class="advanced-body">
+            <label class="choice">
+              <input id="stylistic" type="checkbox" name="mode" value="stylistic" />
+              <span class="choice-label">{c.advanced.stylisticLabel}</span>
+              <span class="choice-body muted small">{c.advanced.stylisticHelp}</span>
+            </label>
+          </div>
+        </details>
+
+        <div class="download-row">
+          <button id="convert" class="button" data-testid="convert" type="button" disabled>{c.convert.button}</button>
+        </div>
+      </form>
+
+      <div id="results" class="results" data-testid="results" aria-live="polite"></div>
+      <div id="remember" data-testid="remember" hidden></div>
+      <div id="download" class="download-row" hidden>
+        <button id="download-zip" class="button" data-testid="download-zip" type="button" disabled>
+          {c.results.download}
+        </button>
+        <span class="muted small">{c.results.downloadHint}</span>
+      </div>
+    </div>
+  </div>
+
+  <script type="application/json" id="island-data" set:html={JSON.stringify(island)} />
+  <script>
+    import "../lib/app";
+  </script>
+</section>

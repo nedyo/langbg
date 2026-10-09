@@ -1,0 +1,25 @@
+name: Set up web
+description: uv (builds the core wheel for the site), Node, pnpm and the site's dependencies.
+
+runs:
+  using: composite
+  steps:
+    - uses: astral-sh/setup-uv@v6
+      with:
+        enable-cache: true
+        cache-dependency-glob: core/uv.lock
+
+    - uses: pnpm/action-setup@v4
+      with:
+        version: 12.10.1
+
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 24
+        cache: pnpm
+        cache-dependency-path: web/pnpm-lock.yaml
+
+    - name: Install dependencies
+      shell: bash
+      working-directory: web
+      run: pnpm install --frozen-lockfile

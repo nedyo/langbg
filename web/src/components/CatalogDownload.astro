@@ -1,0 +1,73 @@
+---
+import Link from "./Link.astro";
+// The download of a catalog font: no copy of it is hosted. src/lib/catalog-download.ts fetches the
+// original files from GitHub when the button is pressed, converts them in the browser and builds
+// the ZIP. The server-rendered part holds every sentence and link, including the ones for a failure,
+// so the script only shows and hides them.
+import { localePath, ui, type Lang } from "../i18n";
+import type { CatalogFont } from "../lib/catalog";
+
+interface Props {
+  lang: Lang;
+  font: CatalogFont;
+}
+
+const { lang, font } = Astro.props;
+const t = ui[lang];
+const g = t.fonts.detail.get;
+const converter = `${localePath(lang, "/")}#converter`;
+// Where the original can be fetched by hand: Google Fonts, or the source until Google Fonts lists the family.
+const original = font.googleFontsUrl
+  ? { href: font.googleFontsUrl, label: g.googleFonts, help: g.help, noscript: g.noscript }
+  : { href: font.source, label: g.sourceButton, help: g.helpSource, noscript: g.noscriptSource };
+const island = {
+  name: font.name,
+  convertedName: font.convertedName,
+  designer: font.designer || null,
+  files: font.files,
+  licenseFile: font.licenseFile,
+  get: g,
+  runtime: t.converter.runtime,
+  errors: t.converter.errors,
+  readme: t.converter.readme,
+};
+---
+
+<p class="download-row" style="margin-top: 1.5rem">
+  <button id="get-button" class="button" type="button" data-testid="catalog-download">{g.button}</button>
+  <span class="muted small">{g.hint}</span>
+</p>
+{
+  font.reservedNames.length > 0 && (
+    <p class="panel panel-warn ui" style="margin-top: 1rem" data-testid="catalog-reserved">
+      {t.converter.notices.reservedName}
+    </p>
+  )
+}
+<p class="muted small ui" style="margin-top: 0.75rem" data-testid="catalog-note">{g.note}</p>
+<p id="get-status" class="small ui get-status" role="status" aria-live="polite" data-testid="catalog-status"></p>
+
+<div id="get-error" class="panel panel-bad ui" style="margin-top: 1rem" role="alert" data-testid="catalog-error" hidden>
+  <p class="panel-title">{g.errorTitle}</p>
+  <p id="get-error-text" data-testid="catalog-error-text"></p>
+  <p>{original.help}</p>
+  <p class="download-row">
+    <Link class="button button-quiet" href={original.href} data-testid="catalog-error-original">{original.label}</Link>
+    <a class="button button-quiet" href={converter} data-testid="catalog-error-converter">{g.manual}</a>
+  </p>
+</div>
+
+<noscript>
+  <div class="panel panel-warn ui" style="margin-top: 1rem">
+    <p>{original.noscript}</p>
+    <p class="download-row">
+      <Link class="button button-quiet" href={original.href}>{original.label}</Link>
+      <a class="button button-quiet" href={converter}>{g.manual}</a>
+    </p>
+  </div>
+</noscript>
+
+<script type="application/json" id="catalog-island" set:html={JSON.stringify(island)} />
+<script>
+  import "../lib/catalog-download";
+</script>
