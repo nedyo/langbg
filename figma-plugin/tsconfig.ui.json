@@ -1,0 +1,10 @@
+{
+  // The panel (an iframe: DOM, no Figma types).
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "lib": ["es2020", "dom", "dom.iterable"],
+    "types": []
+  },
+  "include": ["src/ui.ts"],
+  "exclude": []
+}

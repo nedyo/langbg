@@ -1,0 +1,23 @@
+{
+  "name": "langbg-handoff",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Read-only Figma plugin: CSS with the original family for \"<Family> BG\" fonts, plus a lang=\"bg\" reminder.",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "tsc -p tsconfig.json && tsc -p tsconfig.ui.json",
+    "test": "node --test \"test/*.test.mjs\""
+  },
+  "allowScripts": {
+    "esbuild": true
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "1.141.0",
+    "esbuild": "0.28.2",
+    "typescript": "^6.0.3"
+  }
+}

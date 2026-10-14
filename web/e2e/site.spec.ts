@@ -128,7 +128,7 @@ test("the hero sampler and the preview show the same text under both labels", as
   await expect(page.getByTestId("preview-with")).toHaveText(PANGRAM); // the sample text is Bulgarian on both sites
 });
 
-test("home page: install steps, the Dev Mode note and the FAQ are there, the FAQ opens without JavaScript", async ({ page }) => {
+test("home page: install steps, the handoff note and the FAQ are there, the FAQ opens without JavaScript", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator("#install .step")).toHaveCount(3);
   await expect(page.locator("#handoff")).toContainText('lang="bg"');
@@ -141,11 +141,45 @@ test("home page: install steps, the Dev Mode note and the FAQ are there, the FAQ
   await expect(items.first()).toHaveAttribute("open", "");
 });
 
+test("langBG Handoff: coming soon until published, the paid-plan FAQ, the suffix note in the converter", async ({ page }) => {
+  const pages = [
+    {
+      path: "/",
+      soon: "Скоро: langBG Handoff. Показва правилния CSS в Dev Mode и в Design режим, включително на безплатния план.",
+      q: "Трябва ли ми платен план във Figma?",
+      a: "Не. Конверторът и плъгинът работят и на Starter. На платените планове плъгинът се показва и в Dev Mode.",
+      note: "Плъгинът langBG Handoff разпознава само наставката „BG“.",
+    },
+    {
+      path: "/en/",
+      soon: "Coming soon: langBG Handoff. Shows the correct CSS in Dev Mode and in Design mode, including the free plan.",
+      q: "Do I need a paid Figma plan?",
+      a: "No. The converter and the plugin work on Starter too. On paid plans the plugin also shows up in Dev Mode.",
+      note: "The langBG Handoff plugin only recognizes the “BG” suffix.",
+    },
+  ];
+  for (const { path, soon, q, a, note } of pages) {
+    await page.goto(path);
+    // SITE.figmaPlugin is null until the plugin is published: no link to it anywhere yet.
+    await expect(page.getByTestId("handoff-plugin")).toHaveText(soon);
+    expect(await page.locator('a[href*="figma.com/community"]').count()).toBe(0);
+    await expect(page.locator("main")).not.toContainText("Dev Mode plugin");
+    await expect(page.locator("main")).not.toContainText("плъгин за Figma Dev Mode");
+
+    const faq = page.locator("#faq details", { hasText: q });
+    await faq.locator("summary").click();
+    await expect(faq.locator(".faq-a")).toHaveText(a);
+
+    // The note sits with the custom name in the converter's options (shown once a font is added).
+    await expect(page.locator("#choice-custom").getByTestId("plugin-note")).toContainText(note);
+  }
+});
+
 test("home page: code snippets take the page's language, keep the comment on its own line and copy", async ({ page, context }) => {
   await context.grantPermissions(["clipboard-read", "clipboard-write"]);
   const pages = [
-    { path: "/", comment: "във Figma: Montserrat BG", copied: "Копирано", plugin: "Скоро: плъгин за Figma Dev Mode" },
-    { path: "/en/", comment: "in Figma: Montserrat BG", copied: "Copied", plugin: "Coming soon: a Figma Dev Mode plugin" },
+    { path: "/", comment: "във Figma: Montserrat BG", copied: "Копирано", plugin: "Скоро: langBG Handoff" },
+    { path: "/en/", comment: "in Figma: Montserrat BG", copied: "Copied", plugin: "Coming soon: langBG Handoff" },
   ];
   for (const { path, comment, copied, plugin } of pages) {
     await page.goto(path);

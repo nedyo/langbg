@@ -134,6 +134,7 @@ const bg = {
       customLabel: "Свое име",
       customInput: "Име на семейството",
       wholeFamily: "Името важи за цялото семейство (файлове: {count}).",
+      pluginNote: "Плъгинът langBG Handoff разпознава само наставката „BG“. Със свое име няма да покаже на разработчика оригиналното име.",
       multiFamily: "Файловете са от различни семейства ({families}). Конвертирай всяко отделно.",
       emptySuffix: "Напиши наставка.",
       emptyName: "Напиши име на семейството.",
@@ -217,7 +218,10 @@ const bg = {
       "За разработчика:",
     ],
     cssComment: "във Figma: Montserrat BG",
-    soon: "Скоро: плъгин за Figma Dev Mode. Няма да променя нищо във файла ти: само ще показва правилния CSS, с оригиналното име на шрифта и бележка за lang=\"bg\".",
+    soon: "Скоро: langBG Handoff. Показва правилния CSS в Dev Mode и в Design режим, включително на безплатния план.",
+    // Shown instead of `soon` once SITE.figmaPlugin is set.
+    available: "langBG Handoff показва правилния CSS в Dev Mode и в Design режим, включително на безплатния план.",
+    pluginLink: "Инсталирай langBG Handoff от Figma Community",
   },
   link: { newTab: "отваря се в нов раздел" },
   code: {
@@ -242,6 +246,10 @@ const bg = {
       {
         q: "Трябва ли колегите ми да инсталират копието?",
         a: ["Да - всеки, който отваря файла. Иначе Figma показва друг шрифт на негово място."],
+      },
+      {
+        q: "Трябва ли ми платен план във Figma?",
+        a: ["Не. Конверторът и плъгинът работят и на Starter. На платените планове плъгинът се показва и в Dev Mode."],
       },
       {
         q: "С кои шрифтове работи?",
@@ -501,6 +509,7 @@ const en: Dict = {
       customLabel: "Custom name",
       customInput: "Family name",
       wholeFamily: "The name applies to the whole family (files: {count}).",
+      pluginNote: "The langBG Handoff plugin only recognizes the “BG” suffix. With a custom name, it can’t show developers the original name.",
       multiFamily: "These files are from different families ({families}). Convert each one separately.",
       emptySuffix: "Enter a suffix.",
       emptyName: "Enter a family name.",
@@ -583,7 +592,9 @@ const en: Dict = {
       "For the developer:",
     ],
     cssComment: "in Figma: Montserrat BG",
-    soon: "Coming soon: a Figma Dev Mode plugin. It won’t change anything in your file: it will only show the correct CSS, with the original font name and a note about lang=\"bg\".",
+    soon: "Coming soon: langBG Handoff. Shows the correct CSS in Dev Mode and in Design mode, including the free plan.",
+    available: "langBG Handoff shows the correct CSS in Dev Mode and in Design mode, including the free plan.",
+    pluginLink: "Get langBG Handoff on Figma Community",
   },
   link: { newTab: "opens in a new tab" },
   code: {
@@ -608,6 +619,10 @@ const en: Dict = {
       {
         q: "Do my teammates need the copy too?",
         a: ["Yes - everyone who opens the file. Otherwise Figma substitutes another font."],
+      },
+      {
+        q: "Do I need a paid Figma plan?",
+        a: ["No. The converter and the plugin work on Starter too. On paid plans the plugin also shows up in Dev Mode."],
       },
       {
         q: "Which fonts work?",

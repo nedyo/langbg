@@ -1,0 +1,23 @@
+{
+  "name": "langBG Handoff",
+  "id": "langbg-handoff",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "dist/ui.html",
+  "editorType": ["figma", "dev"],
+  "capabilities": ["codegen"],
+  "codegenLanguages": [{ "label": "CSS", "value": "css" }],
+  "codegenPreferences": [
+    {
+      "itemType": "select",
+      "propertyName": "language",
+      "label": "Език · Language",
+      "options": [
+        { "label": "Български", "value": "bg", "isDefault": true },
+        { "label": "English", "value": "en" }
+      ]
+    }
+  ],
+  "documentAccess": "dynamic-page",
+  "networkAccess": { "allowedDomains": ["none"] }
+}

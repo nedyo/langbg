@@ -4,6 +4,8 @@ export const SITE = {
   url: "https://langbg.com",
   author: { name: "Nedyalko Stoyanov", linkedin: "https://www.linkedin.com/in/nedyalko-stoyanov/" },
   repo: "https://github.com/nedyo/langbg",
+  /** The langBG Handoff page on Figma Community. While null, the site says "coming soon". */
+  figmaPlugin: null as string | null,
 } as const;
 
 export type CreditKey = "pyodide" | "fonttools" | "fflate" | "astro" | "fonts";

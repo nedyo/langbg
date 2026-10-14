@@ -1,0 +1,19 @@
+{
+  // The plugin side (Figma's sandbox: Figma types, no DOM). The panel has its own: tsconfig.ui.json.
+  "compilerOptions": {
+    "target": "es2020",
+    "lib": ["es2020"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+    "noUncheckedIndexedAccess": true,
+    "typeRoots": ["./node_modules/@figma"],
+    "types": ["plugin-typings"]
+  },
+  "include": ["src"],
+  "exclude": ["src/ui.ts"]
+}
