@@ -74,7 +74,7 @@ After a code change, run `pnpm build` again and restart the plugin.
 
 ## Publishing checklist (Figma Community)
 
-1. **ID:** Plugins → Development → New plugin… gives a real plugin ID. Put it in `manifest.json` (`id`) and import again. Today's `langbg-handoff` only works for local testing.
+1. **ID:** done. `manifest.json` has the ID Figma gave the plugin (`1692174372084149492`). Never change it: a test guards it, and the build only writes to `dist/`.
 2. **Name:** "langBG Handoff". No "Figma" or "Fig" in the name (Figma's trademark rules).
 3. **Icon:** 128 × 128 px PNG.
 4. **Cover:** 1920 × 960 px PNG (or GIF/video) showing the Design mode panel next to a Dev Mode CSS section.

@@ -10,6 +10,8 @@ const read = (path) => readFileSync(new URL(path, root), "utf8");
 const manifest = JSON.parse(read("manifest.json"));
 
 test("manifest: name, both editors, CSS codegen, no network, dynamic pages", () => {
+  // The ID Figma gave the plugin. Publishing and updates depend on it: it must never change.
+  assert.equal(manifest.id, "1692174372084149492");
   assert.equal(manifest.name, "langBG Handoff");
   assert.doesNotMatch(manifest.name, /fig/i, "Figma's trademark rules: no Figma or Fig in the name");
   assert.deepEqual(manifest.editorType, ["figma", "dev"]);
