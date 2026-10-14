@@ -12,11 +12,11 @@
 - Маркираш текстов слой и плъгинът показва CSS-а му: `font-family` с оригиналното име, `font-weight`, `font-size`, `line-height`, `letter-spacing` и `font-style` за курсив. Най-отгоре е напомнянето за `lang="bg"`.
 - Ако в един слой има няколко шрифта, получаваш по един CSS блок за всеки, по реда, в който се появяват.
 - Шрифт без наставката „ BG“ показва CSS-а си без промяна и с един ред „не е шрифт на langBG“, без напомнянето за `lang`.
-- Под CSS-а има кратко обяснение за разработчика с прости думи. Езикът е български или английски, по избор.
+- Под CSS-а са „Бележки за имплементация“: за всеки шрифт на langBG кое име да се ползва в кода, веднъж бележка за `lang="bg"` и накрая ред, че плъгинът само чете. Без шрифт на langBG остава само последният ред. Езикът е български или английски, по избор.
 
 ### Два режима
 - **Design режим** (и на безплатния Starter план): Plugins → langBG Handoff. Отваря се малък панел. Маркираш текст или frame и копираш CSS-а с бутона.
-- **Dev Mode** (платени планове): Inspect → Code → от менюто за език избираш „langBG Handoff“. Езикът на обяснението се сменя в настройките на кода.
+- **Dev Mode** (платени планове): Inspect → Code → от менюто за език избираш „langBG Handoff“. Езикът на бележките се сменя в настройките на кода.
 
 ### Какво обещава
 - **Само чете.** Не променя нищо във файла: не пише във възлите, не създава и не трие нищо. Тестовете в `test/` пазят това.
@@ -34,7 +34,7 @@
 ### Разработка
 - `pnpm check`: TypeScript (плъгинът и панелът имат отделни tsconfig).
 - `pnpm test`: тестове с `node --test`. Пусни `pnpm build` преди тях, за да се провери и готовият панел.
-- `src/css.ts` е общият модул: от „run“-ове към CSS и обяснение. `src/collect.ts` чете от документа само с getter-и. `src/code.ts` е входната точка. `src/ui.ts` и `src/ui.html` са панелът. `src/strings.ts` съдържа всички текстове на двата езика.
+- `src/css.ts` е общият модул: от „run“-ове към CSS и бележки. `src/collect.ts` чете от документа само с getter-и. `src/code.ts` е входната точка. `src/ui.ts` и `src/ui.html` са панелът. `src/strings.ts` съдържа всички текстове на двата езика.
 
 ---
 
@@ -46,11 +46,11 @@ A Figma plugin for [langbg.com](https://langbg.com). In Figma, designers use "Mo
 - Select a text layer and the plugin shows its CSS: `font-family` with the original name, `font-weight`, `font-size`, `line-height`, `letter-spacing`, and `font-style` for italics. A `lang="bg"` reminder comes first.
 - A layer with several fonts gets one CSS block per font, in the order they appear.
 - A font without the " BG" suffix keeps its CSS as it is, with a one-line "not a langBG font" note and no `lang` reminder.
-- Below the CSS is a short plain-language note for the developer, in Bulgarian or English.
+- Below the CSS are the "Implementation notes": for each langBG font, which name to use in code; one note about `lang="bg"`; and a closing line that the plugin only reads. Without a langBG font, only the closing line remains. In Bulgarian or English.
 
 ### Two modes
 - **Design mode** (also on the free Starter plan): Plugins → langBG Handoff opens a small panel. Select text or a frame and copy the CSS with the button.
-- **Dev Mode** (paid plans): Inspect → Code → pick "langBG Handoff" in the language menu. The note's language is in the code settings.
+- **Dev Mode** (paid plans): Inspect → Code → pick "langBG Handoff" in the language menu. The notes' language is in the code settings.
 
 ### Promises
 - **Read-only.** It never changes your file: no writes to nodes, nothing created or deleted. The tests in `test/` guard this.
@@ -68,7 +68,7 @@ After a code change, run `pnpm build` again and restart the plugin.
 ### Development
 - `pnpm check`: TypeScript (the plugin and the panel have separate tsconfigs).
 - `pnpm test`: tests with `node --test`. Run `pnpm build` first so the built panel is checked too.
-- `src/css.ts` is the shared module (runs → CSS and note). `src/collect.ts` reads the document with getters only. `src/code.ts` is the entry point. `src/ui.ts` and `src/ui.html` are the panel. `src/strings.ts` holds every string in both languages.
+- `src/css.ts` is the shared module (runs → CSS and notes). `src/collect.ts` reads the document with getters only. `src/code.ts` is the entry point. `src/ui.ts` and `src/ui.html` are the panel. `src/strings.ts` holds every string in both languages.
 
 ---
 

@@ -1,4 +1,4 @@
-// The one place that turns text runs into CSS and the developer note. Both entry points (Dev Mode
+// The one place that turns text runs into CSS and the implementation notes. Both entry points (Dev Mode
 // codegen and the Design mode panel) call `handoff()`. No Figma API here: the tests run it in Node.
 
 import { format, strings, type Lang } from "./strings.ts";
@@ -22,10 +22,17 @@ export interface Run {
   readonly letterSpacing: LetterSpacing;
 }
 
+/** The implementation notes: bullets (none without a langBG font), then the closing line. */
+export interface Note {
+  readonly title: string;
+  readonly bullets: readonly string[];
+  readonly footer: string;
+}
+
 export interface Handoff {
   /** Empty when there are no runs. */
   readonly css: string;
-  readonly note: string;
+  readonly note: Note;
 }
 
 /** "Montserrat BG" → "Montserrat". The " BG" suffix is the only thing recognized; anything else → null. */
@@ -86,22 +93,23 @@ export function handoff(runs: readonly Run[], lang: Lang, options: { truncatedAt
   const langbg = list.filter((block) => block.original !== null);
 
   const parts: string[] = [];
+  if (options.truncatedAt !== undefined && list.length) parts.push(comment(format(s.css.truncated, { count: options.truncatedAt })));
   if (langbg.length) parts.push(comment(s.css.lang));
   for (const block of list) {
     const head = block.original !== null ? format(s.css.inFigma, { name: block.figmaFamily }) : format(s.css.notLangbg, { name: block.figmaFamily });
     parts.push([comment(head), ...block.lines].join("\n"));
   }
 
-  const note: string[] = [];
-  if (langbg.length) {
-    const pairs = new Map(langbg.map((block) => [block.figmaFamily, block.original!]));
-    for (const [figma, original] of pairs) note.push(format(s.note.pair, { figma, original }));
-    note.push(s.note.why, s.note.lang);
-    if (langbg.length < list.length) note.push(s.note.others);
-  } else if (list.length) {
-    note.push(s.note.none);
-  }
-  if (options.truncatedAt !== undefined && list.length) note.push(format(s.note.truncated, { count: options.truncatedAt }));
+  // The first bullet once per langBG family, the lang bullet once; no bullets without a langBG font.
+  const pairs = new Map(langbg.map((block) => [block.figmaFamily, block.original!]));
+  const bullets = [...pairs].map(([figmaName, family]) => format(s.note.family, { family, figmaName }));
+  if (bullets.length) bullets.push(s.note.lang);
 
-  return { css: parts.join("\n\n"), note: note.join("\n") };
+  return { css: parts.join("\n\n"), note: { title: s.note.title, bullets, footer: s.note.safe } };
+}
+
+/** The notes as plain text, for Dev Mode's code section (no rich formatting there). */
+export function noteText(note: Note): string {
+  const bullets = note.bullets.map((bullet) => `• ${bullet}`).join("\n");
+  return bullets ? `${bullets}\n\n${note.footer}` : note.footer;
 }

@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { blocks, handoff, originalFamily } from "../src/css.ts";
+import { blocks, handoff, noteText, originalFamily } from "../src/css.ts";
 
 const run = (family, extra = {}) => ({
   family,
@@ -12,6 +12,24 @@ const run = (family, extra = {}) => ({
   ...extra,
 });
 
+// The implementation notes, word for word as the product owner wrote them.
+const NOTES = {
+  bg: {
+    title: "Бележки за имплементация",
+    family: (family, figmaName) =>
+      `Заложете стандартния шрифт ${family} във Вашия код. Версията „${figmaName}“, която виждате във Figma, е нужна само за превю на българската кирилица в дизайна.`,
+    lang: 'За да покажете българските форми в уеб, е достатъчно да зададете lang="bg" атрибут на HTML документа или на съответния текст.',
+    safe: "Работата Ви е защитена. Плъгинът само чете данните и не прави промени по Figma файла.",
+  },
+  en: {
+    title: "Implementation notes",
+    family: (family, figmaName) =>
+      `Use the standard font ${family} in your code. The "${figmaName}" version you see in Figma is only needed to preview Bulgarian Cyrillic in the design.`,
+    lang: 'To show the Bulgarian forms on the web, set the lang="bg" attribute on the HTML document or on the relevant text.',
+    safe: "Your work is safe. The plugin only reads data and makes no changes to the Figma file.",
+  },
+};
+
 test("only the ' BG' suffix is recognized", () => {
   assert.equal(originalFamily("Montserrat BG"), "Montserrat");
   assert.equal(originalFamily("Source Sans 3 BG"), "Source Sans 3");
@@ -21,11 +39,11 @@ test("only the ' BG' suffix is recognized", () => {
 });
 
 test("a langBG font: original family, lang reminder, comment with the Figma name", () => {
-  const { css, note } = handoff([run("Montserrat BG", { style: "Bold", weight: 700, size: 32 })], "bg");
+  const { css } = handoff([run("Montserrat BG", { style: "Bold", weight: 700, size: 32 })], "bg");
   assert.equal(
     css,
     [
-      '/* добави lang="bg" на страницата или на текста */',
+      '/* задайте lang="bg" на HTML документа или на съответния текст */',
       "",
       "/* във Figma: Montserrat BG */",
       'font-family: "Montserrat";',
@@ -34,23 +52,53 @@ test("a langBG font: original family, lang reminder, comment with the Figma name
       "line-height: normal;",
     ].join("\n"),
   );
-  assert.match(note, /Във Figma: „Montserrat BG“\. В кода: „Montserrat“\./);
-  assert.match(note, /lang="bg"/);
-  assert.doesNotMatch(note, /не са от langBG/);
+});
+
+for (const lang of ["bg", "en"]) {
+  const n = NOTES[lang];
+
+  test(`${lang}: notes for one langBG font are the exact copy`, () => {
+    const { note } = handoff([run("Montserrat BG"), run("Inter")], lang);
+    assert.deepEqual(note, { title: n.title, bullets: [n.family("Montserrat", "Montserrat BG"), n.lang], footer: n.safe });
+  });
+
+  test(`${lang}: the first bullet repeats per langBG family; the lang bullet and the last line once`, () => {
+    const runs = [run("Montserrat BG", { weight: 700 }), run("Inter"), run("Source Sans 3 BG"), run("Montserrat BG")];
+    const { note } = handoff(runs, lang);
+    assert.deepEqual(note.bullets, [n.family("Montserrat", "Montserrat BG"), n.family("Source Sans 3", "Source Sans 3 BG"), n.lang]);
+    assert.equal(note.footer, n.safe);
+  });
+
+  test(`${lang}: without a langBG font only the last line`, () => {
+    const { note } = handoff([run("Inter")], lang);
+    assert.deepEqual(note, { title: n.title, bullets: [], footer: n.safe });
+    assert.equal(noteText(note), n.safe);
+  });
+
+  test(`${lang}: Dev Mode gets plain-text "•" bullets`, () => {
+    const { note } = handoff([run("Montserrat BG")], lang);
+    assert.equal(noteText(note), `• ${n.family("Montserrat", "Montserrat BG")}\n• ${n.lang}\n\n${n.safe}`);
+  });
+}
+
+test("the old developer copy is gone", () => {
+  for (const lang of ["bg", "en"]) {
+    const { note } = handoff([run("Montserrat BG"), run("Inter")], lang);
+    assert.doesNotMatch(JSON.stringify(note), /За разработчика|For the developer|For developers/);
+  }
 });
 
 test("English output has no Cyrillic", () => {
   const { css, note } = handoff([run("Montserrat BG"), run("Inter")], "en");
-  assert.doesNotMatch(css + note, /[А-Яа-я]/);
+  assert.doesNotMatch(css + noteText(note), /[А-Яа-я]/);
   assert.match(css, /\/\* in Figma: Montserrat BG \*\//);
   assert.match(css, /\/\* Inter - not a langBG font \*\//);
 });
 
 test("a font without the suffix: CSS unchanged, no lang reminder, one-line note", () => {
-  const { css, note } = handoff([run("Inter", { weight: 500 })], "bg");
+  const { css } = handoff([run("Inter", { weight: 500 })], "bg");
   assert.equal(css, ["/* Inter - не е шрифт на langBG */", 'font-family: "Inter";', "font-weight: 500;", "font-size: 16px;", "line-height: normal;"].join("\n"));
   assert.doesNotMatch(css, /lang=/);
-  assert.equal(note, "Тук няма шрифт на langBG. CSS-ът е както във Figma.");
 });
 
 test("mixed fonts: one block per distinct font, in order of appearance; equal runs merge", () => {
@@ -64,11 +112,9 @@ test("mixed fonts: one block per distinct font, in order of appearance; equal ru
       ["Montserrat BG", "font-weight: 400;", "font-size: 12px;"],
     ],
   );
-  const { css, note } = handoff(runs, "bg");
+  const { css } = handoff(runs, "bg");
   assert.equal(css.match(/lang="bg"/g)?.length, 1, "the reminder appears once");
-  assert.ok(css.startsWith('/* добави lang="bg"'));
-  assert.equal(note.match(/Във Figma: „Montserrat BG“/g)?.length, 1, "each pair once");
-  assert.match(note, /Другите шрифтове не са от langBG/);
+  assert.ok(css.startsWith('/* задайте lang="bg"'));
 });
 
 test("units: line height, letter spacing, italic, rounding", () => {
@@ -89,11 +135,14 @@ test("names are escaped in CSS strings and comments", () => {
   assert.match(css, /\/\* in Figma: Odd "Name" \* \/ BG \*\//);
 });
 
-test("no runs: nothing", () => {
-  assert.deepEqual(handoff([], "bg"), { css: "", note: "" });
+test("no runs: no CSS, only the last line of the notes", () => {
+  const { css, note } = handoff([], "bg");
+  assert.equal(css, "");
+  assert.deepEqual(note.bullets, []);
 });
 
-test("truncation is mentioned", () => {
-  const { note } = handoff([run("Inter")], "en", { truncatedAt: 100 });
-  assert.match(note, /Showing the first 100 text layers\./);
+test("truncation is a comment at the top of the CSS, not part of the notes", () => {
+  const { css, note } = handoff([run("Inter")], "en", { truncatedAt: 100 });
+  assert.ok(css.startsWith("/* Showing the first 100 text layers. */"));
+  assert.doesNotMatch(noteText(note), /Showing/);
 });

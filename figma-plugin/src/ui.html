@@ -90,13 +90,21 @@
         outline: 2px solid var(--figma-color-border-selected, #0d99ff);
         outline-offset: 1px;
       }
-      #note {
-        margin: 0;
-        white-space: pre-line;
+      #note-bullets {
+        margin: 0 0 8px;
+        padding-left: 16px;
       }
-      footer {
-        margin-top: auto;
-        font-size: 11px;
+      #note-bullets li + li {
+        margin-top: 4px;
+      }
+      #note-footer {
+        margin: 0;
+      }
+      code {
+        font: 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        padding: 0 3px;
+        border-radius: 3px;
+        background: var(--figma-color-bg-secondary, #f5f5f5);
       }
       [hidden] {
         display: none !important;
@@ -124,10 +132,9 @@
 
     <section id="note-section" hidden>
       <h2 id="note-title"></h2>
-      <p id="note"></p>
+      <ul id="note-bullets"></ul>
+      <p id="note-footer" class="muted"></p>
     </section>
-
-    <footer class="muted" id="read-only"></footer>
 
     <script>
       /* SCRIPT */

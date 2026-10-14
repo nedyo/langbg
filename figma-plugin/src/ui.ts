@@ -21,10 +21,18 @@ function show(message: ToPanel): void {
   for (const button of document.querySelectorAll<HTMLButtonElement>("#langs button")) {
     button.setAttribute("aria-pressed", String(button.dataset["lang"] === message.lang));
   }
-  $("read-only").textContent = s.panel.readOnly;
   $("copy").textContent = s.panel.copy;
   $("copy-status").textContent = "";
-  $("note-title").textContent = s.note.title;
+  $("note-title").textContent = message.note.title;
+  $("note-bullets").replaceChildren(
+    ...message.note.bullets.map((bullet) => {
+      const item = document.createElement("li");
+      item.append(...withCode(bullet));
+      return item;
+    }),
+  );
+  $("note-bullets").hidden = !message.note.bullets.length;
+  $("note-footer").textContent = message.note.footer;
 
   const ok = message.state === "ok";
   $("status").hidden = ok;
@@ -32,7 +40,17 @@ function show(message: ToPanel): void {
   $("result").hidden = !ok;
   $("note-section").hidden = !ok;
   $("css").textContent = message.css;
-  $("note").textContent = message.note;
+}
+
+/** The text with every lang="bg" shown as inline code (DOM nodes, no HTML parsing). */
+function withCode(text: string): Node[] {
+  return text.split(/(lang="bg")/).map((part) => {
+    if (part !== 'lang="bg"') return document.createTextNode(part);
+    const code = document.createElement("code");
+    code.textContent = part;
+    code.translate = false;
+    return code;
+  });
 }
 
 // The plugin iframe may not use the async Clipboard API, so the copy goes through a hidden textarea.

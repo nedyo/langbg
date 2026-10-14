@@ -8,27 +8,29 @@ export const defaultLang: Lang = "bg";
 const bg = {
   css: {
     // CSS comments: no "*/" inside.
-    lang: 'добави lang="bg" на страницата или на текста',
+    lang: 'задайте lang="bg" на HTML документа или на съответния текст',
     inFigma: "във Figma: {name}",
     notLangbg: "{name} - не е шрифт на langBG",
-  },
-  note: {
-    title: "За разработчика",
-    pair: "Във Figma: „{figma}“. В кода: „{original}“.",
-    why: "„BG“ в името значи копие на шрифта с включени български форми. В кода не ти трябва: ползвай оригинала.",
-    lang: 'Сложи lang="bg" на страницата (<html lang="bg">) или на текста. Тогава браузърът сам показва българските форми.',
-    others: "Другите шрифтове не са от langBG. CSS-ът им е както във Figma.",
-    none: "Тук няма шрифт на langBG. CSS-ът е както във Figma.",
     truncated: "Показани са първите {count} текстови слоя.",
+  },
+  // Implementation notes. Wording fixed by the product owner: keep it exactly as it is.
+  note: {
+    title: "Бележки за имплементация",
+    // Once per langBG family.
+    family:
+      "Заложете стандартния шрифт {family} във Вашия код. Версията „{figmaName}“, която виждате във Figma, е нужна само за превю на българската кирилица в дизайна.",
+    // Once, when there is a langBG font. lang="bg" is shown as code where the UI allows it.
+    lang: 'За да покажете българските форми в уеб, е достатъчно да зададете lang="bg" атрибут на HTML документа или на съответния текст.',
+    // Always, also without a langBG font.
+    safe: "Работата Ви е защитена. Плъгинът само чете данните и не прави промени по Figma файла.",
   },
   panel: {
     language: "Език на плъгина",
-    empty: "Маркирай текстов слой, за да видиш CSS-а му.",
-    noText: "В маркираното няма текст. Маркирай текстов слой.",
-    copy: "Копирай CSS",
+    empty: "Изберете текстов слой за преглед на CSS кода.",
+    noText: "В избраното няма текст. Изберете текстов слой.",
+    copy: "Копиране на CSS",
     copied: "Копирано",
-    copyFailed: "Не успях да копирам. Маркирай кода и го копирай ръчно.",
-    readOnly: "Плъгинът само чете. Файлът ти не се променя.",
+    copyFailed: "Копирането не успя. Маркирайте кода и го копирайте ръчно.",
   },
 };
 
@@ -36,27 +38,25 @@ export type Strings = typeof bg;
 
 const en: Strings = {
   css: {
-    lang: 'add lang="bg" to the page or to the text',
+    lang: 'set lang="bg" on the HTML document or on the relevant text',
     inFigma: "in Figma: {name}",
     notLangbg: "{name} - not a langBG font",
+    truncated: "Showing the first {count} text layers.",
   },
   note: {
-    title: "For the developer",
-    pair: "In Figma: “{figma}”. In code: “{original}”.",
-    why: "“BG” in the name marks a copy of the font with Bulgarian forms turned on. Code doesn’t need it: use the original.",
-    lang: 'Add lang="bg" to the page (<html lang="bg">) or to the text. Browsers then show the Bulgarian forms on their own.',
-    others: "The other fonts aren’t from langBG. Their CSS is as in Figma.",
-    none: "No langBG font here. The CSS is as in Figma.",
-    truncated: "Showing the first {count} text layers.",
+    title: "Implementation notes",
+    family:
+      'Use the standard font {family} in your code. The "{figmaName}" version you see in Figma is only needed to preview Bulgarian Cyrillic in the design.',
+    lang: 'To show the Bulgarian forms on the web, set the lang="bg" attribute on the HTML document or on the relevant text.',
+    safe: "Your work is safe. The plugin only reads data and makes no changes to the Figma file.",
   },
   panel: {
     language: "Plugin language",
-    empty: "Select a text layer to see its CSS.",
+    empty: "Select a text layer to view its CSS.",
     noText: "There’s no text in the selection. Select a text layer.",
     copy: "Copy CSS",
     copied: "Copied",
     copyFailed: "Couldn’t copy. Select the code and copy it manually.",
-    readOnly: "Read-only. Your file stays unchanged.",
   },
 };
 
