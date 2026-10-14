@@ -601,6 +601,88 @@ input[type="range"] {
   margin-top: 0.5rem;
 }
 
+/* The langBG Handoff card (components/HandoffCard.astro): icon beside name, line, tags and one action. */
+.plugin-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1rem;
+  max-width: var(--measure);
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--panel);
+}
+
+.plugin-card-icon {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: var(--radius);
+  box-shadow: 0 0 0 1px var(--rule); /* keeps the dark icon's edge on the dark theme's panel */
+}
+
+.plugin-card-title {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.plugin-card-kind {
+  color: var(--ink-muted);
+  font-size: 0.9375rem;
+}
+
+.plugin-card-text {
+  margin-top: 0.6rem;
+}
+
+.plugin-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plugin-card-tags li {
+  padding: 0.1rem 0.5rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--paper);
+  font-size: 0.8125rem;
+}
+
+.plugin-card-badge,
+.plugin-card-action {
+  margin-top: 1rem;
+}
+
+.plugin-card-badge {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border: 1px dashed var(--ink-muted);
+  border-radius: var(--radius);
+  color: var(--ink-muted);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* On a phone: a tighter card and a smaller icon. */
+@media (max-width: 29.99rem) {
+  .plugin-card {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .plugin-card-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
 .sampler {
   margin-top: clamp(2.5rem, 6vw, 4.5rem);
   border-top: 3px solid var(--ink);

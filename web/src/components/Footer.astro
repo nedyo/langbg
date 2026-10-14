@@ -19,6 +19,7 @@ const t = ui[lang];
       <Link href={SITE.repo}>{t.footer.source}</Link>
       <!-- Works without JavaScript, unlike the floating support button. -->
       <Link href={SITE.kofi.page} data-testid="footer-kofi">{t.footer.kofi}</Link>
+      {SITE.figmaPlugin && <Link href={SITE.figmaPlugin} data-testid="footer-plugin">{t.footer.plugin}</Link>}
       <span>{t.footer.license}</span>
     </div>
   </div>

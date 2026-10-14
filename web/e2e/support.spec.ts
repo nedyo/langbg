@@ -112,7 +112,7 @@ test("the footer has a plain Ko-fi link for visitors without JavaScript", async 
 test.describe("375px phone", () => {
   test.use({ viewport: { width: 375, height: 812 } });
 
-  test("the button steps aside from the converter's buttons and never covers the footer", async ({ page }) => {
+  test("the button steps aside from the converter's buttons and the plugin card, never covers the footer", async ({ page }) => {
     await page.goto("/");
     const support = page.getByTestId("support-button");
     await expect(support).toBeVisible();
@@ -123,6 +123,13 @@ test.describe("375px phone", () => {
     await scrollTo(choose - 812 + 30);
     await expect(support).toBeHidden(); // visibility: hidden, out of the tab order too
     await scrollTo(choose - 812 - 300);
+    await expect(support).toBeVisible();
+
+    // The same for the langBG Handoff card: the button never sits on top of it.
+    const card = await page.getByTestId("handoff-plugin").evaluate((el) => el.getBoundingClientRect().top + window.scrollY);
+    await scrollTo(card - 812 + 40);
+    await expect(support).toBeHidden();
+    await scrollTo(card - 812 - 300);
     await expect(support).toBeVisible();
 
     await scrollTo(1e6);

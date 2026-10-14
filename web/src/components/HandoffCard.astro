@@ -1,0 +1,36 @@
+---
+// The langBG Handoff card on the home page. Two states, from SITE.figmaPlugin: a muted "coming soon"
+// badge while it is null, a link to the plugin's Figma Community page once it is set.
+// The icon is the plugin's own (figma-plugin/lbg.png; an e2e test keeps the two files identical).
+import Link from "./Link.astro";
+import icon from "../assets/handoff-icon.png";
+import { ui, type Lang } from "../i18n";
+import { SITE } from "../data/site";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = ui[lang].handoff.plugin;
+---
+
+<!-- data-support-clear: the floating support button steps aside while the card is under it. -->
+<div class="plugin-card ui" data-testid="handoff-plugin" data-support-clear>
+  <img class="plugin-card-icon" src={icon.src} width="48" height="48" alt="" />
+  <div class="plugin-card-body">
+    <h3 class="plugin-card-title">{t.name}</h3>
+    <p class="plugin-card-kind">{t.kind}</p>
+    <p class="plugin-card-text">{t.text}</p>
+    <ul class="plugin-card-tags">
+      {t.tags.map((tag) => <li>{tag}</li>)}
+    </ul>
+    {
+      SITE.figmaPlugin ? (
+        <Link class="button plugin-card-action" href={SITE.figmaPlugin} data-testid="plugin-link">{t.get}</Link>
+      ) : (
+        <p class="plugin-card-badge" data-testid="plugin-soon">{t.soon}</p>
+      )
+    }
+  </div>
+</div>

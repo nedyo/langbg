@@ -1,7 +1,8 @@
 import { existsSync, readFileSync } from "node:fs";
-import { expect, test } from "@playwright/test";
+import { expect, test, type Locator, type Page } from "@playwright/test";
 import { PANGRAM, SAMPLER_LETTERS } from "../src/i18n/ui";
 import { catalogData, firstWith } from "./catalog-data";
+import { PLUGIN_URL, PUBLISHED_URL } from "./published";
 
 // Words from the interface of one language that must never show on the other language's pages.
 const BULGARIAN_UI = /Конвертор|Каталог|За проекта|Пусни|Конвертирай|Как се инсталира|Често задавани/;
@@ -167,30 +168,63 @@ test("home page: install steps, the handoff note and the FAQ are there, the FAQ 
   await expect(items.first()).toHaveAttribute("open", "");
 });
 
-test("langBG Handoff: coming soon until published, the paid-plan FAQ, the suffix note in the converter", async ({ page }) => {
+// The langBG Handoff card, per language. `soon` shows until SITE.figmaPlugin is set, `get` after.
+const PLUGIN_CARD = [
+  {
+    path: "/",
+    kind: "Плъгин за Figma",
+    text: "Показва на разработчиците правилния CSS за шрифтовете с българска кирилица.",
+    tags: ["Dev Mode", "Design режим"],
+    soon: "Скоро във Figma Community",
+    get: "Към плъгина (отваря се в нов раздел)",
+    footer: "Плъгин за Figma (отваря се в нов раздел)",
+  },
+  {
+    path: "/en/",
+    kind: "Figma plugin",
+    text: "Show developers the right CSS for Bulgarian Cyrillic fonts.",
+    tags: ["Dev Mode", "Design Mode"],
+    soon: "Coming soon to Figma Community",
+    get: "Get the plugin (opens in a new tab)",
+    footer: "Figma plugin (opens in a new tab)",
+  },
+];
+
+/** What the card shows in both states: the plugin's icon, name, kind, one line and the tags. */
+async function expectPluginCard(page: Page, card: (typeof PLUGIN_CARD)[number]): Promise<Locator> {
+  const box = page.locator("#handoff").getByTestId("handoff-plugin");
+  await expect(box.getByRole("heading", { level: 3 })).toHaveText("langBG Handoff");
+  await expect(box.locator(".plugin-card-kind")).toHaveText(card.kind);
+  await expect(box.locator(".plugin-card-text")).toHaveText(card.text);
+  await expect(box.locator(".plugin-card-tags li")).toHaveText(card.tags);
+  const icon = box.locator("img.plugin-card-icon");
+  await expect(icon).toHaveAttribute("alt", ""); // the name sits right next to it
+  expect(await icon.evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth)).toBe(128);
+  return box;
+}
+
+test("langBG Handoff card: coming soon until published, no link anywhere; the paid-plan FAQ, the suffix note", async ({ page }) => {
   const pages = [
     {
-      path: "/",
-      soon: "Скоро: langBG Handoff. Показва правилния CSS в Dev Mode и в Design режим, включително на безплатния план.",
       q: "Трябва ли ми платен план във Figma?",
       a: "Не. Конверторът и плъгинът работят и на Starter. На платените планове плъгинът се показва и в Dev Mode.",
       note: "Плъгинът langBG Handoff разпознава само наставката „BG“.",
     },
     {
-      path: "/en/",
-      soon: "Coming soon: langBG Handoff. Shows the correct CSS in Dev Mode and in Design mode, including the free plan.",
       q: "Do I need a paid Figma plan?",
       a: "No. The converter and the plugin work on Starter too. On paid plans the plugin also shows up in Dev Mode.",
       note: "The langBG Handoff plugin only recognizes the “BG” suffix.",
     },
   ];
-  for (const { path, soon, q, a, note } of pages) {
-    await page.goto(path);
-    // SITE.figmaPlugin is null until the plugin is published: no link to it anywhere yet.
-    await expect(page.getByTestId("handoff-plugin")).toHaveText(soon);
+  for (const [index, { q, a, note }] of pages.entries()) {
+    const card = PLUGIN_CARD[index]!;
+    await page.goto(card.path);
+    // SITE.figmaPlugin is null until the plugin is published: a muted badge, no link or button to it anywhere.
+    const box = await expectPluginCard(page, card);
+    await expect(box.getByTestId("plugin-soon")).toHaveText(card.soon);
+    expect(await box.locator("a, button").count()).toBe(0);
     expect(await page.locator('a[href*="figma.com/community"]').count()).toBe(0);
-    await expect(page.locator("main")).not.toContainText("Dev Mode plugin");
-    await expect(page.locator("main")).not.toContainText("плъгин за Figma Dev Mode");
+    expect(await page.getByTestId("footer-plugin").count()).toBe(0);
 
     const faq = page.locator("#faq details", { hasText: q });
     await faq.locator("summary").click();
@@ -201,11 +235,69 @@ test("langBG Handoff: coming soon until published, the paid-plan FAQ, the suffix
   }
 });
 
+test("the plugin's icon on the site is the same file as the plugin's own", async ({ page, request }) => {
+  await page.goto("/");
+  const src = await page.getByTestId("handoff-plugin").locator("img").getAttribute("src");
+  const served = Buffer.from(await (await request.get(src!)).body());
+  expect(served.equals(readFileSync(new URL("../../figma-plugin/lbg.png", import.meta.url)))).toBe(true);
+});
+
+test.describe("langBG Handoff published (SITE.figmaPlugin set)", () => {
+  test.use({ baseURL: PUBLISHED_URL });
+
+  test("the card has a primary button to the Community page, the footer links there too", async ({ page }) => {
+    for (const card of PLUGIN_CARD) {
+      await page.goto(card.path);
+      const box = await expectPluginCard(page, card);
+      expect(await box.getByTestId("plugin-soon").count()).toBe(0);
+      const link = box.getByTestId("plugin-link");
+      await expect(link).toHaveText(card.get);
+      await expect(link).toContainClass("button");
+      for (const [name, value] of [["href", PLUGIN_URL], ["target", "_blank"], ["rel", "noopener noreferrer"]]) {
+        await expect(link).toHaveAttribute(name!, value!);
+      }
+      await expect(link.locator(".external-icon")).toHaveAttribute("aria-hidden", "true");
+
+      const footer = page.getByTestId("footer-plugin");
+      await expect(footer).toHaveText(card.footer);
+      await expect(footer).toHaveAttribute("href", PLUGIN_URL);
+      await expect(footer).toHaveAttribute("target", "_blank");
+      await expect(footer).toHaveAttribute("rel", "noopener noreferrer");
+    }
+  });
+
+  test("at 375px the card stays inside the column", async ({ page }) => {
+    await page.setViewportSize({ width: 375, height: 812 });
+    for (const { path } of PLUGIN_CARD) {
+      await page.goto(path);
+      await expectInsideColumn(page);
+    }
+  });
+});
+
+/** The card fits its column and the window; nothing in it sticks out. */
+async function expectInsideColumn(page: Page): Promise<void> {
+  const card = page.getByTestId("handoff-plugin");
+  const { box, column, inner, scrollWidth } = await card.evaluate((el) => {
+    const rect = (node: Element) => node.getBoundingClientRect();
+    return {
+      box: rect(el).toJSON(),
+      column: rect(el.parentElement!).toJSON(),
+      inner: [...el.querySelectorAll("*")].map((child) => rect(child).right),
+      scrollWidth: document.documentElement.scrollWidth,
+    };
+  });
+  expect(box.left).toBeGreaterThanOrEqual(column.left - 0.5);
+  expect(box.right).toBeLessThanOrEqual(column.right + 0.5);
+  expect(Math.max(...inner)).toBeLessThanOrEqual(box.right + 0.5);
+  expect(scrollWidth).toBeLessThanOrEqual(375);
+}
+
 test("home page: code snippets take the page's language, keep the comment on its own line and copy", async ({ page, context }) => {
   await context.grantPermissions(["clipboard-read", "clipboard-write"]);
   const pages = [
-    { path: "/", comment: "във Figma: Montserrat BG", copied: "Копирано", plugin: "Скоро: langBG Handoff" },
-    { path: "/en/", comment: "in Figma: Montserrat BG", copied: "Copied", plugin: "Coming soon: langBG Handoff" },
+    { path: "/", comment: "във Figma: Montserrat BG", copied: "Копирано", plugin: "Скоро във Figma Community" },
+    { path: "/en/", comment: "in Figma: Montserrat BG", copied: "Copied", plugin: "Coming soon to Figma Community" },
   ];
   for (const { path, comment, copied, plugin } of pages) {
     await page.goto(path);
@@ -298,6 +390,13 @@ test.describe("375px phone", () => {
       expect(scrolling, `${path}: code that scrolls sideways at 375px`).toEqual([]);
     });
   }
+
+  test("the langBG Handoff card stays inside the column", async ({ page }) => {
+    for (const { path } of PLUGIN_CARD) {
+      await page.goto(path);
+      await expectInsideColumn(page);
+    }
+  });
 });
 
 test("an unknown address gets the 404 page", async ({ page }) => {

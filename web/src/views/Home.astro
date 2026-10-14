@@ -1,12 +1,12 @@
 ---
 import Link from "../components/Link.astro";
 import CodeSnippet from "../components/CodeSnippet.astro";
+import HandoffCard from "../components/HandoffCard.astro";
 import Converter from "../components/Converter.astro";
 import Preview from "../components/Preview.astro";
 import { SAMPLER_LETTERS, ui, type Lang } from "../i18n";
 import { localePath } from "../i18n";
 import Base from "../layouts/Base.astro";
-import { SITE } from "../data/site";
 
 interface Props {
   lang: Lang;
@@ -130,17 +130,7 @@ const jsonLd = {
         </div>
         <CodeSnippet lang={lang} kind="CSS" code={`/* ${t.handoff.cssComment} */\nfont-family: "Montserrat", sans-serif;`} />
         <CodeSnippet lang={lang} kind="HTML" code={'<html lang="bg">'} />
-        {
-          SITE.figmaPlugin ? (
-            <p class="muted ui small" style="margin-top: 1rem" data-testid="handoff-plugin">
-              {t.handoff.available} <Link href={SITE.figmaPlugin}>{t.handoff.pluginLink}</Link>
-            </p>
-          ) : (
-            <p class="muted ui small" style="margin-top: 1rem" data-testid="handoff-plugin">
-              {t.handoff.soon}
-            </p>
-          )
-        }
+        <HandoffCard lang={lang} />
       </div>
     </div>
   </section>

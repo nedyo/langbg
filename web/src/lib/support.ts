@@ -66,7 +66,7 @@ function kofiButtonVisible(): boolean {
   );
 }
 
-/** Hides the floating buttons while one of the page's own buttons is under them. */
+/** Hides the floating buttons while one of the page's own buttons (or a [data-support-clear] block) is under them. */
 function keepButtonsClear(): void {
   const root = document.documentElement;
   const covered = new Set<Element>();
@@ -89,7 +89,7 @@ function keepButtonsClear(): void {
       },
       { rootMargin: `-${top}px 0px 0px -${left}px` },
     );
-    for (const element of document.querySelectorAll("main .button, main button")) observer.observe(element);
+    for (const element of document.querySelectorAll("main .button, main button, [data-support-clear]")) observer.observe(element);
   };
 
   let resizeTimer = 0;

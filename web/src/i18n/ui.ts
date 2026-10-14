@@ -218,10 +218,15 @@ const bg = {
       "За разработчика:",
     ],
     cssComment: "във Figma: Montserrat BG",
-    soon: "Скоро: langBG Handoff. Показва правилния CSS в Dev Mode и в Design режим, включително на безплатния план.",
-    // Shown instead of `soon` once SITE.figmaPlugin is set.
-    available: "langBG Handoff показва правилния CSS в Dev Mode и в Design режим, включително на безплатния план.",
-    pluginLink: "Инсталирай langBG Handoff от Figma Community",
+    // The plugin card. `soon` shows while SITE.figmaPlugin is null, `get` (a link) once it is set.
+    plugin: {
+      name: "langBG Handoff",
+      kind: "Плъгин за Figma",
+      text: "Показва на разработчиците правилния CSS за шрифтовете с българска кирилица.",
+      tags: ["Dev Mode", "Design режим"],
+      soon: "Скоро във Figma Community",
+      get: "Към плъгина",
+    },
   },
   link: { newTab: "отваря се в нов раздел" },
   code: {
@@ -383,6 +388,7 @@ const bg = {
     source: "Кодът в GitHub",
     license: "Лиценз MIT",
     kofi: "Подкрепи в Ko-fi",
+    plugin: "Плъгин за Figma",
   },
   support: {
     button: "Подкрепи проекта",
@@ -598,9 +604,14 @@ const en: Dict = {
       "For the developer:",
     ],
     cssComment: "in Figma: Montserrat BG",
-    soon: "Coming soon: langBG Handoff. Shows the correct CSS in Dev Mode and in Design mode, including the free plan.",
-    available: "langBG Handoff shows the correct CSS in Dev Mode and in Design mode, including the free plan.",
-    pluginLink: "Get langBG Handoff on Figma Community",
+    plugin: {
+      name: "langBG Handoff",
+      kind: "Figma plugin",
+      text: "Show developers the right CSS for Bulgarian Cyrillic fonts.",
+      tags: ["Dev Mode", "Design Mode"],
+      soon: "Coming soon to Figma Community",
+      get: "Get the plugin",
+    },
   },
   link: { newTab: "opens in a new tab" },
   code: {
@@ -760,6 +771,7 @@ const en: Dict = {
     source: "Code on GitHub",
     license: "MIT license",
     kofi: "Support on Ko-fi",
+    plugin: "Figma plugin",
   },
   support: {
     button: "Support the project",
