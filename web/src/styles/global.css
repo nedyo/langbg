@@ -21,24 +21,10 @@
   --gap: clamp(1.25rem, 3vw, 2.5rem);
   --space-section: clamp(3.5rem, 9vw, 7rem);
   --radius: 3px;
+  --shadow: 0 2px 10px rgb(27 34 80 / 0.22);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    color-scheme: dark;
-    --paper: #101431;
-    --panel: #1a2048;
-    --ink: #eaecf8;
-    --ink-muted: #a3abd0;
-    --rule: #2e3768;
-    --accent: #ff7a85;
-    --ok: #55d0a0;
-    --warn: #f2b04c;
-    --bad: #ff8a80;
-    --on-ink: #101431;
-  }
-}
-
+/* Light for everyone; dark only when chosen with the toggle (the OS setting is ignored). */
 :root[data-theme="dark"] {
   color-scheme: dark;
   --paper: #101431;
@@ -51,6 +37,7 @@
   --warn: #f2b04c;
   --bad: #ff8a80;
   --on-ink: #101431;
+  --shadow: 0 2px 12px rgb(0 0 0 / 0.5);
 }
 
 /* --- base -------------------------------------------------------------------------- */
@@ -373,6 +360,8 @@ code,
 .site-footer {
   border-top: 1px solid var(--rule);
   padding-block: 2.5rem;
+  /* Room for the floating support button, so it never covers the footer links. */
+  padding-bottom: 7.5rem;
   font-size: 0.9375rem;
   color: var(--ink-muted);
 }
@@ -388,6 +377,77 @@ code,
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem 1.5rem;
+}
+
+/* --- support button (Ko-fi facade, src/lib/support.ts) ------------------------------ */
+
+/* Ko-fi's own colours, the same in both themes. */
+.support-button {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 50;
+  min-height: 44px;
+  padding: 0.6rem 1.1rem;
+  border: 0;
+  border-radius: var(--radius);
+  background: #fcbf47;
+  color: #323842;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.2;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s;
+}
+
+.support-button:hover {
+  background: #fdb32a;
+}
+
+.support-button[aria-busy="true"] {
+  cursor: progress;
+}
+
+/* Ko-fi's widget, once drawn, sits where our button was: bottom right, not its default left. */
+.floatingchat-container-wrap,
+.floatingchat-container-wrap-mobi {
+  left: auto !important;
+  right: 16px !important;
+  /* Ko-fi's box is 180px; "Подкрепи проекта" with the logo needs about 235px. */
+  width: 250px !important;
+  max-width: calc(100vw - 32px) !important;
+}
+
+.floatingchat-container,
+.floatingchat-container-mobi {
+  width: 100% !important;
+}
+
+.floating-chat-kofi-popup-iframe,
+.floating-chat-kofi-popup-iframe-mobi {
+  left: auto !important;
+  right: 16px !important;
+  max-width: calc(100vw - 32px);
+}
+
+/* While one of the page's own buttons is under the corner, the floating buttons step aside. */
+.support-tucked .support-button,
+.support-tucked .floatingchat-container-wrap,
+.support-tucked .floatingchat-container-wrap-mobi {
+  opacity: 0 !important;
+  visibility: hidden !important; /* out of the tab order too */
+  transform: translateY(8px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .support-button {
+    transition: none;
+  }
 }
 
 /* --- buttons and fields ------------------------------------------------------------ */

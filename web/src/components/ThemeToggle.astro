@@ -10,16 +10,17 @@ const { label } = Astro.props;
 </button>
 
 <script>
+  // Light unless the visitor picked dark here; the OS setting doesn't count.
   const button = document.getElementById("theme-toggle") as HTMLButtonElement | null;
   const root = document.documentElement;
-  const media = window.matchMedia("(prefers-color-scheme: dark)");
 
-  const isDark = (): boolean => (root.dataset.theme ? root.dataset.theme === "dark" : media.matches);
+  const isDark = (): boolean => root.dataset.theme === "dark";
   const sync = (): void => button?.setAttribute("aria-pressed", String(isDark()));
 
   button?.addEventListener("click", () => {
     const next = isDark() ? "light" : "dark";
-    root.dataset.theme = next;
+    if (next === "dark") root.dataset.theme = "dark";
+    else delete root.dataset.theme;
     try {
       localStorage.setItem("theme", next);
     } catch {
@@ -27,6 +28,5 @@ const { label } = Astro.props;
     }
     sync();
   });
-  media.addEventListener("change", sync);
   sync();
 </script>

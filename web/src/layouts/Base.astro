@@ -4,6 +4,7 @@ import { CF_BEACON_TOKEN } from "astro:env/server";
 import "../styles/global.css";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import Support from "../components/Support.astro";
 import { languages, localePath, ui, type Lang } from "../i18n";
 
 interface Props {
@@ -56,13 +57,13 @@ const otherLocales = languages.filter((code) => code !== lang).map((code) => ui[
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/favicon.ico" sizes="32x32" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="color-scheme" content="light dark" />
+    <meta name="color-scheme" content="light" />
 
-    <!-- Sets the theme before first paint, so a saved choice never flashes the other one. -->
+    <!-- Light for everyone; dark only when chosen with the toggle. Set before first paint, so a
+         saved choice never flashes the other theme. The OS setting is ignored on purpose. -->
     <script is:inline>
       try {
-        var theme = localStorage.getItem("theme");
-        if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+        if (localStorage.getItem("theme") === "dark") document.documentElement.dataset.theme = "dark";
       } catch (error) {}
     </script>
 
@@ -98,5 +99,6 @@ const otherLocales = languages.filter((code) => code !== lang).map((code) => ui[
       <slot />
     </main>
     <Footer lang={lang} />
+    <Support lang={lang} />
   </body>
 </html>

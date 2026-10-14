@@ -382,6 +382,12 @@ const bg = {
     privacy: "Шрифтовете не напускат компютъра ти.",
     source: "Кодът в GitHub",
     license: "Лиценз MIT",
+    kofi: "Подкрепи в Ko-fi",
+  },
+  support: {
+    button: "Подкрепи проекта",
+    // The accessible name starts with the visible label.
+    label: "Подкрепи проекта в Ko-fi",
   },
   notFound: {
     metaTitle: "Страницата не е намерена - langBG",
@@ -753,6 +759,11 @@ const en: Dict = {
     privacy: "Your fonts never leave your computer.",
     source: "Code on GitHub",
     license: "MIT license",
+    kofi: "Support on Ko-fi",
+  },
+  support: {
+    button: "Support the project",
+    label: "Support the project on Ko-fi",
   },
   notFound: {
     metaTitle: "Page not found - langBG",

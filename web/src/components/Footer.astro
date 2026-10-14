@@ -17,6 +17,8 @@ const t = ui[lang];
     <div class="footer-links">
       <a href={localePath(lang, "/about/")}>{t.nav.about}</a>
       <Link href={SITE.repo}>{t.footer.source}</Link>
+      <!-- Works without JavaScript, unlike the floating support button. -->
+      <Link href={SITE.kofi.page} data-testid="footer-kofi">{t.footer.kofi}</Link>
       <span>{t.footer.license}</span>
     </div>
   </div>

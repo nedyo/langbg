@@ -1,0 +1,35 @@
+---
+// The floating "support the project" button: a facade for Ko-fi's overlay widget. Nothing from
+// Ko-fi loads until the first click; then the widget is drawn and its panel opened, so one click
+// is enough. If the widget can't load, Ko-fi's page opens in a new tab. The footer has a plain
+// link for visitors without JavaScript (this button needs it, so it starts hidden).
+import { SITE } from "../data/site";
+import { ui, type Lang } from "../i18n";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const s = ui[lang].support;
+---
+
+<button
+  id="support-button"
+  class="support-button ui"
+  type="button"
+  aria-label={s.label}
+  data-testid="support-button"
+  data-label={s.button}
+  data-user={SITE.kofi.user}
+  data-page={SITE.kofi.page}
+  data-script={SITE.kofi.script}
+  hidden
+>
+  {s.button}
+</button>
+
+<script>
+  import { setupSupport } from "../lib/support";
+  setupSupport();
+</script>

@@ -66,24 +66,50 @@ test("sitemap lists every page in both languages, robots.txt points to it", asyn
   expect(await (await request.get("/robots.txt")).text()).toContain("Sitemap: https://langbg.com/sitemap-index.xml");
 });
 
-test("light and dark theme: the toggle switches and the choice is remembered", async ({ page }) => {
-  await page.emulateMedia({ colorScheme: "light" });
+test("theme: light for everyone, even with a dark OS; dark only when picked, and remembered", async ({ page }) => {
+  await page.emulateMedia({ colorScheme: "dark" }); // the OS setting must not matter
   await page.goto("/");
   const paper = () => page.evaluate(() => getComputedStyle(document.body).backgroundColor);
   const light = await paper();
+  expect(light).toBe("rgb(247, 248, 251)"); // --paper of the light theme
+  expect(await page.locator("html").getAttribute("data-theme")).toBeNull();
+  await expect(page.locator("#theme-toggle")).toHaveAttribute("aria-pressed", "false");
+
   await page.locator("#theme-toggle").click();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
   await expect(page.locator("#theme-toggle")).toHaveAttribute("aria-pressed", "true");
   const dark = await paper();
   expect(dark).not.toBe(light);
+
+  // The inline script in <head> sets the choice before <body> even exists: no flash.
+  await page.addInitScript(() => {
+    new MutationObserver((_records, observer) => {
+      if (!document.body) return;
+      (window as unknown as { __themeAtBody?: string }).__themeAtBody = document.documentElement.dataset.theme ?? "none";
+      observer.disconnect();
+    }).observe(document, { childList: true, subtree: true });
+  });
   await page.reload();
-  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark"); // set before first paint
+  expect(await page.evaluate(() => (window as unknown as { __themeAtBody?: string }).__themeAtBody)).toBe("dark");
   expect(await paper()).toBe(dark);
-  // Without a saved choice the system setting decides.
-  await page.evaluate(() => localStorage.clear());
-  await page.emulateMedia({ colorScheme: "dark" });
+
+  // Back to light, remembered too.
+  await page.locator("#theme-toggle").click();
   await page.reload();
-  expect(await paper()).toBe(dark);
+  expect(await page.locator("html").getAttribute("data-theme")).toBeNull();
+  expect(await paper()).toBe(light);
+
+  // Blocked storage: still light, no error.
+  const errors: string[] = [];
+  page.on("pageerror", (error) => errors.push(error.message));
+  await page.addInitScript(() => {
+    Object.defineProperty(window, "localStorage", { get: () => { throw new Error("blocked"); } });
+  });
+  await page.reload();
+  expect(await paper()).toBe(light);
+  await page.locator("#theme-toggle").click();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  expect(errors).toEqual([]);
 });
 
 test("the site's own font really has Bulgarian forms: every letter of the hero differs between bg and en", async ({ page }) => {

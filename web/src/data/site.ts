@@ -4,6 +4,12 @@ export const SITE = {
   url: "https://langbg.com",
   author: { name: "Nedyalko Stoyanov", linkedin: "https://www.linkedin.com/in/nedyalko-stoyanov/" },
   repo: "https://github.com/nedyo/langbg",
+  /** Donations. The widget script loads only after a click on the support button (a facade). */
+  kofi: {
+    user: "nedyalko",
+    page: "https://ko-fi.com/nedyalko",
+    script: "https://storage.ko-fi.com/cdn/scripts/overlay-widget.js",
+  },
   /** The langBG Handoff page on Figma Community. While null, the site says "coming soon". */
   figmaPlugin: null as string | null,
 } as const;
