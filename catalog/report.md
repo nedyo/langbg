@@ -1,6 +1,6 @@
 # langbg catalog report
 
-google/fonts commit `2eb0b48d5f`: 302 families with the cyrillic subset (1682 without), 302 processed in this run.
+google/fonts commit `6c1dbe27dc`: 302 families with the cyrillic subset (1692 without), 302 processed in this run.
 
 | Family | Result | Files | Original | Preview | Notes |
 |---|---|---:|---:|---:|---|
@@ -271,8 +271,8 @@ google/fonts commit `2eb0b48d5f`: 302 families with the cyrillic subset (1682 wi
 | Tenor Sans (`tenorsans`) | no Bulgarian forms | 1 | 0.1 MB | - |  |
 | TikTok Sans (`tiktoksans`) | (b) works already | 1 | 0.8 MB | 153 KB | enable ss01 |
 | Tinos (`tinos`) | no Bulgarian forms | 4 | 2.3 MB | - |  |
-| Tiny5 (`tiny5`) | no Bulgarian forms | 1 | 0.1 MB | - |  |
-| Tiny5 Duo (`tiny5duo`) | no Bulgarian forms | 2 | 1.1 MB | - |  |
+| Tiny5 (`tiny5`) | no Bulgarian forms | 2 | 0.9 MB | - |  |
+| Tiny5 Duo (`tiny5duo`) | no Bulgarian forms | 2 | 1.2 MB | - |  |
 | Train One (`trainone`) | no Bulgarian forms | 1 | 2.2 MB | - |  |
 | Triodion (`triodion`) | no Bulgarian forms | 1 | 0.2 MB | - |  |
 | Tuffy (`tuffy`) | no Bulgarian forms | 4 | 0.8 MB | - |  |
@@ -323,13 +323,12 @@ Partial, left out (only some files of the family have Bulgarian forms; a half-co
 Not on fonts.google.com yet (in google/fonts only; their page links to the source until a later run finds them):
 
 - Nevermind (`nevermind`)
-- Xmind (`xmind`)
 
 10 of the listed fonts have a license that reserves a font name. They convert like any other ("<family> BG"); their page carries one informational line.
 
 ## Size of the site
 
-- Original fonts read in this run: 1257.8 MB for 302 families
+- Original fonts read in this run: 1258.6 MB for 302 families
 - Previews: 4.7 MB for 67 families (average 70 KB, largest 801 KB: Merriweather)
 - catalog.json: 94 KB
 - **Together: 4.8 MB**. No converted font and no ZIP is hosted.

@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "googleFontsCommit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd",
+  "googleFontsCommit": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
   "families": {
     "adventpro": {
       "name": "Advent Pro",
@@ -1876,16 +1876,16 @@
     "tiny5": {
       "name": "Tiny5",
       "status": "no_bgr",
-      "inputHash": "03670a33e898e641b295dc2dbc57d6c455398bebaf39ef35ab79f6f6f37775f8",
+      "inputHash": "974ce58af30a84265eeacb3556a675f741ba5ef8e80138ba780596da3ba8b092",
       "slug": "tiny5",
-      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+      "commit": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec"
     },
     "tiny5duo": {
       "name": "Tiny5 Duo",
       "status": "no_bgr",
-      "inputHash": "c2471485c7b0f5780ad6d7378a4014dcee4512037e722f5f37ef7ac00d7fef4e",
+      "inputHash": "13e09eb688010f8a01261663457038ffee73d8e34ccecfa2e5a56072e6ff966d",
       "slug": "tiny5-duo",
-      "commit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd"
+      "commit": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec"
     },
     "trainone": {
       "name": "Train One",

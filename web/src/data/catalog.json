@@ -1,7 +1,7 @@
 {
   "schema": 3,
   "mock": false,
-  "googleFontsCommit": "2eb0b48d5f760f62e286216f0859a8c540dbc1bd",
+  "googleFontsCommit": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
   "fonts": [
     {
       "slug": "akt",
@@ -806,7 +806,7 @@
       "designer": "Google",
       "license": "OFL-1.1",
       "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
-      "source": "https://github.com/google/fonts/tree/main/ofl/googlesans",
+      "source": "https://github.com/googlefonts/googlesans",
       "googleFontsUrl": "https://fonts.google.com/specimen/Google+Sans",
       "reservedNames": [],
       "styles": [
@@ -2356,7 +2356,7 @@
       "license": "OFL-1.1",
       "licenseUrl": "https://openfontlicense.org/open-font-license-official-text/",
       "source": "https://github.com/lamzhonghang/xmind",
-      "googleFontsUrl": null,
+      "googleFontsUrl": "https://fonts.google.com/specimen/Xmind",
       "reservedNames": [],
       "styles": [
         "Regular",
