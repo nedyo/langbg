@@ -4,6 +4,8 @@
 // dictionary can be serialised to JSON and handed to the browser island as it is.
 // FAQ answers may hold links as [text](href); an href that starts with "/" is a site path in Bulgarian.
 
+import { SITE } from "../data/site";
+
 export const languages = ["bg", "en"] as const;
 export type Lang = (typeof languages)[number];
 export const defaultLang: Lang = "bg";
@@ -176,6 +178,7 @@ const bg = {
       by: " от {designer}",
       figma: "Във Figma избирай „{name}“.",
       code: "В кода: „{original}“ и lang=\"bg\" на страницата. Браузърът показва българските форми сам.",
+      handoff: `За разработчиците: плъгинът langBG Handoff показва правилния CSS във Figma: ${SITE.figmaPlugin}`,
       install:
         "Инсталиране: Windows: маркирай файловете, десен бутон, Инсталиране. macOS: двоен клик, Инсталиране на шрифт. После рестартирай Figma.",
       files: "Файлове:",
@@ -218,13 +221,12 @@ const bg = {
       "За разработчика:",
     ],
     cssComment: "във Figma: Montserrat BG",
-    // The plugin card. `soon` shows while SITE.figmaPlugin is null, `get` (a link) once it is set.
+    // The plugin card; `get` is its button to SITE.figmaPlugin.
     plugin: {
       name: "langBG Handoff",
       kind: "Плъгин за Figma",
       text: "Показва на разработчиците правилния CSS за шрифтовете с българска кирилица.",
       tags: ["Dev Mode", "Design режим"],
-      soon: "Скоро във Figma Community",
       get: "Към плъгина",
     },
   },
@@ -254,7 +256,7 @@ const bg = {
       },
       {
         q: "Трябва ли ми платен план във Figma?",
-        a: ["Не. Конверторът и плъгинът работят и на Starter. На платените планове плъгинът се показва и в Dev Mode."],
+        a: [`Не. Конверторът и [плъгинът](${SITE.figmaPlugin}) работят и на Starter. На платените планове плъгинът се показва и в Dev Mode.`],
       },
       {
         q: "С кои шрифтове работи?",
@@ -563,6 +565,7 @@ const en: Dict = {
       by: " by {designer}",
       figma: "In Figma, pick “{name}”.",
       code: "In code: “{original}” with lang=\"bg\" on the page. Browsers show the Bulgarian forms on their own.",
+      handoff: `For developers: the langBG Handoff plugin shows the right CSS in Figma: ${SITE.figmaPlugin}`,
       install:
         "Installing: Windows: select the files, right-click, Install. macOS: double-click, then Install Font. Then restart Figma.",
       files: "Files:",
@@ -609,7 +612,6 @@ const en: Dict = {
       kind: "Figma plugin",
       text: "Show developers the right CSS for Bulgarian Cyrillic fonts.",
       tags: ["Dev Mode", "Design Mode"],
-      soon: "Coming soon to Figma Community",
       get: "Get the plugin",
     },
   },
@@ -639,7 +641,7 @@ const en: Dict = {
       },
       {
         q: "Do I need a paid Figma plan?",
-        a: ["No. The converter and the plugin work on Starter too. On paid plans the plugin also shows up in Dev Mode."],
+        a: [`No. The converter and the [plugin](${SITE.figmaPlugin}) work on Starter too. On paid plans the plugin also shows up in Dev Mode.`],
       },
       {
         q: "Which fonts work?",

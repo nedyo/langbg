@@ -655,19 +655,8 @@ input[type="range"] {
   font-size: 0.8125rem;
 }
 
-.plugin-card-badge,
 .plugin-card-action {
   margin-top: 1rem;
-}
-
-.plugin-card-badge {
-  display: inline-block;
-  padding: 0.3rem 0.7rem;
-  border: 1px dashed var(--ink-muted);
-  border-radius: var(--radius);
-  color: var(--ink-muted);
-  font-size: 0.875rem;
-  font-weight: 600;
 }
 
 /* On a phone: a tighter card and a smaller icon. */

@@ -10,12 +10,8 @@ export const SITE = {
     page: "https://ko-fi.com/nedyalko",
     script: "https://storage.ko-fi.com/cdn/scripts/overlay-widget.js",
   },
-  /**
-   * The langBG Handoff page on Figma Community. While null, the home page says "coming soon" and the
-   * footer has no plugin link; once published, put the Community URL in place of `null`.
-   * PUBLIC_FIGMA_PLUGIN only exists for the e2e tests, which use it to see the published state.
-   */
-  figmaPlugin: ((import.meta.env.PUBLIC_FIGMA_PLUGIN as string | undefined) || null) as string | null,
+  /** The langBG Handoff page on Figma Community (home page card, FAQ, footer, README.txt in the ZIP). */
+  figmaPlugin: "https://www.figma.com/community/plugin/1692174372084149492/langbg-handoff",
 } as const;
 
 export type CreditKey = "pyodide" | "fonttools" | "fflate" | "astro" | "fonts";

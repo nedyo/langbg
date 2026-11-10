@@ -25,7 +25,7 @@ langBG е безплатен инструмент с отворен код, ко
 | `core/` | Python пакет (fontTools): преработка на GSUB, преименуване, отчет, CLI |
 | `web/` | Astro сайт с конвертора |
 | `catalog/` | Скрипт, който изгражда каталога с OFL шрифтове |
-| `figma-plugin/` | langBG Handoff: показва правилния CSS (оригиналното име и `lang="bg"`) в Dev Mode и в Design режим. Скоро във Figma Community. |
+| `figma-plugin/` | langBG Handoff: показва правилния CSS (оригиналното име и `lang="bg"`) в Dev Mode и в Design режим. [Във Figma Community](https://www.figma.com/community/plugin/1692174372084149492/langbg-handoff). |
 
 ---
 
@@ -48,7 +48,7 @@ In code you keep using the original font with `lang="bg"`. Browsers apply `locl`
 | `core/` | Python package (fontTools): GSUB rewiring, renaming, report, CLI |
 | `web/` | Astro site with the converter |
 | `catalog/` | Script that builds the catalog of OFL fonts |
-| `figma-plugin/` | langBG Handoff: shows the correct CSS (the original name and `lang="bg"`) in Dev Mode and in Design mode. Coming soon to Figma Community. |
+| `figma-plugin/` | langBG Handoff: shows the correct CSS (the original name and `lang="bg"`) in Dev Mode and in Design mode. [On Figma Community](https://www.figma.com/community/plugin/1692174372084149492/langbg-handoff). |
 
 ---
 

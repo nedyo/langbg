@@ -15,6 +15,7 @@ const fixture = (...parts: string[]) => readFileSync(join(FIXTURES, ...parts));
 const MONTSERRAT = fixture("montserrat", "Montserrat[wght].ttf");
 const MONTSERRAT_OFL = fixture("montserrat", "OFL.txt");
 
+const PLUGIN_URL = "https://www.figma.com/community/plugin/1692174372084149492/langbg-handoff";
 const CORS = { "access-control-allow-origin": "*" };
 const GITHUB = "https://raw.githubusercontent.com/**";
 
@@ -248,6 +249,7 @@ test("catalog: one click gives a ZIP converted in the browser from the original 
   const readme = new TextDecoder().decode(zip["README.txt"]);
   expect(readme).toContain("Запомни: Montserrat BG = Montserrat");
   expect(readme).toContain(`Създаден на основата на Montserrat от ${font!.designer}`);
+  expect(readme).toContain("За разработчиците: плъгинът langBG Handoff показва правилния CSS във Figma: " + PLUGIN_URL);
   expect(readMainName(zip["MontserratBG[wght].ttf"])).toBe("Montserrat BG");
   await expect(page.getByTestId("catalog-status")).toContainText("Montserrat BG.zip");
   await expect(page.getByTestId("catalog-error")).toBeHidden();
@@ -265,6 +267,7 @@ test("catalog: the English page makes the same ZIP with an English README", asyn
   const { zip } = await getZip(page);
   const readme = new TextDecoder().decode(zip["README.txt"]);
   expect(readme).toContain("Remember: Montserrat BG = Montserrat");
+  expect(readme).toContain("For developers: the langBG Handoff plugin shows the right CSS in Figma: " + PLUGIN_URL);
   await expect(page.getByTestId("catalog-status")).toContainText("is downloaded");
   expect(await page.locator("body").innerText()).not.toMatch(/Конвертор|Свали|Грешка/);
 });

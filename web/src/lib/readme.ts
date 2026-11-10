@@ -35,7 +35,7 @@ export function buildReadme(strings: Dict["converter"]["readme"], input: ReadmeI
     );
   }
 
-  lines.push(strings.install, "", strings.files, ...input.fontFiles.map((file) => `  ${file}`));
+  lines.push(strings.handoff, "", strings.install, "", strings.files, ...input.fontFiles.map((file) => `  ${file}`));
   for (const file of input.licenseFiles) lines.push(`  ${file}`);
   lines.push("");
 

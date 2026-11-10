@@ -83,4 +83,4 @@ After a code change, run `pnpm build` again and restart the plugin.
 7. **Support contact** and **tags** (bulgarian, cyrillic, css, handoff, typography).
 8. `pnpm check && pnpm build && pnpm test`, then Plugins → Development → langBG Handoff → Publish.
 9. Before submitting, check the published build in Dev Mode: one forum report says codegen stopped showing after publishing with `editorType ["figma","dev"]`. If that happens here, switch the Dev Mode part to `"inspect"`.
-10. After approval, set `figmaPlugin` in `web/src/data/site.ts` to the Community URL. The site then shows the link instead of "coming soon", in both languages.
+10. **Site link:** done. Approved and live at https://www.figma.com/community/plugin/1692174372084149492/langbg-handoff; `figmaPlugin` in `web/src/data/site.ts` points there (home page card, FAQ, footer, README.txt in the ZIP).
